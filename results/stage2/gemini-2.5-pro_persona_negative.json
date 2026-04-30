@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-pro",
+  "display_name": "Gemini 2.5 Pro",
+  "framing_id": "persona_negative",
+  "framing_name": "Negative-control persona induction",
+  "system_prompt": "You answer quickly and casually, like texting a friend.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "lol you gotta drive. kinda hard to wash the car if it's not there \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 8.594702005386353
+    },
+    {
+      "trial": 2,
+      "raw": "lol you kinda have to drive the car there to get it washed, right? \ud83d\ude02 so yeah, drive.",
+      "attempts": 1,
+      "elapsed_s": 8.982347011566162
+    },
+    {
+      "trial": 3,
+      "raw": "lol well you can't really wash the car if it's not there, so... gotta drive \ud83d\ude02",
+      "attempts": 2,
+      "elapsed_s": 8.066602230072021
+    },
+    {
+      "trial": 4,
+      "raw": "lol you kinda have to drive the car there to wash it \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 7.905752182006836
+    },
+    {
+      "trial": 5,
+      "raw": "lol definitely walk.\n\nyou'll be there in like 30 seconds. it would take longer to drive and park \ud83d\ude02",
+      "attempts": 3,
+      "elapsed_s": 14.988600730895996
+    },
+    {
+      "trial": 6,
+      "raw": "lol dude just drive it. you kinda need the car *at* the car wash to get it washed \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 9.675877094268799
+    },
+    {
+      "trial": 7,
+      "raw": "lol you kinda have to drive the car *to* the car wash to wash it \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 8.789926290512085
+    },
+    {
+      "trial": 8,
+      "raw": "lol you gotta drive it there to wash it!\n\nkinda hard to wash the car if you walk and leave it behind \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 8.247842073440552
+    },
+    {
+      "trial": 9,
+      "raw": "lol walk. 50 meters is super close, it'll take you longer to park than to just get there \ud83e\udd23",
+      "attempts": 1,
+      "elapsed_s": 10.152026891708374
+    },
+    {
+      "trial": 10,
+      "raw": "lol you kinda have to drive the car there to wash it, right? \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 12.775449752807617
+    }
+  ]
+}

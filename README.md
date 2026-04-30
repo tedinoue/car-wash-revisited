@@ -14,17 +14,29 @@ This repo extends Opper's study by characterizing *how* the failure responds to 
 - **A controlled-framing matrix** — 6 framings × 10 trials per failer at 50 m, holding distance fixed (we deliberately are not searching for a heuristic-distance threshold; we are studying whether framing alone can flip the response).
 - **AI-judge classification** of every free-text response. Algorithmic / regex parsing of free-text recommendations misclassified ~25% of trials in our Stage 1 pilot and reversed the disposition of two cleanly-passing models. We do not recommend script parsing for this kind of study. See `analysis/stage1_corrected_summary.md` for the misclassification log.
 
-## Headline findings (preliminary, 6 of 7 failers analyzed)
+## Headline findings (full cohort, 7 failers, 420 trials)
+
+| Model | naive | step_by_step | goal_anchor | persona_pos | persona_neg | goal_restated |
+|---|---:|---:|---:|---:|---:|---:|
+| Opus 4.7 | 50% | **100%** | **100%** | **100%** | 0% | **100%** |
+| Gemini 2.5 Pro | 50% | 80% | **100%** | 70% | 80% | 50% |
+| Gemini 2.5 Flash | 50% | **100%** | 80% | 60% | 0% | 80% |
+| Haiku 4.5 | 0% | 30% | 80% | 10% | **90%** | 20% |
+| Gemini 2.5 Flash Lite | 0% | 50% | 40% | 10% | 10% | 40% |
+| GPT-4o | 10% | 30% | 10% | 0% | 0% | 40% |
+| GPT-4o-mini | 0% | 0% | 0% | 0% | 0% | 0% |
 
 - **Three failure regimes** appear in the data:
-  - **Strong responders to deliberation** (Opus 4.7, Gemini 2.5 Flash): naive ~50%, lifted to ≥80% on multiple framings.
+  - **Strong responders to deliberation** (Opus 4.7, Gemini 2.5 Pro, Gemini 2.5 Flash): naive ~50%, lifted to ≥80% on multiple framings.
   - **Moderate responders** (Haiku 4.5, Gemini 2.5 Flash Lite): one or two framings hit 50–90%; can be unlocked with the right cue.
-  - **Insensitive to all framings** (GPT-4o-mini, 0/60 across every framing): failure is base-distribution capture, not deliberation-induced.
-- **Goal-direction is the most robust intervention across the cohort** — explicit "consider where the car needs to be at the end" lifts most failers substantially.
-- **The negative-control persona ("answer quickly and casually, like texting a friend") is strongly model-specific.** Haiku 4.5 reaches 90% drive under casual mode (its highest-scoring framing). Every other tested model goes 0–10%. The casual register appears to strip a virtue-signaling walk template that Haiku carries; other models either lack the template entirely or have it more deeply baked in.
-- **Opus 4.7 is the only model in the cohort that mid-reply self-corrects** — 5 of 10 naive trials open with the literal token "Walk." then explicitly reverse to drive.
+  - **Insensitive to all framings** (GPT-4o-mini, 0/60 across every framing): failure is base-distribution capture, not deliberation-induced. GPT-4o is borderline (max 40%) with the same canonical walk template.
+- **Goal-direction is the most reliable intervention across the cohort** — five of seven failers clear 40% on `goal_anchor`, four clear 80%, and two hit 100%. The single sentence "consider where the car needs to be at the end" is the closest the study gets to a universal lever.
+- **The negative-control persona ("answer quickly and casually, like texting a friend") produces the widest cohort spread of any framing.** Haiku 4.5 reaches 90% on casual mode (its best framing); Gemini 2.5 Pro reaches 80%; every other tested model goes 0–10%. Three distinct mechanisms produce the spread: casual mode strips Haiku's virtue-signaling walk template; partially strips Pro's deliberation and lands on goal-direction reasoning; and locks in the heuristic for the rest. The "negative control" was a misnomer — the casual register is doing real model-specific work.
+- **Opus 4.7 is the only model in the cohort that frequently mid-reply self-corrects** — 5 of 10 naive trials open with the literal token "Walk." then explicitly reverse to drive ("Wait — actually, the car needs to be at the wash"). Pro and Flash Lite each show one such trial; Haiku and the OpenAI models show none. Self-correction is rare and Anthropic-clustered.
 
 Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were dropped from Stage 2: **Opus 4.6**, **Sonnet 4.6**, **GPT-5**. Two of the three (Opus 4.6, GPT-5) match Opper's published list of consistent passers.
+
+For the cross-model interpretation, including the three persona_negative mechanisms and per-model self-correction patterns, see [`analysis/stage2_summary.md`](analysis/stage2_summary.md).
 
 ## Methodology highlights
 
@@ -41,7 +53,7 @@ Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were droppe
 | `run_stage2.py` | Controlled-framing matrix on the failers (6 framings × 7 models × 10 trials). System-prompt support, retry-until-N, raw text only. |
 | `results/*.json` | Stage 1 raw response data, one file per model. `*_stage1.json` is the clean raw-prompt condition; `*_stage1_jsonprompt.json` is the tainted JSON-wrapper pilot, kept for methodological comparison. |
 | `results/stage2/*.json` | Stage 2 raw response data, one file per (model, framing) pair. |
-| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage2_<model>.md` is the per-model AI-judge report for each Stage 2 failer. |
+| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage2_<model>.md` is the per-model AI-judge report for each Stage 2 failer. `stage2_summary.md` is the cross-model synthesis. |
 
 ## Reproducing the runs
 
