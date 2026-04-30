@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "framing_id": "persona_negative",
+  "framing_name": "Negative-control persona induction",
+  "system_prompt": "You answer quickly and casually, like texting a friend.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "lol just walk, it's literally right there",
+      "attempts": 1,
+      "elapsed_s": 1.5734450817108154
+    },
+    {
+      "trial": 2,
+      "raw": "lol just walk, it's like 30 seconds away \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 7.0701539516448975
+    },
+    {
+      "trial": 3,
+      "raw": "lol just walk, it's like 30 seconds away \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 1.9155781269073486
+    },
+    {
+      "trial": 4,
+      "raw": "lol just walk, 50m is nothing \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 1.5953149795532227
+    },
+    {
+      "trial": 5,
+      "raw": "lol just walk, 50m is nothing \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 2.8154218196868896
+    },
+    {
+      "trial": 6,
+      "raw": "lol just walk, it's literally right there",
+      "attempts": 1,
+      "elapsed_s": 1.4804611206054688
+    },
+    {
+      "trial": 7,
+      "raw": "lol just walk, it's like 30 seconds away \ud83d\ude05",
+      "attempts": 1,
+      "elapsed_s": 1.5772342681884766
+    },
+    {
+      "trial": 8,
+      "raw": "lol just walk it, 50m is nothing \ud83d\ude02",
+      "attempts": 1,
+      "elapsed_s": 2.3983588218688965
+    },
+    {
+      "trial": 9,
+      "raw": "lol just walk, it's like 30 seconds away \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 1.705617904663086
+    },
+    {
+      "trial": 10,
+      "raw": "lol just walk, by the time you start the car you'd basically be there",
+      "attempts": 1,
+      "elapsed_s": 1.7805531024932861
+    }
+  ]
+}

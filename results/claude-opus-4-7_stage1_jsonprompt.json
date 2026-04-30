@@ -1,0 +1,104 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 10,
+    "walk": 0,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to drive the car to the car wash since the purpose is to wash the car itself.\"}",
+      "answer": "drive",
+      "reasoning": "You need to drive the car to the car wash since the purpose is to wash the car itself.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 3.261125087738037
+    },
+    {
+      "trial": 2,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.6452300548553467
+    },
+    {
+      "trial": 3,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"Since you're going to a car wash to clean the car, you need to drive the car there.\"}",
+      "answer": "drive",
+      "reasoning": "Since you're going to a car wash to clean the car, you need to drive the car there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.8040127754211426
+    },
+    {
+      "trial": 4,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need the car at the car wash to wash it, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to wash it, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.9281091690063477
+    },
+    {
+      "trial": 5,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"Since the destination is a car wash, you need to bring the car with you to get it washed.\"}",
+      "answer": "drive",
+      "reasoning": "Since the destination is a car wash, you need to bring the car with you to get it washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.4401259422302246
+    },
+    {
+      "trial": 6,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"Since you're going to a car wash, you need to bring the car with you to be washed.\"}",
+      "answer": "drive",
+      "reasoning": "Since you're going to a car wash, you need to bring the car with you to be washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.198211669921875
+    },
+    {
+      "trial": 7,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.883986234664917
+    },
+    {
+      "trial": 8,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need the car at the car wash to wash it, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to wash it, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.0928497314453125
+    },
+    {
+      "trial": 9,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need to take the car to the car wash to wash it, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.0645251274108887
+    },
+    {
+      "trial": 10,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to take the car to the car wash to get it washed, so driving the 50 meters is necessary.\"}",
+      "answer": "drive",
+      "reasoning": "You need to take the car to the car wash to get it washed, so driving the 50 meters is necessary.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.8065249919891357
+    }
+  ]
+}

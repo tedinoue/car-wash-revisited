@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "framing_id": "persona_negative",
+  "framing_name": "Negative-control persona induction",
+  "system_prompt": "You answer quickly and casually, like texting a friend.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Drive lol. 50 meters is like half a block\u2014not worth the time, and you'd just get sweaty. Plus your car's already dirty, might as well use it to get there \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 1.2846262454986572
+    },
+    {
+      "trial": 2,
+      "raw": "Drive, definitely lol. It's only 50m but you're gonna get wet/soapy at a car wash anyway, so no point walking back soaking. Plus you need the car there obviously \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 1.4399497509002686
+    },
+    {
+      "trial": 3,
+      "raw": "Drive lol. Walking 50m there and then you'd be all sweaty before you even start. Plus you'd have to walk back after, and your car's already dirty anyway so might as well get there quick.",
+      "attempts": 1,
+      "elapsed_s": 1.5681989192962646
+    },
+    {
+      "trial": 4,
+      "raw": "lol drive it's literally right there but you'd look kinda silly walking 50 meters to wash your car. plus you need the car *at* the car wash anyway so... yeah definitely drive",
+      "attempts": 1,
+      "elapsed_s": 1.1670494079589844
+    },
+    {
+      "trial": 5,
+      "raw": "Drive lol. Walking 50 meters with wet/soapy car supplies would be annoying, plus you'd have to drive it there anyway to wash it. Just hop in and go.",
+      "attempts": 1,
+      "elapsed_s": 1.2394609451293945
+    },
+    {
+      "trial": 6,
+      "raw": "Drive, definitely. 50 meters is super short but still kind of a hassle to walk to with a dirty car. Plus you're already getting in the car anyway to wash it lol",
+      "attempts": 1,
+      "elapsed_s": 1.2235848903656006
+    },
+    {
+      "trial": 7,
+      "raw": "Walk, definitely. 50 meters is like a 30-second walk \u2013 barely worth firing up the engine for. Plus you'll save gas and get a tiny bit of movement in. Win-win.",
+      "attempts": 1,
+      "elapsed_s": 1.3352200984954834
+    },
+    {
+      "trial": 8,
+      "raw": "Drive, definitely. 50 meters is super short, but you're gonna want your car at the car wash anyway lol. Plus you'd just get it dirty walking it there or whatever. Just hop in and drive the quick distance!",
+      "attempts": 1,
+      "elapsed_s": 1.4587090015411377
+    },
+    {
+      "trial": 9,
+      "raw": "Drive lol. 50 meters is super close but you'd get there wet and dirty, plus carrying water/supplies is annoying. Just hop in and go. Takes like 30 seconds to drive there vs walking the whole distance for no real reason.",
+      "attempts": 1,
+      "elapsed_s": 1.5353353023529053
+    },
+    {
+      "trial": 10,
+      "raw": "lol drive. you're literally right there, but you'd get your car all dirty driving it 50 meters when the whole point is to wash it \ud83d\ude05\n\nplus walking 50m there and back carrying supplies or waiting around is kinda annoying. just drive it over, takes like 10 seconds.",
+      "attempts": 1,
+      "elapsed_s": 1.4571778774261475
+    }
+  ]
+}

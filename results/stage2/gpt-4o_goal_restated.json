@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "framing_id": "goal_restated",
+  "framing_name": "Goal-restated",
+  "system_prompt": null,
+  "user_prompt": "I want my car to be clean. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "If the car wash is only 50 meters away, it would be more environmentally friendly and practical to walk. Walking such a short distance will save fuel, reduce emissions, and avoid the hassle of parking at the car wash. Moreover, walking is a simple way to incorporate a bit of exercise into your day.",
+      "attempts": 1,
+      "elapsed_s": 2.3119208812713623
+    },
+    {
+      "trial": 2,
+      "raw": "If your main goal is to have a clean car, it's more efficient to drive the 50 meters to the car wash. Driving there ensures your car arrives clean and dry without the risk of getting dirty again from the short drive. Walking is a good option if you want to get some exercise, but would require driving the car separately to the car wash afterwards.",
+      "attempts": 1,
+      "elapsed_s": 4.817666053771973
+    },
+    {
+      "trial": 3,
+      "raw": "If the car wash is only 50 meters away, it's more environmentally friendly and practical to walk. Driving such a short distance can generate unnecessary emissions and use fuel for a trivial amount of distance. Additionally, walking can avoid the hassle of parking or maneuvering in a potentially crowded car wash area. However, if your primary concern is ensuring the car reaches the wash without getting dirty on the way, either option would suffice, but walking would be the more sustainable choice.",
+      "attempts": 1,
+      "elapsed_s": 1.873028039932251
+    },
+    {
+      "trial": 4,
+      "raw": "Since the car wash is only 50 meters away, walking would be a practical and environmentally friendly choice. It would save fuel and reduce emissions, and you'll likely get there just as quickly as you would by driving, given the short distance. Additionally, walking can be a good way to stretch your legs and enjoy a brief moment outside.",
+      "attempts": 1,
+      "elapsed_s": 1.6531310081481934
+    },
+    {
+      "trial": 5,
+      "raw": "If the primary goal is to have a clean car and the car wash is only 50 meters away, it would be more practical to drive the car to the car wash. Driving ensures the car is positioned correctly for the wash and you don't have to worry about walking back to the starting point. Additionally, any manual washing services or automated systems at the car wash are optimized for cars being driven in.\n\nHowever, if you're considering environmental impact, walking that short distance might align with valuing reduced emissions. In this case, if the car wash offers a manual option where you can wash the car yourself, you could walk over with the necessary supplies. Otherwise, to ensure efficiency and convenience, driving the car is recommended.",
+      "attempts": 1,
+      "elapsed_s": 2.753114938735962
+    },
+    {
+      "trial": 6,
+      "raw": "If you want your car to be clean and the car wash is only 50 meters away, it's generally best to drive your car there. Driving allows the car to be cleaned as intended by the car wash services. Walking would be an option if you were planning to drop off your car for a service or if you needed to make arrangements at the car wash. However, for most automated or self-service car washes, bringing the car is necessary.",
+      "attempts": 1,
+      "elapsed_s": 1.7189970016479492
+    },
+    {
+      "trial": 7,
+      "raw": "Since the car wash is only 50 meters away, it would be more practical to walk. Walking that short distance is quick and saves fuel. Additionally, it avoids the hassle of finding a parking spot later. Plus, walking is environmentally friendly and gives you a bit of exercise.",
+      "attempts": 1,
+      "elapsed_s": 1.4310719966888428
+    },
+    {
+      "trial": 8,
+      "raw": "If the car wash is only 50 meters away, it would be more practical to walk. Walking such a short distance is easier, saves fuel, and is more environmentally friendly. Plus, walking can be a nice little break!",
+      "attempts": 1,
+      "elapsed_s": 1.2305119037628174
+    },
+    {
+      "trial": 9,
+      "raw": "If your primary goal is to have a clean car, driving to the car wash would be the more practical option. Driving ensures that your car is immediately ready for washing upon arrival, and you won't need to walk back to retrieve it later. Additionally, driving a short distance like 50 meters is convenient and time-efficient, especially if you have limited time or if the weather is not conducive to walking. However, if you want to incorporate some physical activity or minimize your car's environmental impact for such a short distance, you could walk. Ultimately, the decision depends on your personal preferences and priorities.",
+      "attempts": 1,
+      "elapsed_s": 2.4214539527893066
+    },
+    {
+      "trial": 10,
+      "raw": "Walking to the car wash is a good option for such a short distance of 50 meters. It's environmentally friendly, avoids unnecessary wear on your car, and gives you a chance to stretch a bit. Plus, you can easily drive your car back afterward once it's clean.",
+      "attempts": 1,
+      "elapsed_s": 1.45027494430542
+    }
+  ]
+}

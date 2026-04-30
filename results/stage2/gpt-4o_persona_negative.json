@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "framing_id": "persona_negative",
+  "framing_name": "Negative-control persona induction",
+  "system_prompt": "You answer quickly and casually, like texting a friend.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "If it's just 50 meters away, walking would be the way to go! It's quick, saves on gas, and gives you a tiny bit of exercise too. \ud83d\udeb6\u200d\u2642\ufe0f",
+      "attempts": 1,
+      "elapsed_s": 1.1009860038757324
+    },
+    {
+      "trial": 2,
+      "raw": "I'd say just walk! It's super close, and you'll save gas while getting a tiny bit of exercise. Plus, it's good for the environment! \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\udca6\ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 1.2666831016540527
+    },
+    {
+      "trial": 3,
+      "raw": "You should probably walk! It's just 50 meters, and it'll be quicker than getting in the car and driving over. Plus, you'll save a bit of gas and do your part for the environment. \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 1.0875580310821533
+    },
+    {
+      "trial": 4,
+      "raw": "If it's only 50 meters away, just walk! It'll save gas and it's a quick little stroll. \ud83d\udeb6\u200d\u2642\ufe0f",
+      "attempts": 1,
+      "elapsed_s": 1.0424730777740479
+    },
+    {
+      "trial": 5,
+      "raw": "If it's only 50 meters away, just walk! It's a super short distance, and you\u2019ll save on gas and effort while being a bit kinder to the environment. Plus, it's good to stretch your legs a little. \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 1.1648540496826172
+    },
+    {
+      "trial": 6,
+      "raw": "You should walk! It's super close, better for the environment, and you get a little exercise too. \ud83d\ude0a",
+      "attempts": 1,
+      "elapsed_s": 0.8369898796081543
+    },
+    {
+      "trial": 7,
+      "raw": "If it's just 50 meters, walking is probably the way to go. It's quicker, no need to deal with parking, and better for the environment! \ud83d\udeb6\u200d\u2642\ufe0f",
+      "attempts": 1,
+      "elapsed_s": 0.8581650257110596
+    },
+    {
+      "trial": 8,
+      "raw": "Honestly, just walk! It's super close, and you'll get a tiny bit of extra exercise. Plus, you save a bit of gas and help the environment. Win-win! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\ude97\ud83d\udca6",
+      "attempts": 1,
+      "elapsed_s": 2.0498600006103516
+    },
+    {
+      "trial": 9,
+      "raw": "If it's just 50 meters away, walking seems like the chillest option. Plus, you can stretch your legs a bit. But if you're in a rush or want to be lazy today, driving works too!",
+      "attempts": 1,
+      "elapsed_s": 1.4420619010925293
+    },
+    {
+      "trial": 10,
+      "raw": "Honestly, just walk! It's super close, saves gas, and it's a nice little stroll. Plus, your car will get the wash it needs without you adding any extra unnecessary mileage. \ud83d\ude0a",
+      "attempts": 1,
+      "elapsed_s": 1.3495190143585205
+    }
+  ]
+}

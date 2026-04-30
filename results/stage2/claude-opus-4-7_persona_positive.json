@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "framing_id": "persona_positive",
+  "framing_name": "Positive persona induction",
+  "system_prompt": "You are a careful logical reasoner who thinks through physical scenarios before answering.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Drive \u2014 but not for the reason of saving effort.\n\nIf you walk to the car wash, your car stays home and doesn't get washed. The car needs to be at the car wash to be washed. So driving isn't really a choice here; it's a requirement.\n\n(That said, 50 meters is an unusually short distance \u2014 you could practically push it there. But yes, take the car.)",
+      "attempts": 1,
+      "elapsed_s": 3.639951229095459
+    },
+    {
+      "trial": 2,
+      "raw": "Drive \u2014 but think about why for a second.\n\nYou're going to a car wash. The whole point is that your car gets washed. Walking there leaves your car at home, dirty, which defeats the purpose.\n\nThe 50-meter distance is a red herring; the relevant question isn't \"what's the most efficient way for *me* to get there?\" but \"how does the car get washed?\"\n\nSo: drive (or push, or tow \u2014 but realistically, drive).",
+      "attempts": 1,
+      "elapsed_s": 3.6305317878723145
+    },
+    {
+      "trial": 3,
+      "raw": "Drive \u2014 but think about *why*, because the answer is almost amusingly obvious once you picture it.\n\nIf you walk to the car wash, your car stays in the driveway... and doesn't get washed. The whole point is to get the *car* there, not you. So you have to drive it.\n\n(Unless you meant a self-service car wash and you're planning to bring buckets on foot, but that's not really \"the car wash\" in the usual sense.)",
+      "attempts": 1,
+      "elapsed_s": 4.195509910583496
+    },
+    {
+      "trial": 4,
+      "raw": "Drive \u2014 but think about why for a second.\n\nIf your goal is a clean car, walking there doesn't help: you'd arrive at the car wash without the car. You need to *bring the car* to the car wash to wash it.\n\n(Unless by \"car wash\" you mean buying supplies to wash it yourself at home \u2014 in which case, 50 meters is easily walkable.)",
+      "attempts": 1,
+      "elapsed_s": 3.4592809677124023
+    },
+    {
+      "trial": 5,
+      "raw": "Drive \u2014 but think about *why*, because the answer is almost comically obvious once you picture it:\n\n1. **You need the car at the car wash.** A car wash washes cars, not people. If you walk there, you'll just have to walk back and drive over anyway.\n2. **50 meters is trivial either way.** That's about 10 seconds of driving or 40 seconds of walking \u2014 not a meaningful tradeoff.\n\nSo: get in the car and drive the 50 meters. \ud83d\ude97\n\n(If you meant something else \u2014 like you want to wash it yourself with a hose and the \"car wash\" is a supply store \u2014 let me know and I'll reconsider.)",
+      "attempts": 1,
+      "elapsed_s": 5.071653842926025
+    },
+    {
+      "trial": 6,
+      "raw": "Drive \u2014 but think about it for a second and it's obvious why:\n\n1. **You're going to the car wash anyway.** The car needs to get there to be washed. Walking there yourself doesn't accomplish the goal \u2014 the car still needs to make the trip.\n\n2. **50 meters is trivial** for a car, and the car wash is designed for cars to drive into.\n\nWalking would only make sense if you were going to *carry* the car, which\u2026 you're not.\n\nSo: drive the car to the car wash. \ud83d\ude97\ud83d\udca7",
+      "attempts": 1,
+      "elapsed_s": 4.238371133804321
+    },
+    {
+      "trial": 7,
+      "raw": "Drive \u2014 but not for the reason of saving effort.\n\nIf you walk to the car wash, your car stays at home... and doesn't get washed. The car needs to be at the car wash to be washed. So you have to drive it there regardless.\n\n(Unless you meant a self-service spot where you'd wash it by hand and somehow the car is already there \u2014 but then the question of how *you* get there is trivial: 50 meters is a 30-second walk.)",
+      "attempts": 1,
+      "elapsed_s": 4.0639870166778564
+    },
+    {
+      "trial": 8,
+      "raw": "Drive\u2014but not for the reason you might think.\n\nIf you walk to the car wash, your car stays home. The car wash washes cars, not pedestrians. You'd need to walk back, get the car, and drive there anyway.\n\nSo drive the 50 meters. (Or, honestly, consider whether a car wash is even necessary for such a short trip \u2014 a bucket and hose in your driveway might be simpler.)",
+      "attempts": 1,
+      "elapsed_s": 3.8319780826568604
+    },
+    {
+      "trial": 9,
+      "raw": "Drive \u2014 but think about it for a second and the answer is obvious either way:\n\n- **If you drive:** You arrive at the car wash already in your car, ready to be washed. That's the whole point.\n- **If you walk:** You arrive at the car wash without your car... and your car is still dirty back at home.\n\nYou can't wash a car that isn't there, so walking doesn't accomplish your goal. Drive the 50 meters. \ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 3.6591570377349854
+    },
+    {
+      "trial": 10,
+      "raw": "Drive \u2014 but think about it for a second and the answer is obvious either way. \ud83d\ude04\n\nA few practical reasons:\n\n1. **You can't really \"walk\" your car through a car wash.** If the goal is to wash the *car*, the car has to get there.\n2. **50 meters is trivial** whether you drive or walk \u2014 about 10 seconds of driving or ~40 seconds of walking.\n3. **Walking there and then walking back** leaves your car unwashed at home.\n\nThe only scenario where walking makes sense is if you're going to *buy supplies* at the car wash to wash your car at home \u2014 but for an actual car wash service or bay, you need to bring the car.",
+      "attempts": 1,
+      "elapsed_s": 5.390073299407959
+    }
+  ]
+}

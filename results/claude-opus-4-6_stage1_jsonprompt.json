@@ -1,0 +1,104 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-6",
+  "display_name": "Opus 4.6",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 4,
+    "walk": 6,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "{\"answer\": \"drive\", \"reasoning\": \"You need your car at the car wash to wash it, so you must drive it there.\"}",
+      "answer": "drive",
+      "reasoning": "You need your car at the car wash to wash it, so you must drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.136474847793579
+    },
+    {
+      "trial": 2,
+      "raw": "{\"answer\": \"drive\", \"reasoning\": \"You need your car at the car wash to wash it, so you must drive it there.\"}",
+      "answer": "drive",
+      "reasoning": "You need your car at the car wash to wash it, so you must drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 3.6507320404052734
+    },
+    {
+      "trial": 3,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.605341911315918
+    },
+    {
+      "trial": 4,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.710505962371826
+    },
+    {
+      "trial": 5,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.3323330879211426
+    },
+    {
+      "trial": 6,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.6040308475494385
+    },
+    {
+      "trial": 7,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.578779697418213
+    },
+    {
+      "trial": 8,
+      "raw": "{\"answer\": \"drive\", \"reasoning\": \"You need your car at the car wash to wash it, so you must drive it there.\"}",
+      "answer": "drive",
+      "reasoning": "You need your car at the car wash to wash it, so you must drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.180558919906616
+    },
+    {
+      "trial": 9,
+      "raw": "{\"answer\": \"drive\", \"reasoning\": \"You need your car at the car wash to wash it, so you must drive it there.\"}",
+      "answer": "drive",
+      "reasoning": "You need your car at the car wash to wash it, so you must drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.284923791885376
+    },
+    {
+      "trial": 10,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.\"}",
+      "answer": "walk",
+      "reasoning": "50 meters is a very short distance, but since you need your car at the car wash to wash it, you should drive it there.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.566021203994751
+    }
+  ]
+}

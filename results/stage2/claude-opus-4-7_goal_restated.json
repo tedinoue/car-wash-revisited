@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "framing_id": "goal_restated",
+  "framing_name": "Goal-restated",
+  "system_prompt": null,
+  "user_prompt": "I want my car to be clean. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Drive. Here's why:\n\n- **Car washes are designed for cars to drive through or into.** Most automated and self-service washes require you to pull the vehicle in.\n- **50 meters is too short to matter** for fuel use, wear, or emissions in any meaningful way.\n- **Walking there defeats the purpose** \u2014 you'd arrive without your car, which is the thing you want washed.\n\nJust drive over, get it washed, and drive back. \ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 4.6464080810546875
+    },
+    {
+      "trial": 2,
+      "raw": "Drive. Car washes are designed for cars to drive through them \u2014 that's how they work. Walking there won't get your car clean since the car needs to be at the wash, not you.",
+      "attempts": 1,
+      "elapsed_s": 2.1004011631011963
+    },
+    {
+      "trial": 3,
+      "raw": "Drive. Car washes are designed for cars to drive through them \u2014 that's literally how they work. Walking to a car wash wouldn't get your car clean since the car needs to be there.\n\nEven if it's only 50 meters away, you'd still need to drive your car to the wash for it to actually be cleaned.",
+      "attempts": 1,
+      "elapsed_s": 2.885455846786499
+    },
+    {
+      "trial": 4,
+      "raw": "Drive. Here's why:\n\n- **It's a car wash** \u2014 you need the car there to wash it. Walking there accomplishes nothing toward your goal of having a clean car.\n- 50 meters is a trivial distance for a car (about 10 seconds of driving).\n- Even if you walked there, you'd just have to walk back and drive over anyway.\n\nJust drive the 50 meters, get the wash, and you're done.",
+      "attempts": 1,
+      "elapsed_s": 3.269270896911621
+    },
+    {
+      "trial": 5,
+      "raw": "Drive. Here's why:\n\n- **It's a car wash** \u2014 you literally need the car there to wash it. Walking accomplishes nothing toward your goal.\n- 50 meters is irrelevant to the decision; the car is the thing being cleaned.\n\nJust hop in and drive over.",
+      "attempts": 1,
+      "elapsed_s": 3.0721657276153564
+    },
+    {
+      "trial": 6,
+      "raw": "Drive. Here's why:\n\n- **It's a car wash** \u2014 the whole point is to clean the car, which requires the car to be there.\n- Walking there and back wouldn't get your car any cleaner.\n- 50 meters is trivially short either way, but only driving accomplishes your actual goal.\n\nWalking would just leave you standing at a car wash with no car to wash. \ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 3.4673449993133545
+    },
+    {
+      "trial": 7,
+      "raw": "Drive. Car washes are designed for cars to drive through (or into) \u2014 that's the whole point. Walking there won't get your car clean since your car would still be at home.\n\nEven though 50 meters is a very short distance, you need the car at the car wash to wash it.",
+      "attempts": 1,
+      "elapsed_s": 3.0629138946533203
+    },
+    {
+      "trial": 8,
+      "raw": "Drive. Car washes are designed for cars to drive through (or onto a conveyor) \u2014 you can't walk your car through one. You need to be in the vehicle to take it to the wash, regardless of distance.\n\nIf the question is really about the 50 meters (e.g., \"is it worth driving such a short distance?\"), the answer is still the same: you have to drive the car to the car wash to get the car washed. Walking there yourself accomplishes nothing for the car.",
+      "attempts": 1,
+      "elapsed_s": 4.323109149932861
+    },
+    {
+      "trial": 9,
+      "raw": "Drive. Here's why it makes practical sense:\n\n1. **You're going to a car wash anyway** \u2014 driving there is the whole point. You can't really get your car washed without bringing the car.\n2. **50 meters is too short to matter** for fuel/emissions in any meaningful way.\n3. **Walking there and back** would just mean you still need to drive the car over afterward.\n\nJust hop in and drive the 50 meters. \ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 3.9673709869384766
+    },
+    {
+      "trial": 10,
+      "raw": "Drive. Car washes are designed for cars to drive through them \u2014 that's literally how they work. You can't walk a car through a car wash.\n\nEven though 50 meters is a trivial walking distance, you need the car *at* the car wash to wash it. So drive the short distance, get it cleaned, and drive back.",
+      "attempts": 1,
+      "elapsed_s": 3.2934980392456055
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "framing_id": "goal_anchor",
+  "framing_name": "Goal anchor",
+  "system_prompt": null,
+  "user_prompt": "Consider where the car needs to be at the end. I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "# Drive\n\nSince the car wash is 50 meters away, you need to drive there anyway\u2014that's the whole point of going to a car wash. You can't wash your car at home and then somehow not have it at the car wash.\n\n**Driving gets your car where it needs to be** (the car wash location) so you can actually wash it.\n\nWalking would just leave your unwashed car behind at home.",
+      "attempts": 1,
+      "elapsed_s": 1.5904462337493896
+    },
+    {
+      "trial": 2,
+      "raw": "# Drive to the car wash.\n\nHere's why: If you walk there, your car stays home\u2014dirty. You'd then need to either:\n- Walk back home and drive it to the wash (extra trip)\n- Have someone pick you up (depends on availability)\n\nDriving solves the actual problem: getting your dirty car to the wash location where it needs to be.\n\nThe 50 meters is short, but not short enough that walking makes practical sense given your goal.",
+      "attempts": 1,
+      "elapsed_s": 2.1103949546813965
+    },
+    {
+      "trial": 3,
+      "raw": "**Drive.** Here's why:\n\n- You need the car at the car wash anyway (that's where you're washing it)\n- Driving 50 meters takes ~10 seconds; walking takes ~1 minute\n- You save time and effort\n- The car wash itself will clean any minor emissions from that short drive\n\nWalking would only make sense if you were trying to avoid using the car for environmental reasons, but then you'd still need to drive it home afterward\u2014so you haven't actually avoided the trip.",
+      "attempts": 1,
+      "elapsed_s": 1.9844021797180176
+    },
+    {
+      "trial": 4,
+      "raw": "You should **walk**.\n\nHere's why: If you drive 50 meters to the car wash, your car will be dirty when you arrive. Then after washing it, you'd need to drive it home again\u2014defeating the purpose since you'd dirty it up on the short drive back.\n\nWalking lets you arrive clean and keep the car clean afterward (or at least, you avoid adding more dirt between the wash and home).",
+      "attempts": 1,
+      "elapsed_s": 1.6146039962768555
+    },
+    {
+      "trial": 5,
+      "raw": "You should **walk**.\n\nHere's why: If you drive 50 meters to the car wash, your car will be dirty when you arrive. Then after washing it, you'd need to drive it back (getting it dirty again on the return trip), which defeats the purpose.\n\nWalking there lets you arrive clean and ready to wash, then drive home afterward with a freshly cleaned car.",
+      "attempts": 1,
+      "elapsed_s": 1.7554402351379395
+    },
+    {
+      "trial": 6,
+      "raw": "**Drive** makes more sense here.\n\nEven though it's only 50 meters away, you need the car to be *at the car wash* to wash it. If you walk, you'd still need to drive it there afterward anyway\u2014so you'd end up making the trip twice.\n\nThe only exception: if you're already at the car wash location for another reason, then walk to get your car.",
+      "attempts": 1,
+      "elapsed_s": 1.769209861755371
+    },
+    {
+      "trial": 7,
+      "raw": "**Drive.**\n\nEven though it's only 50 meters away, driving makes sense here because:\n\n- **You need the car there anyway** \u2014 to wash it, you'd have to get it to the car wash somehow. Walking there without it doesn't help.\n\n- **Walking back would be awkward** \u2014 you'd arrive at an empty car wash with no car to clean.\n\nThe short distance doesn't change the fact that the car needs to end up at the destination.\n\n(The only exception: if you meant you'd walk to the car wash, then drive the car there separately \u2014 but that seems less efficient.)",
+      "attempts": 1,
+      "elapsed_s": 2.4756736755371094
+    },
+    {
+      "trial": 8,
+      "raw": "Drive.\n\nEven though it's close, driving makes sense because:\n\n1. **You end up with a clean car** - Walking there leaves your car dirty at home\n2. **The car needs to be at the wash** - That's where the service happens\n3. **Distance is manageable** - 50 meters is short enough that driving is still practical\n\nWalking would only make sense if someone else was driving the car to the wash, or if you were going just to observe/pay without needing the car there.",
+      "attempts": 2,
+      "elapsed_s": 4.249964952468872
+    },
+    {
+      "trial": 9,
+      "raw": "**Drive** makes more sense here.\n\nEven though 50 meters is walkable, driving saves time and effort for a task where:\n- You need the car to be *at* the car wash anyway\n- You'd need to return home with a wet car afterward (or walk back empty-handed and return for it)\n- Driving 50 meters takes seconds vs. a few minutes walking\n\nThe only reason to walk would be if you needed the exercise or wanted to avoid using gas for such a short distance\u2014but practically speaking, driving is the logical choice.",
+      "attempts": 1,
+      "elapsed_s": 2.299341917037964
+    },
+    {
+      "trial": 10,
+      "raw": "**Drive.** Here's why:\n\n- You need the car at the car wash anyway (that's where you're washing it)\n- Driving 50 meters takes ~10 seconds; walking takes ~1 minute\n- You save time and effort\n- The car wash can handle the short distance\n\nThe only reason to walk would be if you're specifically trying to exercise, but for a practical errand, driving is the clear choice.",
+      "attempts": 1,
+      "elapsed_s": 1.7402760982513428
+    }
+  ]
+}

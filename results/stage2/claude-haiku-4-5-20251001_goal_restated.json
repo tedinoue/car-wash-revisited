@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "framing_id": "goal_restated",
+  "framing_name": "Goal-restated",
+  "system_prompt": null,
+  "user_prompt": "I want my car to be clean. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "**Walk.** It's only 50 meters (about 150 feet or a 1-minute walk).\n\nDriving would be:\n- Wasteful (fuel/wear for a trivial distance)\n- Slower when you factor in getting in the car and starting it\n- Less practical (you'd need to walk back anyway)\n\nWalking is the obvious choice here.",
+      "attempts": 1,
+      "elapsed_s": 1.7568919658660889
+    },
+    {
+      "trial": 2,
+      "raw": "**Walk.** Here's why:\n\n- **50 meters is very short** \u2013 about a 1-minute walk\n- **Driving uses fuel** for a trivial distance\n- **Driving produces emissions** for no meaningful benefit\n- **Walking is faster** when you factor in getting the car started, driving, and parking\n- **Wear and tear** on your engine isn't worth it for such a short trip\n\nThe only reason to drive would be if you have mobility issues or bad weather. Otherwise, walking is the obvious choice.",
+      "attempts": 1,
+      "elapsed_s": 2.120950937271118
+    },
+    {
+      "trial": 3,
+      "raw": "**Drive** is the practical choice here:\n\n- **Distance**: 50 meters is very short for walking (about 30-50 seconds), but you're already at your car\n- **Purpose**: You need to get your car there anyway, so driving it is the point\n- **Efficiency**: Driving takes seconds; walking wastes time when the car needs to be washed regardless\n\nThe only reason to walk would be if you were trying to exercise or avoid using gas for such a tiny distance\u2014but then you'd still need to drive back home afterward.",
+      "attempts": 1,
+      "elapsed_s": 2.3030757904052734
+    },
+    {
+      "trial": 4,
+      "raw": "**Walk.** It's only 50 meters (about 165 feet) \u2013 roughly a 1-minute walk. Driving would use fuel, produce emissions, and take more time when you factor in getting in the car and starting it up.\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 1.4737930297851562
+    },
+    {
+      "trial": 5,
+      "raw": "**Walk** \u2013 it's the better choice here.\n\nReasons:\n- **Distance**: 50 meters is only about a 30-second walk\n- **Efficiency**: Driving uses fuel and emissions for a trivial distance\n- **Practicality**: You'd spend more time starting the car than walking\n- **Cost**: Minimal wear on your vehicle\n\nThe only reason to drive would be if you have mobility issues or bad weather, but for a typical situation, walking is obviously the way to go.",
+      "attempts": 1,
+      "elapsed_s": 5.18838906288147
+    },
+    {
+      "trial": 6,
+      "raw": "# Walking makes more sense here\n\n**Drive** would be wasteful for such a short distance:\n- 50 meters = about a 30-second walk\n- You'd use fuel and produce emissions for minimal distance\n- Driving takes roughly the same time as walking when you factor in getting in the car\n\n**Walk** is the better choice because:\n- It's only a minute or two away\n- It's good exercise\n- Saves fuel and money\n- Better for the environment\n\nThe only exception might be if you have mobility issues or bad weather\u2014then driving would be reasonable.",
+      "attempts": 1,
+      "elapsed_s": 3.990954875946045
+    },
+    {
+      "trial": 7,
+      "raw": "**Walk.** It's only 50 meters (about 165 feet) \u2014 a half-minute walk. Driving would use fuel, produce emissions, and take more time when you factor in getting in the car, starting it, and parking.\n\nWalking is faster, cheaper, and better for the environment.",
+      "attempts": 1,
+      "elapsed_s": 1.878082036972046
+    },
+    {
+      "trial": 8,
+      "raw": "**Walk** is the better choice here.\n\nFor just 50 meters (about 165 feet):\n- Driving takes nearly as long once you factor in starting the engine, backing out, driving, and parking\n- Walking takes roughly 1 minute\n- You'll save gas and wear on your engine\n- It's good exercise\n- No parking hassle at the car wash\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 2.1064541339874268
+    },
+    {
+      "trial": 9,
+      "raw": "**Drive** makes more sense here.\n\nWhile 50 meters is walkable, driving is practical because:\n\n- You need to get your car to the car wash anyway\n- Driving takes ~10 seconds vs. a few minutes walking\n- You'll have your car there and ready to wash\n- It uses minimal fuel for such a short distance\n\nThe only reason to walk would be if you were getting exercise or avoiding the car for some other reason\u2014but since your goal is to clean the car, you need it at the location anyway.",
+      "attempts": 1,
+      "elapsed_s": 2.16507887840271
+    },
+    {
+      "trial": 10,
+      "raw": "**Walk** is the better choice here.\n\nDriving 50 meters (about 165 feet) doesn't make practical sense because:\n\n- **Time**: Walking takes roughly 1 minute; driving takes similar or longer when accounting for getting in, starting up, and parking\n- **Cost**: Gas/wear on your engine for such a short distance isn't worth it\n- **Effort**: It's a very short walk\u2014less exertion than dealing with the car\n- **Parking**: You might struggle to find a spot at the car wash anyway\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 2.125962972640991
+    }
+  ]
+}

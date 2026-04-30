@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-pro",
+  "display_name": "Gemini 2.5 Pro",
+  "framing_id": "goal_anchor",
+  "framing_name": "Goal anchor",
+  "system_prompt": null,
+  "user_prompt": "Consider where the car needs to be at the end. I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "This is a great logical puzzle! Based on your instruction, \"Consider where the car needs to be at the end,\" the answer is clear:\n\n**You should drive.**\n\nHere's why:\n\n*   **The Goal:** To wash your car.\n*   **The Requirement:** The car must be physically present at the car wash to be washed.\n\nIf you walk, you will arrive at the car wash, but your car will still be 50 meters away at home. You can't wash it from there. Driving is the only way to get the car to its destination so you can complete your task.",
+      "attempts": 1,
+      "elapsed_s": 11.603561878204346
+    },
+    {
+      "trial": 2,
+      "raw": "You should **drive**.\n\nThe key is in your own instruction: \"Consider where the car needs to be at the end.\"\n\nTo wash your car, the car itself must be at the car wash. You can't walk there and leave the car behind!\n\nEven though driving 50 meters might feel a bit silly, the purpose of the trip makes it the only logical option.",
+      "attempts": 1,
+      "elapsed_s": 13.037445783615112
+    },
+    {
+      "trial": 3,
+      "raw": "This is a great logic question that highlights the importance of the end goal.\n\nBased on your own instruction\u2014\"Consider where the car needs to be at the end\"\u2014the answer is clear:\n\n**You should drive.**\n\nHere's the simple breakdown:\n\n*   **Your Goal:** To wash the car.\n*   **Requirement for the Goal:** The car must be physically present at the car wash.\n*   **Walking:** If you walk, you will arrive at the car wash, but your car will still be 50 meters away, unwashed.\n*   **Driving:** If you drive, both you and the car will arrive at the car wash, allowing you to achieve your goal.\n\nEven though driving 50 meters feels a bit silly, it is the only option that will result in a clean car.",
+      "attempts": 2,
+      "elapsed_s": 13.614429950714111
+    },
+    {
+      "trial": 4,
+      "raw": "This is a great logic question that hinges on your final goal.\n\nBased on the fact that you want to **wash your car**, you should **drive**.\n\nHere's the simple breakdown:\n\n*   **If you walk:** You will arrive at the car wash, but your car will still be 50 meters away, unwashed.\n*   **If you drive:** You and your car will both arrive at the car wash, ready for the wash.\n\nEven though 50 meters is an extremely short distance that you would normally walk, the task itself requires the car to be at the destination.",
+      "attempts": 1,
+      "elapsed_s": 12.903181076049805
+    },
+    {
+      "trial": 5,
+      "raw": "You've hit on the exact logical point that solves this riddle.\n\nBased on your own excellent instruction\u2014\"Consider where the car needs to be at the end\"\u2014the answer is clear:\n\nYou **must drive**.\n\nHere's the simple breakdown:\n\n*   **The Goal:** To wash the car.\n*   **The Requirement:** The car must be physically present at the car wash to be washed.\n\nIf you walk, you will arrive at the car wash, but your car will still be 50 meters away, unwashed. The trip would be a failure.\n\nTherefore, even for such a short distance, driving is the only option that accomplishes your goal.",
+      "attempts": 1,
+      "elapsed_s": 11.524300813674927
+    },
+    {
+      "trial": 6,
+      "raw": "This is a great question that gets you to think about the goal first.\n\nLet's break it down based on your excellent starting point: **\"Consider where the car needs to be at the end.\"**\n\nThe goal is to wash the car. To do that, the car itself must be physically present at the car wash.\n\nTherefore, the logical and only practical answer is:\n\n### You should **drive**.\n\nHere\u2019s why:\n\n*   **Walking:** If you walk, you will arrive at the car wash, but your dirty car will still be 50 meters away, back where you started. You cannot wash a car that isn't there.\n*   **Driving:** If you drive, you and your car will both arrive at the car wash. You will then be able to achieve your goal of washing it.\n\nEven though starting a car to travel only 50 meters (about 165 feet) might feel a little silly or inefficient, it is the only option that accomplishes the task.",
+      "attempts": 1,
+      "elapsed_s": 15.152358293533325
+    },
+    {
+      "trial": 7,
+      "raw": "This is a great little logic puzzle!\n\nBased on your crucial point, **\"Consider where the car needs to be at the end,\"** the answer is clear:\n\n**You have to drive.**\n\nHere's the simple breakdown:\n\n*   **The Goal:** To wash the car.\n*   **The Requirement:** The car must be physically present at the car wash to be washed.\n*   **If you walk:** You will arrive at the car wash, but your car will still be 50 meters away at your starting point. You cannot wash it.\n*   **If you drive:** You and your car will both arrive at the car wash. You can now wash the car.\n\nWhile it feels absurd to drive such a short distance, it's the only option that accomplishes your goal. It's a classic case of the most logical solution also being the most comically inefficient one from an environmental or exercise perspective.",
+      "attempts": 1,
+      "elapsed_s": 16.14294672012329
+    },
+    {
+      "trial": 8,
+      "raw": "Based on your instruction, \"Consider where the car needs to be at the end,\" the answer is clear:\n\n**You should drive.**\n\nHere's the simple breakdown:\n\n*   **The Goal:** To wash your car.\n*   **The Requirement:** The car must be physically present at the car wash to be washed.\n*   **If you walk:** You will arrive at the car wash, but your car will still be 50 meters away, unwashed.\n*   **If you drive:** Both you and your car will arrive at the car wash, allowing you to complete your goal.\n\nWhile driving 50 meters is normally inefficient and impractical, in this specific case, it's the only option that accomplishes the task.",
+      "attempts": 2,
+      "elapsed_s": 12.533130884170532
+    },
+    {
+      "trial": 9,
+      "raw": "You should **drive**.\n\nThe key is in your instruction: \"Consider where the car needs to be at the end.\"\n\nTo wash your car, the car itself must be at the car wash. Walking there would leave the car behind, defeating the entire purpose of your trip.",
+      "attempts": 1,
+      "elapsed_s": 9.189260959625244
+    },
+    {
+      "trial": 10,
+      "raw": "This is a great logic question!\n\nYou should **drive**.\n\nHere's why: The goal is to wash the car. To do that, the car itself needs to be at the car wash. If you walk, you'll arrive, but your car will still be 50 meters away, unwashed.",
+      "attempts": 1,
+      "elapsed_s": 9.534354209899902
+    }
+  ]
+}

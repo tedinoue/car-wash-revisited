@@ -1,0 +1,104 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-5",
+  "display_name": "GPT-5",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 10,
+    "walk": 0,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car to the car wash to wash it, even if it\u2019s only 50 meters away.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash to wash it, even if it\u2019s only 50 meters away.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.4788289070129395
+    },
+    {
+      "trial": 2,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car to the car wash to clean it, and it's only 50 meters away.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash to clean it, and it's only 50 meters away.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 9.44265604019165
+    },
+    {
+      "trial": 3,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car to the car wash to clean it, and walking won\u2019t get the car there even though it\u2019s only 50 meters away.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash to clean it, and walking won\u2019t get the car there even though it\u2019s only 50 meters away.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.395072937011719
+    },
+    {
+      "trial": 4,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car to the car wash to wash it, so drive the short distance.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash to wash it, so drive the short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 9.916433095932007
+    },
+    {
+      "trial": 5,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need the car at the car wash to wash it, so driving the short 50 meters is the practical choice.\"}",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to wash it, so driving the short 50 meters is the practical choice.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.1143457889556885
+    },
+    {
+      "trial": 6,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car to the wash to clean it, so drive the 50 meters.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the wash to clean it, so drive the 50 meters.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.08287501335144
+    },
+    {
+      "trial": 7,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need to bring the car itself to the car wash to wash it.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car itself to the car wash to wash it.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.937856912612915
+    },
+    {
+      "trial": 8,
+      "raw": "{\"answer\": \"drive\", \"reasoning\": \"You need to bring the car to the car wash to wash it, and 50 meters is a very short drive.\"}",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash to wash it, and 50 meters is a very short drive.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.522896766662598
+    },
+    {
+      "trial": 9,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need the car at the car wash to wash it, and it's only 50 meters away.\"}",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to wash it, and it's only 50 meters away.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 15.092875003814697
+    },
+    {
+      "trial": 10,
+      "raw": "{\"answer\":\"drive\",\"reasoning\":\"You need the car at the car wash to wash it, and it's only 50 meters away.\"}",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to wash it, and it's only 50 meters away.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 14.142460107803345
+    }
+  ]
+}

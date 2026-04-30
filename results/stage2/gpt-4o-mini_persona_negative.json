@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o-mini",
+  "display_name": "GPT-4o-mini",
+  "framing_id": "persona_negative",
+  "framing_name": "Negative-control persona induction",
+  "system_prompt": "You answer quickly and casually, like texting a friend.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Totally walk! It\u2019s just 50 meters, so you\u2019ll save gas and get some fresh air. Plus, it's a nice little workout! \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\udca6",
+      "attempts": 1,
+      "elapsed_s": 1.242121934890747
+    },
+    {
+      "trial": 2,
+      "raw": "Just walk! It\u2019s only 50 meters, no need to waste gas for such a short distance. Plus, it\u2019s good exercise! \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\udca6",
+      "attempts": 1,
+      "elapsed_s": 1.3698487281799316
+    },
+    {
+      "trial": 3,
+      "raw": "I'd say just walk! It's super close, and it'll save gas. Plus, you can enjoy some fresh air! \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 1.2410290241241455
+    },
+    {
+      "trial": 4,
+      "raw": "Definitely just walk! It's super close, and you'll save on gas. Plus, it's a nice little bit of exercise. \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 1.155066728591919
+    },
+    {
+      "trial": 5,
+      "raw": "I'd say just walk! It's super close, plus it's a good excuse to get some fresh air. \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 1.3472659587860107
+    },
+    {
+      "trial": 6,
+      "raw": "If it's just 50 meters, walking is the way to go! It's a quick stroll and better for the environment. Plus, you'll save on gas! \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 1.3810973167419434
+    },
+    {
+      "trial": 7,
+      "raw": "Just walk! It\u2019s only 50 meters\u2014totally a quick stroll. Plus, you\u2019ll save some gas. \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 0.9549510478973389
+    },
+    {
+      "trial": 8,
+      "raw": "If it's just 50 meters, definitely walk! It'll save gas and is better for the environment. Plus, a little exercise never hurts. \ud83d\udeb6\u200d\u2642\ufe0f\u2728",
+      "attempts": 1,
+      "elapsed_s": 1.0728790760040283
+    },
+    {
+      "trial": 9,
+      "raw": "Just walk! It\u2019s only 50 meters. Plus, it\u2019ll save gas and give you a little exercise. \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\udca7",
+      "attempts": 1,
+      "elapsed_s": 1.035776138305664
+    },
+    {
+      "trial": 10,
+      "raw": "Just walk! It\u2019s only 50 meters, so save the gas and get some fresh air. Plus, it\u2019s good exercise! \ud83d\udeb6\u200d\u2642\ufe0f\ud83d\ude97\u2728",
+      "attempts": 1,
+      "elapsed_s": 0.9246771335601807
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "framing_id": "goal_anchor",
+  "framing_name": "Goal anchor",
+  "system_prompt": null,
+  "user_prompt": "Consider where the car needs to be at the end. I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Drive. \n\nIf you walk to the car wash, your car stays at home\u2014which defeats the purpose. You need the car to actually be at the car wash to wash it.\n\nThe 50-meter distance is a red herring; the relevant factor is that the car itself is the thing being transported to the destination.",
+      "attempts": 1,
+      "elapsed_s": 3.1659576892852783
+    },
+    {
+      "trial": 2,
+      "raw": "Drive\u2014but it's a fun question because the distance alone suggests walking.\n\nThe key consideration is where the car needs to end up: **at the car wash**. If you walk there, you'll just have to walk back and drive over anyway. So driving is the right call, even though 50 meters is trivially walkable.",
+      "attempts": 1,
+      "elapsed_s": 3.7847418785095215
+    },
+    {
+      "trial": 3,
+      "raw": "Drive. \n\nIf you walk to the car wash, your car stays at home \u2014 which defeats the purpose. The car itself needs to be at the car wash to get washed, so you need to drive it there (even though 50 meters is a trivially short distance for a person to walk).",
+      "attempts": 1,
+      "elapsed_s": 2.571802854537964
+    },
+    {
+      "trial": 4,
+      "raw": "Drive. \n\nIf you walk to the car wash, your car stays at home \u2014 which defeats the purpose. You need the car *at* the car wash to wash it, so you have to drive it there (or push it, but that's a lot of work for 50 meters).",
+      "attempts": 1,
+      "elapsed_s": 2.7112691402435303
+    },
+    {
+      "trial": 5,
+      "raw": "Drive. \n\nIf you walk to the car wash, your car stays at home \u2014 which defeats the purpose. The car needs to end up *at* the car wash to get washed, so you have to drive it there (or push it, but driving is easier).",
+      "attempts": 1,
+      "elapsed_s": 2.5479400157928467
+    },
+    {
+      "trial": 6,
+      "raw": "If you want to *wash* your car, you obviously need the car to be at the car wash \u2014 so walking there doesn't accomplish the goal. Drive it. \ud83d\ude97\n\n(That said, 50 meters is an unusually short distance for a car wash \u2014 if you actually meant 50 km or miles, the answer is still the same: drive, because the car needs to be there.)",
+      "attempts": 1,
+      "elapsed_s": 3.1765708923339844
+    },
+    {
+      "trial": 7,
+      "raw": "Drive. If you walk to the car wash, your car stays at home \u2014 which defeats the purpose. The car itself needs to end up at the car wash, so you have to drive it there (50 meters is trivially short, but the car has to make the trip).",
+      "attempts": 1,
+      "elapsed_s": 5.12300968170166
+    },
+    {
+      "trial": 8,
+      "raw": "If your goal is to end up *with a clean car at the car wash* (or back home after washing), you pretty much have to **drive** \u2014 the car needs to physically go through the car wash. Walking 50 meters there yourself doesn't get the car cleaned.\n\nSo: drive the 50 meters. Walking only makes sense if you're going somewhere the car doesn't need to be.",
+      "attempts": 1,
+      "elapsed_s": 3.5545849800109863
+    },
+    {
+      "trial": 9,
+      "raw": "If your goal is to end up with a clean car at the car wash, driving makes more sense \u2014 even though 50 meters is a trivially short distance to walk.\n\nIf you walk there, your car stays dirty at home, and you've accomplished nothing. You'd have to go back and drive it over anyway. So just drive the 50 meters.",
+      "attempts": 1,
+      "elapsed_s": 3.234860897064209
+    },
+    {
+      "trial": 10,
+      "raw": "Drive. \n\nIf you walk to the car wash, your car stays at home \u2014 which defeats the purpose. The car itself needs to end up at the wash, so you have to drive it there (50 meters is trivial for a car).",
+      "attempts": 1,
+      "elapsed_s": 2.455321788787842
+    }
+  ]
+}

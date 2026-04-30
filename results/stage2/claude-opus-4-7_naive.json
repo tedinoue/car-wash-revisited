@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "framing_id": "naive",
+  "framing_name": "Naive baseline",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk. \n\nFor 50 meters, driving makes no sense:\n\n- **Time**: Walking takes ~40 seconds. Driving requires getting in, starting up, pulling out, parking at the wash, etc. \u2014 likely longer overall.\n- **Purpose defeated**: You'd dirty the car (tires, underside) on the short drive back home after washing it.\n- **Fuel/wear**: Cold starts for ultra-short trips are the worst for engine wear and fuel efficiency.\n\nOne catch: most car washes (automatic or self-serve bays) require you to *drive the car through or into them*. So you'll need to drive the car **to the wash itself** \u2014 you can't really walk a car through a car wash.\n\nSo the real question is: are you washing the car, or just going to buy supplies? \n- Buying supplies to wash at home \u2192 **walk**.\n- Taking the car through the wash \u2192 **drive** (you have no choice).",
+      "attempts": 1,
+      "elapsed_s": 8.000092029571533
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. \n\nAt 50 meters away, driving makes no practical sense:\n\n- **Time**: Walking takes under a minute. Driving saves maybe 30 seconds, minus the time to start the car, pull out, and park.\n- **Defeats the purpose**: You're going to wash the car. Driving it 50 meters won't make it meaningfully dirtier, but it's a bit silly to drive such a tiny distance to clean it.\n- **Wait \u2014 are you washing it yourself or going to a car wash?** If it's a drive-through or automatic car wash, obviously you need to drive (you can't push the car through). If it's a self-serve bay or you're walking there to get supplies, walk.\n\nSo: if the destination requires the car to *be there* (commercial car wash), drive. Otherwise, walk.",
+      "attempts": 1,
+      "elapsed_s": 7.434105157852173
+    },
+    {
+      "trial": 3,
+      "raw": "Walk. \n\nAt 50 meters away, driving makes no sense for several reasons:\n\n- **Time**: Walking takes under a minute. Driving requires getting in, starting up, pulling out, and parking \u2014 likely longer overall.\n- **Purpose defeated**: You'd dirty the car again on the drive back (or just on the way there if it's already clean-ish).\n- **Practicality**: Most car washes need you to drive *through* them, so... wait.\n\nActually \u2014 re-reading your question: if it's a drive-through car wash, you have to drive. You can't walk your car through it. \ud83d\ude04\n\nIf it's a self-service bay or you're carrying supplies to wash it at a spot 50m away, walk (well, drive the car there since the car needs to be washed, then walk home? No \u2014 just drive it, wash it, drive back).\n\n**Bottom line**: You need to drive the car to the car wash, because the car is what's being washed. Walking yourself there without the car wouldn't accomplish anything.",
+      "attempts": 1,
+      "elapsed_s": 7.946108102798462
+    },
+    {
+      "trial": 4,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense for several reasons:\n- You'd spend more time getting in/out of the car than walking there\n- You'd dirty the car you just washed by driving it back home\n- Wait, actually \u2014 you want to wash the car, so you need to bring it. Drive.\n\nLet me reconsider: if the goal is to wash *the car*, the car has to go to the car wash. So drive (or push it, but that's silly for 50 meters... actually still drive).\n\nIf you meant you want to wash it yourself with a bucket and the car wash is just where you're buying soap/supplies, then walk.\n\nWhich is it?",
+      "attempts": 1,
+      "elapsed_s": 5.475858926773071
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. \n\n50 meters is about 60 seconds on foot. Driving there would:\n- Burn fuel and emit exhaust unnecessarily\n- Likely take longer once you factor in starting the car, pulling out, and parking\n- Be a bit absurd for that distance\n\nWait \u2014 one clarification: do you mean you want to *take your car* to the car wash to get *the car* washed? In that case, yes, you have to drive it there (you can't walk your car). \n\nBut if you're going to a self-service bay and just need to get yourself there, walk.",
+      "attempts": 1,
+      "elapsed_s": 5.269099950790405
+    },
+    {
+      "trial": 6,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense:\n- You'd spend more time getting in/out of the car than walking\n- You'd burn fuel and add wear to the engine for a trip shorter than most parking lot maneuvers\n- Cold starts are particularly hard on engines\n\nAlso, a practical note: many car washes won't let you walk through them anyway \u2014 you typically need to drive your car *into* the wash bay. So if the goal is to actually wash your car, you'll need to drive it there regardless.\n\nDid you mean you want to wash it yourself at a self-service bay, or are you just going somewhere nearby and wondering whether to walk?",
+      "attempts": 1,
+      "elapsed_s": 5.383721113204956
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense:\n\n- **Time**: Walking takes ~40 seconds. Driving requires getting in, starting up, pulling out, parking \u2014 likely longer overall.\n- **Fuel/wear**: A cold start for such a short trip is the worst case for engine wear and fuel efficiency.\n- **Defeats the purpose**: You'd be driving a freshly washed car back home anyway... wait.\n\nActually, you need to drive \u2014 you're going *to* the car wash to wash the car. You can't wash it there without bringing it. \ud83d\ude42\n\nSo: **drive the car to the car wash, get it washed, drive it home.** Walking would leave the car dirty at home.",
+      "attempts": 1,
+      "elapsed_s": 6.368206024169922
+    },
+    {
+      "trial": 8,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense:\n- You'd spend more time getting in/out of the car than walking there\n- Starting a cold engine for such a short trip is bad for it\n- You'd just have to park again at the car wash\n- Walking 50 meters takes under a minute\n\nUnless you have a mobility issue, walking is the obvious choice here.",
+      "attempts": 1,
+      "elapsed_s": 3.560070037841797
+    },
+    {
+      "trial": 9,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense for several reasons:\n\n- **Time**: Walking takes under a minute. Driving requires getting in, starting up, pulling out, parking \u2014 likely longer overall.\n- **Pointlessness**: You're about to wash the car. Driving it 50 meters won't make it meaningfully dirtier, but it also won't accomplish anything.\n- **Wait, you need the car there**: Actually \u2014 if it's *your car* being washed, you obviously need to drive it to the car wash. You can't walk a car through a car wash.\n\nSo the real answer: **drive the car**, since the car itself is what's being washed. Walking defeats the purpose unless you're planning to carry the car there.",
+      "attempts": 1,
+      "elapsed_s": 5.859216690063477
+    },
+    {
+      "trial": 10,
+      "raw": "Walk. \n\nAt 50 meters, driving makes no sense for a few reasons:\n\n- **You'd barely move** \u2014 by the time you start the engine, back out, and pull in, you could've already walked there.\n- **Cold engine wear** \u2014 short trips are actually the worst for your engine. It doesn't reach optimal operating temperature, which causes more wear and fuel waste than longer drives.\n- **You're about to wash it anyway** \u2014 why add even a tiny bit of road grime first?\n- **Parking** \u2014 you'd need somewhere to park at the wash, then drive back.\n\nJust walk over and book/pay, or walk back and drive it in when you're ready to actually wash it. If it's a drive-through car wash where the car needs to physically go through, then obviously you drive \u2014 but only at that point.",
+      "attempts": 1,
+      "elapsed_s": 7.021591663360596
+    }
+  ]
+}

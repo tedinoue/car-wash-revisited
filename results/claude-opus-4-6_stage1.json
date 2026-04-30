@@ -1,0 +1,96 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-6",
+  "display_name": "Opus 4.6",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "summary": {
+    "drive": 10,
+    "walk": 0,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (likely the better choice)\n- **You need the car at the car wash** \u2014 the whole point is to wash the car, so it needs to be there.\n- 50 meters is a very short drive.\n\n**Walk** \ud83d\udeb6\n- This only makes sense if it's a **self-service/hand wash** where you bring supplies, or if you're going to **schedule an appointment** first and bring the car later.\n\n**Most likely answer:** Just **drive** \u2014 you'll need the car there anyway! \ud83d\ude97",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.508014917373657
+    },
+    {
+      "trial": 2,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed.\n- Even though it's only 50 meters, driving makes the most sense since the whole point is to wash the *car*.\n\n**Walk** \ud83d\udeb6\n- Would only make sense if it's a **hand/self-service car wash** where you're picking up supplies to wash the car at home, or if you're going to arrange an appointment.\n\nSo unless you plan to wash the car yourself at home, **drive** \u2014 the car kind of needs to come with you! \ud83d\ude04",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.9715189933776855
+    },
+    {
+      "trial": 3,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (likely the better choice)\n- **You need your car at the car wash** \u2014 they can't wash it if it's not there!\n- Even if it's a walk-through self-service, most car washes are designed for you to drive through.\n\n**Walk** \ud83d\udeb6\n- Only makes sense if it's a **hand-wash service** that offers pickup, or if someone else can drive it over.\n\nSo the practical answer: **Drive**, since the whole point is to get your car there to be washed! 50 meters is a very short drive.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 6.118885278701782
+    },
+    {
+      "trial": 4,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, driving it there is the whole point\n\n**Walking wouldn't make sense** unless:\n- You're using a mobile/hand car wash service that comes to you\n- Someone else is driving your car there for you\n\nSo the simple answer: **drive**, since the car needs to be at the car wash! \ud83d\ude97",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.019198894500732
+    },
+    {
+      "trial": 5,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, the whole point is to wash the car\n\n**Walk** \ud83d\udeb6\n- Only makes sense if it's a **self-service/hand wash** place where you'd bring supplies back, or if you're just going to buy a wash token or ask about prices first\n\nSo unless you're just scouting it out, **drive** \u2014 the car kind of needs to come with you! \ud83d\ude04",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 6.279809951782227
+    },
+    {
+      "trial": 6,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (likely the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, the whole point is to wash the car\n\n**Walk** \ud83d\udeb6\n- Would only make sense if it's a **self-service/hand wash** where you bring supplies, and you plan to wash it where it's parked\n\nSo unless you're picking up car wash supplies to bring back, you should probably **drive** \u2014 the car needs to be at the car wash! \ud83d\ude97",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.637724161148071
+    },
+    {
+      "trial": 7,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, driving it there is the whole point\n\n**Walk** \ud83d\udeb6\n- Would only make sense if it's a self-service wash and you're going to bring supplies back, or if you're scouting it out first\n\nUnless you're planning to wash the car by hand at home and just need to buy supplies from a shop that happens to be 50 meters away, **you should drive** \u2014 the car needs to be at the car wash! \ud83d\ude04",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 6.460115909576416
+    },
+    {
+      "trial": 8,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, driving it there is the whole point\n\n**Walk** \ud83d\udeb6\n- Would only make sense if you're scouting the car wash first (checking prices, wait times, etc.) before bringing the car over\n\nUnless you're planning to wash it by hand and just picking up supplies, **drive** \u2014 the car kind of needs to come with you! \ud83d\ude04",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.432269096374512
+    },
+    {
+      "trial": 9,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (probably the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, driving it there is the whole point\n\n**Walk** \ud83d\udeb6\n- Would only make sense if you're scouting it out first (checking prices, wait times, etc.) before bringing your car\n\nUnless you're planning to wash it **by hand** at home and just need to pick up supplies from a shop 50 meters away \u2014 in that case, walking makes perfect sense!\n\nSo: **drive**, because the car needs to come with you. \ud83d\ude04",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 6.3613550662994385
+    },
+    {
+      "trial": 10,
+      "raw": "This is a fun practical question! Here are some things to consider:\n\n**Drive** \u2705 (likely the better choice)\n- You're going to a **car wash** \u2014 your car needs to be there to get washed\n- Even though it's only 50 meters, the whole point is to wash the car\n\n**Walk** \ud83d\udeb6\n- Would only make sense if it's a **self-service/hand wash** where you're picking up supplies to bring back and wash it at home\n\nSo unless you're just buying car wash soap, **you should drive** \u2014 the car needs to be at the car wash! \ud83d\ude97",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.347830772399902
+    }
+  ]
+}

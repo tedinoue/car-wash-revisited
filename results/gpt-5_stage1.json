@@ -1,0 +1,96 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-5",
+  "display_name": "GPT-5",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "summary": {
+    "drive": 4,
+    "walk": 6,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Drive. The car needs to be at the car wash to get washed.\n\nOptional: Since it\u2019s only 50 meters away, you could walk over first to check if there\u2019s a line or if it\u2019s open, then go back and drive the car over when it\u2019s your turn to avoid idling.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 16.840527772903442
+    },
+    {
+      "trial": 2,
+      "raw": "Drive. To wash the car, it needs to be at the car wash, and 50 meters is very close. \n\nIf you just want to check for a line or prices first, you could walk over, then bring the car. Otherwise, just drive the 50 m\u2014make sure your windows and lights are clear and follow local traffic rules.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 16.07097601890564
+    },
+    {
+      "trial": 3,
+      "raw": "Drive. To wash the car, it needs to be at the car wash, and 50 meters is a very short, safe hop. If you\u2019re unsure about wait times or prices, you could quickly walk over to check first, then bring the car. If it\u2019s an ICE vehicle and you make lots of very short trips, consider combining this with a slightly longer errand afterward to let the engine fully warm up.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 15.81104302406311
+    },
+    {
+      "trial": 4,
+      "raw": "Drive the car. If you\u2019re using that car wash, the car needs to be there\u2014walking won\u2019t get it washed.\n\nQuick tips:\n- Buckle up and obey local traffic rules, even for 50 m.\n- No need to warm up the engine; just start and go.\n- If you\u2019re concerned about a very short cold start, you could combine it with another errand or wash at home (rinse-less/waterless products work well) if allowed in your area.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 21.521563053131104
+    },
+    {
+      "trial": 5,
+      "raw": "Drive. You need the car at the car wash to wash it, and 50 meters is a negligible distance. Walk only if you\u2019re just going to check prices or buy tokens first.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 12.902351140975952
+    },
+    {
+      "trial": 6,
+      "raw": "Drive\u2014the car\u2019s the thing that needs washing. Since it\u2019s only 50 meters, just take it over gently. If you want to check wait times or payment options first, you could walk there, then bring the car.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 9.673555135726929
+    },
+    {
+      "trial": 7,
+      "raw": "Drive the car. If you\u2019re using the car wash (automatic or self-serve), the car needs to be there.\n\nExceptions:\n- If you\u2019re just buying supplies or checking the queue, walk.\n- If you\u2019d rather avoid a very short cold start, either wash at home (if allowed) or combine the wash with a slightly longer errand afterward.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 21.102831840515137
+    },
+    {
+      "trial": 8,
+      "raw": "Drive. The car needs to be at the car wash to get washed.\n\nExceptions:\n- If you just want to check wait times, hours, or buy tokens, walk over first, then bring the car.\n- If home washing is allowed and you have supplies, you could wash it at home instead.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 13.699206113815308
+    },
+    {
+      "trial": 9,
+      "raw": "Drive the car. To wash it at the car wash, the car has to be there.\n\n- If you just want to check prices/hours or the queue, walk over first since it\u2019s only 50 m.\n- Before you go: close windows/sunroof, retract mirrors, remove/secure antenna/roof rack if needed, bring payment.\n- After the wash, drive a few minutes to dry the brakes and avoid water spots.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 17.04730987548828
+    },
+    {
+      "trial": 10,
+      "raw": "Drive the car over. To get it washed there, the car needs to be at the car wash.\n\nException: If you just want to check prices/queue first, walk over, then go back and bring the car. And if the car isn\u2019t road\u2011legal or drivable, don\u2019t drive\u2014arrange a mobile wash or towing instead.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 15.454101085662842
+    }
+  ]
+}

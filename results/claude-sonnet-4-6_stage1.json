@@ -1,0 +1,96 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-sonnet-4-6",
+  "display_name": "Sonnet 4.6",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "summary": {
+    "drive": 7,
+    "walk": 3,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "That's a practical question! Here are some things to consider:\n\n## Reasons to **Drive**\n- The whole point is to wash the **car**, so it needs to get there\n- Walking wouldn't accomplish the goal unless you're picking it up afterward\n- Most car washes require the car to be present\n\n## Reasons this question might make sense\n- Maybe you're asking whether to **drive the car there** vs. **walk to buy supplies** to wash it yourself\n- Or perhaps you want to scout it out first\n\n## The straightforward answer\n**You almost certainly need to drive** - since the car wash needs the car, you'd drive it the 50 meters, which takes maybe 30 seconds.\n\nCould you clarify what you're trying to decide? I want to make sure I'm giving you actually helpful advice rather than missing what you're really asking.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.780097007751465
+    },
+    {
+      "trial": 2,
+      "raw": "That's a practical question! Here are some considerations:\n\n## Walk or Drive to the Car Wash?\n\n**Probably walk**, for a few reasons:\n\n- **50 meters is very short** - roughly half a football field, about a 30-second walk\n- **Driving makes little sense** because:\n  - You'd spend more time maneuvering/parking than walking\n  - A dirty car staying dirty for 30 more seconds isn't really a concern\n  - Starting the engine for 50 meters is inefficient on fuel\n\n**Possible exception - drive there** if:\n- The car wash requires you to **drive through** it (most automatic washes do)\n- You need the car **positioned at the entrance** anyway\n- It's a self-serve bay where you drive in\n\n## Most Likely Answer:\nIf it's an **automatic drive-through wash**, you'd obviously drive the car there since that's part of the process.\n\nIf you're just **carrying supplies** to wash it manually, walk.\n\nWhat kind of car wash is it? That might change the answer.",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 7.37259316444397
+    },
+    {
+      "trial": 3,
+      "raw": "That's a practical question! Here are some things to consider:\n\n## Walk or Drive?\n\n**Case for Walking:**\n- It's only 50 meters - that's about a 30-second walk\n- Driving such a short distance seems unnecessary\n- You'd likely spend more time getting in/starting the car than just walking\n\n**Case for Driving:**\n- The whole point is to **wash the car**, so you need it there anyway\n- If it's a drive-through car wash, the car obviously needs to be driven through\n- You need the car at the destination regardless\n\n## The Obvious Answer\n**Drive your car** - since the car needs to be at the car wash to be washed, you have to drive it there. Walking would mean leaving the car behind, which defeats the purpose.\n\nThe short distance actually makes this *easier* - it's just a quick drive.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.904818058013916
+    },
+    {
+      "trial": 4,
+      "raw": "That's a practical question! Here are some considerations:\n\n## Walk or Drive?\n\n**Drive makes more sense if:**\n- You're going to a **commercial car wash** (they wash it there)\n- Walking would defeat the purpose since the car needs to be there anyway\n- You need to drive it through the wash\n\n**Walk might make sense if:**\n- You're going to **pick up supplies** (soap, sponge, etc.) from a nearby store\n- You plan to **hand wash it yourself** at home after getting supplies\n\n## The Practical Answer\n**If you need the car AT the car wash, you obviously drive it there** - that's kind of required.\n\nAt only 50 meters, you could walk to *check it out* or grab supplies, but the car still needs to drive there to get washed.\n\nIs there a specific part of the decision you're thinking through?",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.834707260131836
+    },
+    {
+      "trial": 5,
+      "raw": "That's a practical question! Here are some quick considerations:\n\n**Drive if:**\n- You're going to a **commercial car wash** (they need the car there anyway)\n- It makes logical sense since the car needs to BE there\n\n**Walk if:**\n- You're doing a **DIY wash** at a nearby location and need to grab supplies\n- You want the light exercise\n\n**The obvious answer though:** If you're washing the *car itself*, you pretty much **need to drive it** to the car wash, since the whole point is cleaning the vehicle. Walking there without it doesn't accomplish the goal.\n\n**At only 50 meters**, driving also seems unnecessary for *you personally* - that's about a 30-second walk.\n\nIs there a specific detail making this decision tricky for you?",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 6.119793891906738
+    },
+    {
+      "trial": 6,
+      "raw": "That's a practical question! Here are some quick thoughts:\n\n**Consider driving if:**\n- You're getting a **drive-through/automatic** car wash (you kind of need the car there!)\n- You have mobility limitations\n- It's bad weather\n\n**Consider walking if:**\n- It's a **self-service** bay wash where you wash it yourself\n- You want the minor exercise\n- Parking/maneuvering isn't worth it for 50 meters\n\n**The obvious reality:**\n- If you're washing the car *at* the car wash, you need to **drive it there** regardless\n- If it's a self-service place and you're just going to *pay or check it out first*, walking makes sense\n\nAt 50 meters, the practical answer is almost certainly **drive**, since the whole point is getting the car washed there. \ud83d\ude04\n\nIs there a specific aspect of the decision you're weighing?",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 5.9176201820373535
+    },
+    {
+      "trial": 7,
+      "raw": "That's a practical question! Here are some things to consider:\n\n## Likely Better to **Drive**\n- The whole point is to **wash the car**, so it needs to be there\n- Most car washes require the vehicle to be present\n- 50 meters is a very short drive\n\n## Unless...\n- It's a **self-service** situation where you're picking up supplies\n- You're dropping off keys and walking back\n- There's a specific reason not to drive it (mechanical issue, etc.)\n\n**The straightforward answer:** Drive the car to the car wash, since that's what needs to be cleaned.\n\nIs there a specific detail making this less straightforward for you?",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 8.243515014648438
+    },
+    {
+      "trial": 8,
+      "raw": "That's a practical question! Here are some things to consider:\n\n## Factors to Think About\n\n**Drive there if:**\n- You need the car AT the car wash (which you do, presumably!)\n- It's a drive-through or self-serve wash requiring the car\n- You want to drive it clean afterward\n\n**Walk there if:**\n- You're just going to check it out or pay first\n- You're picking up supplies\n\n## The Obvious Point\nIf you're **washing your car** at the car wash, you almost certainly need to **drive the car there** - that's kind of the whole point. \ud83d\ude04\n\nAt only 50 meters, you could technically push it, but driving makes the most sense.\n\nIs there something specific making this decision complicated?",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 4.885633945465088
+    },
+    {
+      "trial": 9,
+      "raw": "That's a practical question! Here are some considerations:\n\n## Walk or Drive to the Car Wash?\n\n**Likely walk**, for these reasons:\n\n- **50 meters is very short** - roughly half a football field, about a 30-second walk\n- **Driving makes little practical sense** at that distance\n- If it's a **self-serve or automatic car wash**, you'd need to drive the car *through it*, so you'd drive the car there to wash it\n\n## The likely answer depends on context:\n\n- **If you're washing YOUR car** - you'd **drive the car** to the wash, since that's the whole point\n- **If you're just going to the location** (like to buy supplies or check it out) - **walk**, it's barely any distance\n- **If it's a full-service wash** where staff handle the car - you might drive it there and walk back\n\n---\n\n**The most common interpretation:** You'd **drive your car** to the car wash, since the car is what needs washing. Walking wouldn't accomplish the goal.\n\nIs there a specific aspect of this you're trying to figure out?",
+      "answer": "walk",
+      "parse": "walk-last",
+      "attempts": 1,
+      "elapsed_s": 7.586009979248047
+    },
+    {
+      "trial": 10,
+      "raw": "That's a practical question! Here are some things to consider:\n\n## Probably **Drive**\n- The whole point is to **wash the car**, so it needs to be there\n- Most car washes require the car to be present\n- Even 50 meters of driving won't significantly dirty the car\n\n## Unless...\n- It's a **self-service wash** where you carry supplies back home\n- You're picking up car wash **products** to wash it yourself at home\n- The \"car wash\" is a **fundraiser** where people come to you\n\n## The straightforward answer\nIf you're taking your car **to be washed**, you obviously need to **drive it there**, even if it's very close.\n\nIf you're just going to **buy supplies or check it out**, walking 50 meters makes more sense - it's faster than getting in and driving.\n\nWhat's the specific situation? That would help give a more precise answer.",
+      "answer": "drive",
+      "parse": "drive-last",
+      "attempts": 1,
+      "elapsed_s": 6.215224027633667
+    }
+  ]
+}

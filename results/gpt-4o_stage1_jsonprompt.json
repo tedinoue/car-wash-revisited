@@ -1,0 +1,104 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 0,
+    "walk": 10,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and practical for such a short distance.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and practical for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.7538409233093262
+    },
+    {
+      "trial": 2,
+      "raw": "{ \"answer\": \"walk\", \"reasoning\": \"50 meters is a short distance, making it more efficient and environmentally friendly to walk.\" }",
+      "answer": "walk",
+      "reasoning": "50 meters is a short distance, making it more efficient and environmentally friendly to walk.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.8164780139923096
+    },
+    {
+      "trial": 3,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is quicker and more environmentally friendly for such a short distance.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is quicker and more environmentally friendly for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.9010229110717773
+    },
+    {
+      "trial": 4,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"The car wash is very close, reducing fuel use and emissions by walking.\"}\n```",
+      "answer": "walk",
+      "reasoning": "The car wash is very close, reducing fuel use and emissions by walking.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.9685790538787842
+    },
+    {
+      "trial": 5,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"The car wash is only 50 meters away, which is a very short distance best covered by walking.\"}\n```",
+      "answer": "walk",
+      "reasoning": "The car wash is only 50 meters away, which is a very short distance best covered by walking.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.1549639701843262
+    },
+    {
+      "trial": 6,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and practical for such a short distance.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and practical for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.1384949684143066
+    },
+    {
+      "trial": 7,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and efficient for such a short distance.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and efficient for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.9104630947113037
+    },
+    {
+      "trial": 8,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and efficient for such a short distance.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and efficient for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.8986520767211914
+    },
+    {
+      "trial": 9,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and practical for such a short distance of 50 meters.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and practical for such a short distance of 50 meters.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.7860450744628906
+    },
+    {
+      "trial": 10,
+      "raw": "{\"answer\": \"walk\", \"reasoning\": \"Walking is more environmentally friendly and saves fuel for such a short distance.\"}",
+      "answer": "walk",
+      "reasoning": "Walking is more environmentally friendly and saves fuel for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 0.831779956817627
+    }
+  ]
+}

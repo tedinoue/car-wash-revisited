@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "framing_id": "naive",
+  "framing_name": "Naive baseline",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\n- **Fuel cost**: Driving uses gas for such a short trip\n- **Wear on car**: Short trips are actually harder on engines than longer ones\n- **Parking**: You'd need to park anyway once there\n- **Exercise**: Walking is a small bonus\n\nThe only reason to drive would be if you have mobility issues or bad weather. Otherwise, walking is cheaper, easier, and just makes more sense.",
+      "attempts": 1,
+      "elapsed_s": 2.2709009647369385
+    },
+    {
+      "trial": 2,
+      "raw": "**Walk** is the better choice here.\n\nAt just 50 meters (about 165 feet), driving makes no sense because:\n\n- **Time**: Walking takes ~1 minute; driving takes similar time when including starting the car\n- **Wear and tear**: You'd use fuel and engine wear for an unnecessarily short trip\n- **Practicality**: You'll need to park anyway once there\n- **Effort**: It's a short, easy walk\n\nThe only exception would be if you have mobility issues that make walking difficult. Otherwise, walking is faster, cheaper, and simpler.",
+      "attempts": 1,
+      "elapsed_s": 2.3236846923828125
+    },
+    {
+      "trial": 3,
+      "raw": "I'd suggest **walking** for 50 meters. Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify driving\n- **Practicality**: Your car won't be clean when you arrive if you drive it there dirty\n- **Efficiency**: Walking is faster when you factor in starting the engine, driving, and parking\n- **Cost**: Saves fuel for such a short trip\n\nThe only reason to drive would be if you have mobility issues or bad weather. Otherwise, walking is the obvious choice.",
+      "attempts": 1,
+      "elapsed_s": 1.8651587963104248
+    },
+    {
+      "trial": 4,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify driving\n- **Practicality**: You'd spend more time starting the car, driving, and parking than walking\n- **Cost**: Even a short drive uses fuel and wear on your engine\n- **Convenience**: Walking is simpler and you'll arrive just as quickly\n\nThe only reason to drive would be if you had mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 1.61965012550354
+    },
+    {
+      "trial": 5,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify starting your car\n- **Fuel/wear**: You'd use more gas and engine wear than any benefit\n- **Parking**: You'd need to find a spot anyway\n- **Practicality**: Walking gives you time to think and is better exercise\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 1.9046993255615234
+    },
+    {
+      "trial": 6,
+      "raw": "**Walk** is the better choice here. Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify starting up your car\n- **Fuel & wear**: You'd use gas and create engine wear for a trivial distance\n- **Parking**: You'd need to park at the car wash anyway\n- **Convenience**: Walking is simpler and faster overall\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 1.8959100246429443
+    },
+    {
+      "trial": 7,
+      "raw": "**Walk** would be the better choice here.\n\nAt 50 meters (about 165 feet), driving doesn't make practical sense because:\n\n- **Time**: Walking takes roughly 1 minute; driving (with starting the car, backing out, etc.) takes similar or longer\n- **Fuel**: You'd burn gas for an unnecessarily short trip\n- **Wear & tear**: Not worth the engine startup and brake use\n- **Convenience**: Walking is simpler\u2014no parking hassle at the wash\n\nThe only reason to drive would be if you have mobility issues or bad weather.",
+      "attempts": 1,
+      "elapsed_s": 2.454369068145752
+    },
+    {
+      "trial": 8,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 1-minute walk\u2014very short\n- **Fuel/wear**: Driving uses gas and causes engine wear for minimal distance\n- **Parking**: You'd need to park anyway, possibly adding time\n- **Exercise**: Walking is a bonus health benefit\n- **Simplicity**: No need to start the car\n\nThe only reason to drive would be if you're unable to walk or carrying heavy items. Otherwise, walking is the clear choice.",
+      "attempts": 1,
+      "elapsed_s": 2.475486993789673
+    },
+    {
+      "trial": 9,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify starting up the car\n- **Fuel/wear**: You'd use more resources than the trip saves\n- **Practicality**: It's faster to walk than to get in the car, drive, and park\n- **Parking**: You might struggle to find a spot at the car wash anyway\n\nThe only reason to drive would be if you have mobility issues or bad weather. Otherwise, walking is the clear choice.",
+      "attempts": 1,
+      "elapsed_s": 2.276998996734619
+    },
+    {
+      "trial": 10,
+      "raw": "Walking makes more sense here. At 50 meters (about 165 feet), driving would be:\n\n- **Wasteful** \u2013 you'd use gas for a trivial distance\n- **Slower** \u2013 walking takes just 1 minute; driving takes longer with startup, maneuvering, parking\n- **Pointless** \u2013 the whole point of a car wash is to clean your car, so arriving dirty doesn't matter\n\nThe only reason to drive would be if you physically can't walk that distance. Otherwise, just walk.",
+      "attempts": 1,
+      "elapsed_s": 1.909865140914917
+    }
+  ]
+}

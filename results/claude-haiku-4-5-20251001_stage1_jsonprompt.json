@@ -1,0 +1,104 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 0,
+    "walk": 10,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"50 meters is too short a distance to justify the fuel consumption and emissions from driving, and walking is more practical and economical.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "50 meters is too short a distance to justify the fuel consumption and emissions from driving, and walking is more practical and economical.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.1607747077941895
+    },
+    {
+      "trial": 2,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters, walking is more practical and economical than driving, and you'll likely arrive faster when accounting for vehicle startup and parking time.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters, walking is more practical and economical than driving, and you'll likely arrive faster when accounting for vehicle startup and parking time.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.2503199577331543
+    },
+    {
+      "trial": 3,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters, walking is more practical and efficient than starting your car, with negligible time difference and no need for fuel or emissions.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters, walking is more practical and efficient than starting your car, with negligible time difference and no need for fuel or emissions.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.1246662139892578
+    },
+    {
+      "trial": 4,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters, walking is more practical and efficient than the fuel and effort required to drive such a short distance.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters, walking is more practical and efficient than the fuel and effort required to drive such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.0160019397735596
+    },
+    {
+      "trial": 5,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At only 50 meters away, walking is more practical and efficient than driving, parking, and using fuel for such a short distance.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At only 50 meters away, walking is more practical and efficient than driving, parking, and using fuel for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.2546730041503906
+    },
+    {
+      "trial": 6,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"50 meters is too short a distance to justify the fuel consumption and emissions from driving, and walking is faster and more practical.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "50 meters is too short a distance to justify the fuel consumption and emissions from driving, and walking is faster and more practical.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.1191458702087402
+    },
+    {
+      "trial": 7,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"50 meters is only a short distance (about a 30-second walk), making walking more practical, economical, and environmentally sensible than driving.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "50 meters is only a short distance (about a 30-second walk), making walking more practical, economical, and environmentally sensible than driving.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.0522830486297607
+    },
+    {
+      "trial": 8,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters (about 164 feet), driving would consume more fuel and resources than the distance warrants, while walking is practical and environmentally efficient.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters (about 164 feet), driving would consume more fuel and resources than the distance warrants, while walking is practical and environmentally efficient.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.4973340034484863
+    },
+    {
+      "trial": 9,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters away, walking is more practical and efficient than driving, which would require starting the engine, navigating, and parking for such a short distance.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters away, walking is more practical and efficient than driving, which would require starting the engine, navigating, and parking for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.123594045639038
+    },
+    {
+      "trial": 10,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"At 50 meters, walking is more practical and efficient than starting your car for such a short distance.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "At 50 meters, walking is more practical and efficient than starting your car for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.2084391117095947
+    }
+  ]
+}

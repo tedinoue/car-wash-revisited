@@ -1,0 +1,104 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-sonnet-4-6",
+  "display_name": "Sonnet 4.6",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 0,
+    "walk": 10,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would dirty the car further and waste fuel, while walking is practical for such a short distance.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would dirty the car further and waste fuel, while walking is practical for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.0443530082702637
+    },
+    {
+      "trial": 2,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving your car to a location only 50 meters away is unnecessary and impractical, as walking takes only seconds and avoids the hassle of getting in and driving such a trivial distance.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving your car to a location only 50 meters away is unnecessary and impractical, as walking takes only seconds and avoids the hassle of getting in and driving such a trivial distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.9977731704711914
+    },
+    {
+      "trial": 3,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would barely move the car and makes no practical sense when walking takes only seconds.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would barely move the car and makes no practical sense when walking takes only seconds.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.8410859107971191
+    },
+    {
+      "trial": 4,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would defeat the purpose, as the car would not get meaningfully dirty in such a short distance, and walking is perfectly practical for such a short trip.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would defeat the purpose, as the car would not get meaningfully dirty in such a short distance, and walking is perfectly practical for such a short trip.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.0878288745880127
+    },
+    {
+      "trial": 5,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would dirty the car less than it already is, and walking that short distance is more practical and efficient.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would dirty the car less than it already is, and walking that short distance is more practical and efficient.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.322334051132202
+    },
+    {
+      "trial": 6,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash defeats the purpose, as you would barely get the car dirty enough to justify the trip, and walking is trivially easy for such a short distance.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash defeats the purpose, as you would barely get the car dirty enough to justify the trip, and walking is trivially easy for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.321789026260376
+    },
+    {
+      "trial": 7,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would dirty the car no more than it already is, and walking such a short distance is far more practical.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would dirty the car no more than it already is, and walking such a short distance is far more practical.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.5321869850158691
+    },
+    {
+      "trial": 8,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would dirty the car no more than it already is, and walking is practical for such a short distance.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would dirty the car no more than it already is, and walking is practical for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 1.8674898147583008
+    },
+    {
+      "trial": 9,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would be impractical and potentially dirty the car further before it's even cleaned, while walking that short distance takes only seconds.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would be impractical and potentially dirty the car further before it's even cleaned, while walking that short distance takes only seconds.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.0625739097595215
+    },
+    {
+      "trial": 10,
+      "raw": "```json\n{\"answer\": \"walk\", \"reasoning\": \"Driving 50 meters to a car wash would dirty the car no more than it already is, and walking such a short distance is faster and more practical.\"}\n```",
+      "answer": "walk",
+      "reasoning": "Driving 50 meters to a car wash would dirty the car no more than it already is, and walking such a short distance is faster and more practical.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 2.2115159034729004
+    }
+  ]
+}

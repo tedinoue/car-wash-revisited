@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-flash",
+  "display_name": "Gemini 2.5 Flash",
+  "framing_id": "goal_restated",
+  "framing_name": "Goal-restated",
+  "system_prompt": null,
+  "user_prompt": "I want my car to be clean. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "You'll need to **drive** your car.\n\nWhile 50 meters is a very short walk for you, the car needs to be physically present at the car wash to get cleaned!\n\n**However, a few considerations for such a short drive:**\n\n*   **Engine Warm-up:** Starting your car for just 50 meters doesn't give the engine a chance to warm up, which isn't ideal for its long-term health or fuel efficiency. If your car is already warm from a previous trip, it's less of an issue.\n*   **Convenience:** Even for 50 meters, it's easier to just hop in and drive the car over.\n*   **Checking it out:** You *could* walk the 50 meters first to check if there's a queue, if it's open, or what services they offer, and then go back for your car.\n\nBut ultimately, for the car to get clean at the car wash, it has to be driven there!",
+      "attempts": 1,
+      "elapsed_s": 6.4319398403167725
+    },
+    {
+      "trial": 2,
+      "raw": "You'll need to **drive** your car to the car wash.\n\nWhile 50 meters is a very short walk for you (less than a minute!), the car needs to be driven into the car wash tunnel or bay to get cleaned. You can't simply walk there and expect your car to magically follow or be pushed through.\n\nIt might feel a little silly starting the engine for such a short distance, but it's necessary for the car to enter the washing mechanism.",
+      "attempts": 1,
+      "elapsed_s": 6.597232103347778
+    },
+    {
+      "trial": 3,
+      "raw": "**Definitely walk!**\n\n50 meters is a very short distance \u2013 about the length of half a football field, or roughly 150-160 feet. It will take you less than a minute to walk there.\n\nHere's why walking is the better choice:\n\n*   **It's good exercise:** Even a short walk is better than none.\n*   **Saves fuel:** No need to start your engine for such a short trip.\n*   **Better for your car:** Frequent short trips where the engine doesn't warm up fully can cause more wear and tear over time.\n*   **Environmentally friendly:** Reduces emissions.\n*   **No parking hassle:** You can just walk right in.\n\nThe only reasons to drive such a short distance would be if it's pouring rain, you have mobility issues, or you're carrying something very heavy. Otherwise, enjoy the quick stroll!",
+      "attempts": 1,
+      "elapsed_s": 6.936773061752319
+    },
+    {
+      "trial": 4,
+      "raw": "You'll need to **drive** your car.\n\nWhile 50 meters is a very short distance to walk, your car needs to be physically present at the car wash to get cleaned! You can't walk *to* the car wash and expect your car to magically appear there.\n\nIt might feel a little silly to drive such a short distance, but it's the only way to get the job done.",
+      "attempts": 1,
+      "elapsed_s": 5.681986093521118
+    },
+    {
+      "trial": 5,
+      "raw": "You'll need to **drive** your car.\n\nWhile 50 meters is a very short walk for you, the goal is to get the *car* clean, which means the car itself needs to be driven to the car wash bay or entrance.\n\nSo, hop in and drive the 50 meters!",
+      "attempts": 1,
+      "elapsed_s": 6.5492331981658936
+    },
+    {
+      "trial": 6,
+      "raw": "**Walk!**\n\n50 meters is an extremely short distance \u2013 roughly half a football field, or about a one-minute walk.\n\nHere's why walking is almost certainly the better option:\n\n*   **For your car:** Starting your car for such a short distance is actually bad for the engine. It doesn't give the oil a chance to warm up and circulate properly, and it can lead to increased wear over time. It also uses more fuel and produces more emissions per meter traveled because the engine isn't at optimal operating temperature.\n*   **For you:** It's a quick, easy bit of fresh air and light exercise.\n*   **Convenience:** You won't have to worry about parking the car at home when you get back after it's clean; you can just walk it back to its spot.\n*   **Environment:** Less fuel burned, fewer emissions.\n\n**The only reasons to drive would be:**\n\n*   **Mobility issues:** If you genuinely struggle with walking that distance.\n*   **Weather:** If it's pouring rain, extremely hot, or very cold, and you don't want to get wet or uncomfortable.\n*   **Immediate plans:** If you need to immediately drive the car somewhere else *after* the wash.\n\nOtherwise, enjoy the short stroll!",
+      "attempts": 1,
+      "elapsed_s": 10.162750005722046
+    },
+    {
+      "trial": 7,
+      "raw": "You'll definitely need to **drive your car** to the car wash, as the car itself needs to be present for the cleaning!\n\n50 meters is an extremely short distance \u2013 it's barely a drive, but you can't walk your car there.\n\nHowever, if you're asking about what *you* should do *after* dropping the car off:\n\n*   **Walk:** If it's a full-service wash where you leave the car, 50 meters is a perfectly reasonable walk back home or to a nearby spot while your car is being cleaned.\n*   **Wait:** If it's a quick automatic wash, it might be faster to just wait in the car or in the waiting area for your car to be done.",
+      "attempts": 1,
+      "elapsed_s": 7.46032190322876
+    },
+    {
+      "trial": 8,
+      "raw": "You should **drive** your car.\n\nWhile 50 meters is a very short distance to walk, you need to bring your *car* to the car wash to get it cleaned! Unless you have some incredible telekinetic powers, driving it there is the only practical option.",
+      "attempts": 1,
+      "elapsed_s": 5.062804222106934
+    },
+    {
+      "trial": 9,
+      "raw": "You'll need to **drive** your car to the car wash!\n\nWhile 50 meters is a very short walk for a person, you need to bring the *car* itself to the car wash to get it cleaned. It's barely worth starting the engine for, but it's the only way to get your car into the cleaning bay!",
+      "attempts": 1,
+      "elapsed_s": 5.648010015487671
+    },
+    {
+      "trial": 10,
+      "raw": "You'll need to **drive** your car.\n\nThe car wash cleans your car, so the car itself needs to be at the car wash location. While 50 meters is a very short walk for you, the car can't walk itself!\n\nIt will be a very quick drive!",
+      "attempts": 1,
+      "elapsed_s": 10.181965112686157
+    }
+  ]
+}

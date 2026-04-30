@@ -1,0 +1,104 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-pro",
+  "display_name": "Gemini 2.5 Pro",
+  "prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive? Respond with strict JSON only, no prose: {\"answer\": \"walk\" or \"drive\", \"reasoning\": \"<one sentence>\"}",
+  "n_trials": 10,
+  "summary": {
+    "drive": 6,
+    "walk": 4,
+    "other": 0
+  },
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "```json\n{\n  \"answer\": \"drive\",\n  \"reasoning\": \"You must bring the car with you to the car wash in order to get it washed.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "You must bring the car with you to the car wash in order to get it washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.7242937088012695
+    },
+    {
+      "trial": 2,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"A distance of 50 meters is extremely short and it would take more time and effort to get into a car and drive than to simply walk.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "A distance of 50 meters is extremely short and it would take more time and effort to get into a car and drive than to simply walk.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.113324165344238
+    },
+    {
+      "trial": 3,
+      "raw": "```json\n{\n    \"answer\": \"drive\",\n    \"reasoning\": \"You must bring the car to the car wash in order to wash it.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "You must bring the car to the car wash in order to wash it.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.022287845611572
+    },
+    {
+      "trial": 4,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"Walking 50 meters is significantly faster and more practical than the process of starting, driving, and parking a car for such a short distance.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "Walking 50 meters is significantly faster and more practical than the process of starting, driving, and parking a car for such a short distance.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.6737220287323
+    },
+    {
+      "trial": 5,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"50 meters is an extremely short distance that is much faster and more efficient to walk than to drive.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "50 meters is an extremely short distance that is much faster and more efficient to walk than to drive.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.598538875579834
+    },
+    {
+      "trial": 6,
+      "raw": "```json\n{\n  \"answer\": \"walk\",\n  \"reasoning\": \"A distance of 50 meters is extremely short, making walking significantly more practical and efficient than driving.\"\n}\n```",
+      "answer": "walk",
+      "reasoning": "A distance of 50 meters is extremely short, making walking significantly more practical and efficient than driving.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.65432596206665
+    },
+    {
+      "trial": 7,
+      "raw": "```json\n{\n  \"answer\": \"drive\",\n  \"reasoning\": \"You need to bring the car to the car wash in order to have it washed.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash in order to have it washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.5982279777526855
+    },
+    {
+      "trial": 8,
+      "raw": "```json\n{\n  \"answer\": \"drive\",\n  \"reasoning\": \"You need the car at the car wash to get it washed.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "You need the car at the car wash to get it washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.059746980667114
+    },
+    {
+      "trial": 9,
+      "raw": "```json\n{\n  \"answer\": \"drive\",\n  \"reasoning\": \"The car needs to be at the car wash in order to be washed.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "The car needs to be at the car wash in order to be washed.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 7.292900800704956
+    },
+    {
+      "trial": 10,
+      "raw": "```json\n{\n  \"answer\": \"drive\",\n  \"reasoning\": \"You need to bring the car to the car wash in order to wash it.\"\n}\n```",
+      "answer": "drive",
+      "reasoning": "You need to bring the car to the car wash in order to wash it.",
+      "parse": "ok",
+      "error": null,
+      "elapsed_s": 6.83636212348938
+    }
+  ]
+}

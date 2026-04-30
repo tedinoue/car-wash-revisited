@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-flash",
+  "display_name": "Gemini 2.5 Flash",
+  "framing_id": "naive",
+  "framing_name": "Naive baseline",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "You'll need to **drive your car** to the car wash!\n\nWhile 50 meters is a very short distance (easily walkable in under a minute), the purpose of going to a car wash is to get your *car* clean. Unless you're planning on pushing it, driving is the way to go!\n\nThe only reason you might walk is if:\n*   You're just going to buy a token or a snack.\n*   Someone else is driving your car and you're just meeting them there.\n*   You're dropping your car off and walking home, then walking back to pick it up later.\n\nBut if you want to *wash* your car, you've got to bring the car with you!",
+      "attempts": 1,
+      "elapsed_s": 6.588348865509033
+    },
+    {
+      "trial": 2,
+      "raw": "**Definitely walk!**\n\nHere's why:\n\n1.  **Speed:** 50 meters is incredibly short. You'll likely walk it in well under a minute. By the time you get in your car, start it, drive 50 meters, and park, you'll probably have taken longer than walking.\n2.  **Effort:** It's a negligible amount of effort and a tiny bit of fresh air/exercise.\n3.  **Environment:** No emissions for such a short trip.\n4.  **Cost:** Free! No fuel used.\n5.  **Convenience:** No need to maneuver a car, find parking, or worry about a cold start for such a tiny distance.\n\n**The only reasons to drive would be:**\n\n*   If it's pouring rain or extremely bad weather.\n*   If you have a physical disability that prevents you from walking that far comfortably.\n*   If it's an automated car wash where you literally drive the car *through* the wash, and then you'll need the car to drive it back anyway.\n\nOtherwise, enjoy the very short stroll!",
+      "attempts": 1,
+      "elapsed_s": 6.090149164199829
+    },
+    {
+      "trial": 3,
+      "raw": "**Walk!**\n\n50 meters is a very short distance. It's roughly the length of half a football field, or about a 30-60 second walk for most people.\n\n**Here's why walking is better:**\n\n*   **Faster:** By the time you get in your car, start it, back out (if applicable), drive 50 meters, and park, you'd have already walked there and back.\n*   **Healthier:** A little bit of fresh air and movement is always good.\n*   **Environmentally Friendly:** No fuel consumed, no emissions.\n*   **No Parking Hassle:** Just walk right up.\n*   **Simpler:** No keys, no starting the engine.\n\nThe only exceptions would be if you have mobility issues, are carrying something heavy, or if there's extremely bad weather (like a downpour). Otherwise, lace up your shoes!",
+      "attempts": 1,
+      "elapsed_s": 6.366490840911865
+    },
+    {
+      "trial": 4,
+      "raw": "Since you want to **wash your car**, you'll need to **drive** it to the car wash.\n\nEven though 50 meters is a very short distance, the car itself needs to be physically present at the car wash to be cleaned! You can't really walk your car there.",
+      "attempts": 1,
+      "elapsed_s": 4.256150960922241
+    },
+    {
+      "trial": 5,
+      "raw": "**Definitely walk!**\n\nHere's why:\n\n*   **Distance:** 50 meters is extremely short. It's about half the length of a football field. You'll cover that distance in less than a minute.\n*   **Health:** It's a quick bit of exercise.\n*   **Environment:** No emissions for such a short, unnecessary drive.\n*   **Your Car:** Starting an engine for such a short trip and then immediately turning it off isn't ideal for the engine's wear and tear, and it uses more fuel inefficiently.\n*   **Convenience:** You don't have to bother getting in, starting the car, buckling up, driving a few seconds, parking, and getting out.\n\nUnless you have a specific mobility issue, walking is by far the better, more sensible, and healthier choice.",
+      "attempts": 1,
+      "elapsed_s": 5.793056011199951
+    },
+    {
+      "trial": 6,
+      "raw": "**Definitely walk!**\n\nHere's why:\n\n1.  **It's incredibly close:** 50 meters is about half a football field. It will take you well under a minute to walk there (probably 30-45 seconds).\n2.  **Environmental impact:** Driving your car for such a short distance is very inefficient and produces a disproportionately high amount of emissions because the engine doesn't even have a chance to warm up properly.\n3.  **Car health:** Very short trips are actually not great for your car's engine. It prevents the oil from fully circulating and reaching optimal temperature.\n4.  **Cost:** You'll save the tiny bit of fuel you'd use.\n5.  **Convenience:** You don't have to start the car, put on your seatbelt, or worry about parking. Just walk!\n6.  **Exercise:** A tiny bit of fresh air and movement is always a good thing.\n\nUnless you have mobility issues or are transporting something heavy *to* the car wash, there's no reason to drive for 50 meters. **Walk!**",
+      "attempts": 1,
+      "elapsed_s": 6.543354034423828
+    },
+    {
+      "trial": 7,
+      "raw": "You'll need to **drive** your car to the car wash to actually get it washed!\n\nWhile 50 meters is a very short walk for you, the car can't walk itself to the washing bay.\n\nThink of it this way: You walk your *body* to the car wash, but you drive the *car* to the car wash.\n\nHowever, given it's only 50 meters, it's an incredibly short drive. You might:\n\n*   **Start the car, drive it there, wash it, and then drive it back.** (This is the most direct way).\n*   **Consider if you have any other errands or driving to do that day** and combine it so the car isn't just driven 50 meters for a cold start and immediate stop.\n\nBut yes, to wash the car, the car needs to be driven there!",
+      "attempts": 2,
+      "elapsed_s": 8.111689329147339
+    },
+    {
+      "trial": 8,
+      "raw": "Given the car wash is only **50 meters away**, you should definitely **drive** your car.\n\nHere's why:\n\n1.  **The Car Needs to Be Washed:** You need the car *at* the car wash for it to be cleaned.\n2.  **Type of Car Wash:**\n    *   **Automatic Car Wash (Drive-Through):** You must drive your car into the wash bay.\n    *   **Self-Service Bay:** You must drive your car into the bay to wash it yourself.\n    *   **Full-Service Car Wash:** You drive your car to the entrance, they might take over from there, but the car still needs to be present.\n3.  **Convenience:** While 50 meters is a very short walk, it's not practical to *walk* your car to the wash!\n\nSo, **drive your car** to the car wash. Enjoy the clean ride!",
+      "attempts": 1,
+      "elapsed_s": 8.974967956542969
+    },
+    {
+      "trial": 9,
+      "raw": "You'll need to **drive your car** the 50 meters to the car wash!\n\nWhile 50 meters is an incredibly short distance to walk, your car can't get washed if it's not there.\n\nIt might feel a little silly to drive such a short distance, but it's the only way to get your car cleaned!",
+      "attempts": 1,
+      "elapsed_s": 9.125777959823608
+    },
+    {
+      "trial": 10,
+      "raw": "For 50 meters (about 164 feet, or half the length of an Olympic swimming pool), you should almost certainly **walk**!\n\nHere's why:\n\n1.  **Time:** Walking 50 meters will take less than a minute. By the time you get in your car, start it, drive 50 meters, park, and get out, you'll likely have spent more time than just walking.\n2.  **Effort:** It's a very short, easy walk.\n3.  **Cost:** No fuel, no wear and tear on your car.\n4.  **Environment:** No emissions.\n5.  **Simplicity:** No need to maneuver a car, find parking, etc.\n\n**The only reasons you might drive are if:**\n\n*   It's pouring rain or extreme weather.\n*   You have mobility issues that make walking difficult.\n*   The car wash is an automatic drive-thru where you stay in your car anyway.\n\nOtherwise, enjoy the very brief stroll!",
+      "attempts": 1,
+      "elapsed_s": 7.938552141189575
+    }
+  ]
+}
