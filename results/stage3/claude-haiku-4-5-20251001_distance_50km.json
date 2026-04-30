@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "distance_50km",
+  "condition_name": "Distance \u2014 50 km (floor test)",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 kilometers away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "You should **drive**.\n\nHere's why:\n\n- **Distance**: 50 km is too far to walk (that's about 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes to an hour; walking takes most of a day\n- **Practicality**: You'd arrive exhausted, then still need to wash the car\n- **Logic**: You're trying to clean your car, so driving it there makes sense\n\nThe only reason to walk would be if your car is broken down and you're getting it towed, or if you're using it as exercise (though there are closer options for that).",
+      "attempts": 1,
+      "elapsed_s": 2.4928958415985107
+    },
+    {
+      "trial": 2,
+      "raw": "You should **drive**.\n\nHere's why:\n\n- **Distance**: 50 km is too far to walk (that's about 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes vs. most of a day walking\n- **Practicality**: You need to get there, wash the car, and return home\n\nThe only reason to walk would be if your car doesn't run\u2014in which case, you'd need to fix it first or find alternative transport (bus, taxi, etc.).",
+      "attempts": 1,
+      "elapsed_s": 1.7610259056091309
+    },
+    {
+      "trial": 3,
+      "raw": "Drive. Here's why:\n\n- **Distance**: 50 km is too far to walk (roughly 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes vs. most of a day walking\n- **Practicality**: You'd arrive exhausted, and your car still needs washing\n- **Cost**: Gas is minimal compared to your time and energy\n\nThe only reason to walk would be if your car isn't operational, in which case you'd need alternative transport (bus, bike, taxi, etc.).",
+      "attempts": 1,
+      "elapsed_s": 2.0624327659606934
+    },
+    {
+      "trial": 4,
+      "raw": "Drive, definitely.\n\nWalking 50 km would take roughly 10-12 hours of continuous walking. Driving the same distance typically takes 30-45 minutes depending on traffic and speed limits.\n\nDriving is:\n- **Much faster** (30-45 min vs 10+ hours)\n- **Less physically taxing**\n- **More practical** for getting to a car wash (which you'd need the car at anyway)\n\nThe only reason to walk would be if your car isn't drivable, but then you'd probably want to call a tow truck instead.",
+      "attempts": 1,
+      "elapsed_s": 2.042006015777588
+    },
+    {
+      "trial": 5,
+      "raw": "You should **drive**.\n\nHere's why:\n\n- **Distance**: 50 km is too far to walk (roughly 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes vs. a full day of walking\n- **Practicality**: You'd arrive exhausted, and your car wouldn't be at the wash location\n- **Logic**: You need your car there to wash it anyway\n\nThe only reason to walk would be if your car doesn't run, in which case you'd need to arrange a tow or ride instead.",
+      "attempts": 1,
+      "elapsed_s": 2.13712215423584
+    },
+    {
+      "trial": 6,
+      "raw": "**Drive.** It's the practical choice here.\n\nWalking 50 km would take roughly 10+ hours and leave you exhausted before you even got to wash your car. Driving takes maybe 45 minutes to an hour and gets you there ready to actually do the task.\n\nThe only reasons to walk would be if:\n- Your car is broken down (but then you'd need another solution anyway)\n- You're specifically looking for exercise (but there are easier ways)\n- You have no other transportation available\n\nSo unless you have an unusual constraint, definitely drive.",
+      "attempts": 1,
+      "elapsed_s": 2.195880889892578
+    },
+    {
+      "trial": 7,
+      "raw": "You should drive. Here's why:\n\n- **Distance**: 50 km is roughly 31 miles \u2014 far too long to walk (that would take 10+ hours on foot)\n- **Practicality**: You need to get your car to the car wash anyway\n- **Time**: Driving takes maybe 30-45 minutes depending on traffic and roads\n- **Effort**: Walking would exhaust you before you even get there\n\nThe only exception would be if your car is already broken down and you're planning to have it towed \u2014 but even then, you'd probably arrange transportation rather than walk that distance.",
+      "attempts": 1,
+      "elapsed_s": 1.842900276184082
+    },
+    {
+      "trial": 8,
+      "raw": "Drive. Here's why:\n\n- **Distance**: 50 km is too far to walk (roughly 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes vs. most of a day walking\n- **Practicality**: You'd be exhausted before arriving, and the car wouldn't get washed anyway\n- **Logic**: You need your car clean, which implies you have a car to drive there\n\nThe only reason to walk would be if your car is broken down\u2014but then you'd probably need to get it towed to the wash instead.",
+      "attempts": 1,
+      "elapsed_s": 2.1032299995422363
+    },
+    {
+      "trial": 9,
+      "raw": "You should **drive**.\n\nHere's why:\n\n- **Distance**: 50 km is too far to walk (that's about 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes to an hour vs. most of a day walking\n- **Practicality**: You'd arrive exhausted, and still need to drive back anyway\n- **Cost**: Gas is minimal compared to the time and effort saved\n\nThe only reason to walk would be if your car is broken down and you're getting it fixed at that location\u2014but even then, most people would arrange a ride.",
+      "attempts": 1,
+      "elapsed_s": 1.8548741340637207
+    },
+    {
+      "trial": 10,
+      "raw": "Drive. Here's why:\n\n- **Distance**: 50 km is too far to walk (roughly 10+ hours on foot)\n- **Time**: Driving takes ~45 minutes vs. a full day walking\n- **Practicality**: You'd arrive exhausted, and your car still wouldn't be washed\n- **Cost**: Gas is far cheaper than the time and effort\n\nThe only scenario where walking makes sense is if your car isn't working\u2014then you'd need a ride or alternative transport anyway.",
+      "attempts": 1,
+      "elapsed_s": 1.945267915725708
+    }
+  ]
+}

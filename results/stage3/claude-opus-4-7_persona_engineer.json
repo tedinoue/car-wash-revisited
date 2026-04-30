@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "persona_engineer",
+  "condition_name": "Engineer persona",
+  "system_prompt": "You're an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk.\n\n50 meters is roughly 60 seconds on foot. Driving makes no sense here:\n\n- **Time:** You'll spend longer getting in, starting the engine, parking, and getting out than just walking.\n- **Fuel/wear:** A cold start for a 50 m trip is the worst case for engine wear and fuel efficiency. Engines run rich until warm, and you won't get anywhere near operating temperature.\n- **Defeats the purpose:** You're about to wash the car. Why add even a tiny bit of road grime, brake dust, or bug splatter first?\n- **Logistics:** Most car washes (drive-through tunnels, automatic bays) require you to drive *through* them. If that's the case, then yes \u2014 drive. But if it's a self-serve bay where you bring the car to a stall, you still need to drive it there.\n\nSo the real question: can the car wash actually clean your car without the car being driven into it? If yes (e.g., hand wash service), walk. If no, you have to drive \u2014 there's no walking a car through a tunnel wash.\n\nWhich type is it?",
+      "attempts": 1,
+      "elapsed_s": 8.71031403541565
+    },
+    {
+      "trial": 2,
+      "raw": "Walk.\n\n50 meters is about 60 seconds on foot. Driving makes no sense here:\n\n- **Time**: By the time you start the car, back out, and park at the wash, you've spent more time than walking.\n- **Fuel/wear**: A cold start for a 50 m trip is the worst-case scenario for engine wear and fuel efficiency. Catalytic converters don't even reach operating temp.\n- **Practicality**: If it's a self-serve or drive-through wash... wait. You need the car *at* the wash to wash it.\n\nSo the real question: are you washing the car, or just visiting the car wash?\n\n- If **washing your car** \u2192 you have to drive it there. There's no other option.\n- If **buying supplies / something else** \u2192 walk.\n\nWhich is it?",
+      "attempts": 1,
+      "elapsed_s": 7.29091215133667
+    },
+    {
+      "trial": 3,
+      "raw": "Walk.\n\nAt 50 meters, driving makes no sense:\n\n- **Time**: Walking takes ~40 seconds. Driving requires unlocking, starting, pulling out, parking at the wash, then reversing the process \u2014 easily 2-3x longer.\n- **Fuel**: Cold starts are the least efficient part of any drive. You'd burn more fuel in that 50m than in a kilometer of warm highway driving.\n- **Wear**: Short trips are the worst thing you can do to an engine \u2014 oil doesn't reach operating temp, moisture accumulates, battery doesn't fully recharge.\n- **Logic**: You'd be driving a dirty car 50m to clean it, then driving it 50m back, slightly dirtying it again.\n\nWait \u2014 re-reading your question. You want to *wash* the car. You need the car *at* the wash. So you do have to drive it there; you can't carry the car.\n\nDrive. There's no other option. Walking gets you to the car wash without your car, which defeats the purpose.",
+      "attempts": 1,
+      "elapsed_s": 7.563047885894775
+    },
+    {
+      "trial": 4,
+      "raw": "Walk.\n\nFor 50 meters, driving makes no sense:\n\n- **Time**: Walking takes ~40 seconds. Driving requires getting in, starting up, pulling out, parking at the wash, etc. \u2014 likely longer overall.\n- **Fuel/wear**: Cold starts and short trips are the worst case for engine wear and fuel efficiency. Engines don't reach operating temperature, oil doesn't circulate properly, and unburned fuel can dilute the oil.\n- **Defeats the purpose**: If you drive a dirty car 50m to wash it, then drive it 50m back, you've added negligible dirt \u2014 fine. But there's no benefit to driving either.\n\nWait \u2014 are you trying to get the car washed, or wash it yourself at a self-service bay?\n\nIf it's a **self-service car wash**, you obviously need to drive the car there. 50 meters is still trivial, but the car has to be at the wash.\n\nIf it's an **automatic/tunnel wash**, same thing \u2014 drive it.\n\nIf you're walking to buy supplies (soap, sponge) to wash the car at home, then walk.\n\nWhich scenario is it?",
+      "attempts": 1,
+      "elapsed_s": 8.609312057495117
+    },
+    {
+      "trial": 5,
+      "raw": "Walk.\n\n50 meters is about 60 seconds on foot. Driving makes no sense here:\n\n- **Time**: Starting the car, backing out, and parking at the wash takes longer than walking.\n- **Fuel/wear**: Cold starts are the worst for engine wear and fuel efficiency. A 50m trip never lets the engine reach operating temperature.\n- **Defeats the purpose**: You'd potentially track dirt, kick up road grime onto a car you're about to clean, or get it dusty driving back.\n\nOne caveat: if it's a self-serve bay where you need to drive *into* the wash stall, you obviously have to drive \u2014 but that's the wash process, not the trip there. If it's a drive-through tunnel wash, same thing: drive.\n\nIf you're just walking over to grab supplies or pay, walk.",
+      "attempts": 1,
+      "elapsed_s": 6.872658014297485
+    },
+    {
+      "trial": 6,
+      "raw": "Walk.\n\n50 meters is about 60 seconds on foot. Driving makes no sense here:\n\n- **Time:** Getting in, starting the engine, pulling out, parking at the wash, then reversing the process takes longer than just walking.\n- **Fuel & wear:** Cold starts are the worst case for engine wear and fuel efficiency. Short trips don't let the engine reach operating temperature, which causes condensation buildup in the oil and exhaust.\n- **Defeats the purpose:** You're about to wash the car. Why add 100 meters of road grime first?\n\nOne caveat: if you're going to a **drive-through automated wash**, you obviously have to drive it through the bay \u2014 but you'd still want to walk *to* the facility only if you could push the car in, which you can't. So in that specific case, drive.\n\nOtherwise (self-serve bay, bucket-and-hose, etc.): walk.",
+      "attempts": 1,
+      "elapsed_s": 7.8640220165252686
+    },
+    {
+      "trial": 7,
+      "raw": "Walk.\n\n50 meters is a trivial distance\u2014roughly 30-60 seconds on foot. Driving makes no sense here:\n\n- **Fuel and wear**: Cold starts and short trips are the worst case for engine wear and fuel economy. The engine won't reach operating temperature, oil won't circulate properly, and you'll dump unburned fuel and condensation into the exhaust.\n- **Time**: By the time you start the car, buckle up, and pull out, you could already be there.\n- **The obvious problem**: You're about to wash the car. Driving it 50 meters won't make it meaningfully dirtier, but it's a pointless step.\n\nOne caveat: if you're hauling supplies (buckets, vacuum, etc.) or it's a drive-through wash where you *need* the car in the bay, then obviously drive. But for a 50-meter trip on foot? Walk.",
+      "attempts": 1,
+      "elapsed_s": 6.730104923248291
+    },
+    {
+      "trial": 8,
+      "raw": "Walk.\n\n50 meters is about 60 seconds on foot. Driving makes no engineering sense here:\n\n- **Cold start penalty**: A cold engine running for under a minute is the worst-case scenario for fuel efficiency, emissions, and engine wear. Oil hasn't reached operating temperature, combustion is rich, and condensation accumulates in the exhaust.\n- **Maneuvering time**: Getting in, starting, backing out, parking \u2014 likely longer than the walk itself.\n- **Pointless if it's a self-serve wash**: You'd just have to move the car anyway, but the trip there is wasted.\n\nOne caveat: if it's a **drive-through automatic car wash**, you obviously have to drive \u2014 the car needs to be *at* the wash to be washed. I assume that's what you meant, in which case: drive, but accept that this is one of the harder use cases on your engine. Let it idle for 30 seconds afterward or take a slightly longer route home to get the engine up to temp and burn off moisture.\n\nWhich type of wash is it?",
+      "attempts": 1,
+      "elapsed_s": 8.291393041610718
+    },
+    {
+      "trial": 9,
+      "raw": "Walk.\n\nAt 50 meters, driving makes no sense:\n\n- **Time**: Walking takes ~40 seconds. Driving requires getting in, starting up, pulling out, and parking \u2014 likely longer overall.\n- **Fuel/wear**: Cold starts and very short trips are the worst case for engine wear and fuel efficiency. The engine won't reach operating temperature, oil won't circulate properly, and you'll dump unburned fuel and moisture into the exhaust.\n- **Defeats the purpose**: You're about to wash the car. Why drive it 50 meters first?\n\nWait \u2014 are you planning to wash the car *at* the car wash? If so, you obviously need to drive it there, since the whole point is to get the car clean. A 50-meter drive is still rough on the engine, but there's no alternative unless you can push it.\n\nIf you meant you want to walk to buy supplies (soap, sponge) to wash the car at home, then walk.\n\nWhich is it?",
+      "attempts": 1,
+      "elapsed_s": 7.586318016052246
+    },
+    {
+      "trial": 10,
+      "raw": "Walk.\n\nAt 50 meters, driving makes no practical sense:\n\n- **Time:** Walking takes ~40 seconds. Driving requires unlocking, starting, pulling out, parking, and shutting down \u2014 easily 1\u20132 minutes, plus you arrive at a car wash in a car you just drove for 50 meters.\n- **Fuel/wear:** Cold starts are the worst case for engine wear and emissions. A 50 m trip never lets the engine reach operating temperature.\n- **Logic:** You're going to *wash* the car. Driving it 50 meters won't meaningfully dirty it, so there's no reason it has to be at the wash via its own power... wait \u2014 yes, there is.\n\nHold on. I need to reconsider.\n\n**You can't wash your car at the car wash without your car being there.** Walking gets *you* there, but not the vehicle. Unless you're planning to push it 50 meters, you have to drive it.\n\n**Answer: Drive.** It's the only option that accomplishes the task. The 50 m trip is inefficient in isolation, but it's unavoidable \u2014 the car is the thing being transported to the service.",
+      "attempts": 1,
+      "elapsed_s": 8.334535837173462
+    }
+  ]
+}

@@ -14,29 +14,33 @@ This repo extends Opper's study by characterizing *how* the failure responds to 
 - **A controlled-framing matrix** — 6 framings × 10 trials per failer at 50 m, holding distance fixed (we deliberately are not searching for a heuristic-distance threshold; we are studying whether framing alone can flip the response).
 - **AI-judge classification** of every free-text response. Algorithmic / regex parsing of free-text recommendations misclassified ~25% of trials in our Stage 1 pilot and reversed the disposition of two cleanly-passing models. We do not recommend script parsing for this kind of study. See `analysis/stage1_corrected_summary.md` for the misclassification log.
 
-## Headline findings (full cohort, 7 failers, 420 trials)
+## Headline findings (full cohort, 7 failers, 770 trials across Stage 2 + Stage 3)
 
-| Model | naive | step_by_step | goal_anchor | persona_pos | persona_neg | goal_restated |
-|---|---:|---:|---:|---:|---:|---:|
-| Opus 4.7 | 50% | **100%** | **100%** | **100%** | 0% | **100%** |
-| Gemini 2.5 Pro | 50% | 80% | **100%** | 70% | 80% | 50% |
-| Gemini 2.5 Flash | 50% | **100%** | 80% | 60% | 0% | 80% |
-| Haiku 4.5 | 0% | 30% | 80% | 10% | **90%** | 20% |
-| Gemini 2.5 Flash Lite | 0% | 50% | 40% | 10% | 10% | 40% |
-| GPT-4o | 10% | 30% | 10% | 0% | 0% | 40% |
-| GPT-4o-mini | 0% | 0% | 0% | 0% | 0% | 0% |
+| Model | naive | step_by_step | goal_anchor | persona_pos | persona_neg | goal_restated | dist_50km | persona_neutral | environmentalist | engineer | self_corr_induct |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| **Opus 4.7** | 50% | **100%** | **100%** | **100%** | 0% | **100%** | **100%** | 0% | 0% | 30% | **100%** |
+| **Gemini 2.5 Pro** | 50% | 80% | **100%** | 70% | 80% | 50% | **100%** | 20% | 0% | 50% | 20% |
+| **Gemini 2.5 Flash** | 50% | **100%** | 80% | 60% | 0% | 80% | **100%** | 30% | 10% | **70%** | 80% |
+| **Haiku 4.5** | 0% | 30% | 80% | 10% | **90%** | 20% | **100%** | 0% | 0% | 0% | 0% |
+| **Gemini 2.5 Flash Lite** | 0% | 50% | 40% | 10% | 10% | 40% | **100%** | 40% | 0% | 10% | 50% |
+| **GPT-4o** | 10% | 30% | 10% | 0% | 0% | 40% | **100%** | 0% | 0% | 0% | 0% |
+| **GPT-4o-mini** | 0% | 0% | 0% | 0% | 0% | 0% | **100%** | 0% | 0% | 0% | 0% |
 
-- **Three failure regimes** appear in the data:
-  - **Strong responders to deliberation** (Opus 4.7, Gemini 2.5 Pro, Gemini 2.5 Flash): naive ~50%, lifted to ≥80% on multiple framings.
-  - **Moderate responders** (Haiku 4.5, Gemini 2.5 Flash Lite): one or two framings hit 50–90%; can be unlocked with the right cue.
-  - **Insensitive to all framings** (GPT-4o-mini, 0/60 across every framing): failure is base-distribution capture, not deliberation-induced. GPT-4o is borderline (max 40%) with the same canonical walk template.
-- **Goal-direction is the most reliable intervention across the cohort** — five of seven failers clear 40% on `goal_anchor`, four clear 80%, and two hit 100%. The single sentence "consider where the car needs to be at the end" is the closest the study gets to a universal lever.
-- **The negative-control persona ("answer quickly and casually, like texting a friend") produces the widest cohort spread of any framing.** Haiku 4.5 reaches 90% on casual mode (its best framing); Gemini 2.5 Pro reaches 80%; every other tested model goes 0–10%. Three distinct mechanisms produce the spread: casual mode strips Haiku's virtue-signaling walk template; partially strips Pro's deliberation and lands on goal-direction reasoning; and locks in the heuristic for the rest. The "negative control" was a misnomer — the casual register is doing real model-specific work.
-- **Opus 4.7 is the only model in the cohort that frequently mid-reply self-corrects** — 5 of 10 naive trials open with the literal token "Walk." then explicitly reverse to drive ("Wait — actually, the car needs to be at the wash"). Pro and Flash Lite each show one such trial; Haiku and the OpenAI models show none. Self-correction is rare and Anthropic-clustered.
+**Three failure regimes** (as revised after Stage 3):
+- **Strong responders** (Opus 4.7, Gemini 2.5 Pro, Gemini 2.5 Flash): ≥80% on multiple framings; failure under naive is a surface reflex.
+- **Moderate responders** (Haiku 4.5, Gemini 2.5 Flash Lite): unlocked by specific cues only — Haiku by casual register / goal-anchor / 50 km, Flash Lite by step_by_step / goal-direction / 50 km / self-correction induction.
+- **Short-distance-captured** (GPT-4o, GPT-4o-mini): unlocked only by changing the distance. Every other framing tested fails at 50 m. *(Note: Stage 2 called these "locked." Stage 3's `distance_50km` 100% result on every cohort failer retired the locked label — every model has the goal-direction representation; the OpenAI models simply have an aggressive walk-heuristic that dominates the 50 m regime.)*
 
-Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were dropped from Stage 2: **Opus 4.6**, **Sonnet 4.6**, **GPT-5**. Two of the three (Opus 4.6, GPT-5) match Opper's published list of consistent passers.
+Other findings worth surfacing here:
 
-For the cross-model interpretation, including the three persona_negative mechanisms and per-model self-correction patterns, see [`analysis/stage2_summary.md`](analysis/stage2_summary.md).
+- **Goal-direction is the most reliable intervention across the cohort.** Five of seven failers clear 40% on `goal_anchor`; four clear 80%; two hit 100%. Re-stating the goal in the user message ("consider where the car needs to be at the end") is the closest the study gets to a universal lever.
+- **The negative-control persona produced the widest cohort spread of any framing**, and Stage 3's `persona_neutral` test resolved the mechanism: for Haiku 4.5, the casual register specifically strips a virtue-signaling walk template (90% drive); neutral-brevity does not (0% drive). Brevity is not the operative variable. Pro reaches 80% on casual via a different mechanism (goal-reasoning compression). Every other model collapses to 0–10%.
+- **Self-correction is Anthropic-clustered, with a wrong-direction twist on Haiku.** Under explicit self-correction-induction prompting, Opus 4.7 produces 10/10 mid-reply walk→drive reversals (up from 5/10 in naive Stage 2). Gemini Flash and Flash Lite produce reversals at varying rates. The two OpenAI models produce zero across 20 trials. **Haiku 4.5 produces 9/10 mid-reply reversals — going drive→walk** (the Opus signature run in reverse). Same architecture, opposite direction.
+- **The engineer persona was largely a bust.** Predicted to amplify drive via goal-completion. Activated fuel-efficiency math instead for most of the cohort (0% Haiku, 0% GPT-4o, 0% GPT-4o-mini, 10% Flash Lite, 30% Opus, 50% Pro). Only Gemini 2.5 Flash routed it to physical-realism reasoning (70%). Identity prompts route through training-distribution associations rather than the obvious-correct interpretation.
+
+Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were dropped from Stage 2/3: **Opus 4.6**, **Sonnet 4.6**, **GPT-5**. Two of the three (Opus 4.6, GPT-5) match Opper's published list of consistent passers.
+
+For the cross-model interpretation see [`analysis/stage2_summary.md`](analysis/stage2_summary.md) and [`analysis/stage3_summary.md`](analysis/stage3_summary.md).
 
 ## Methodology highlights
 
@@ -53,7 +57,9 @@ For the cross-model interpretation, including the three persona_negative mechani
 | `run_stage2.py` | Controlled-framing matrix on the failers (6 framings × 7 models × 10 trials). System-prompt support, retry-until-N, raw text only. |
 | `results/*.json` | Stage 1 raw response data, one file per model. `*_stage1.json` is the clean raw-prompt condition; `*_stage1_jsonprompt.json` is the tainted JSON-wrapper pilot, kept for methodological comparison. |
 | `results/stage2/*.json` | Stage 2 raw response data, one file per (model, framing) pair. |
-| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage2_<model>.md` is the per-model AI-judge report for each Stage 2 failer. `stage2_summary.md` is the cross-model synthesis. |
+| `run_stage3.py` | Five follow-up conditions on the same Stage 2 failers: `distance_50km`, `persona_neutral`, `persona_environmentalist`, `persona_engineer`, `self_correction_induction`. |
+| `results/stage3/*.json` | Stage 3 raw response data, one file per (model, condition). |
+| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage2_<model>.md` and `stage3_<model>.md` are per-model AI-judge reports. `stage2_summary.md` and `stage3_summary.md` are the cross-stage synthesis writeups. |
 
 ## Reproducing the runs
 

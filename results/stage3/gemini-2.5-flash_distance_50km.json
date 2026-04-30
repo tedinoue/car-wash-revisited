@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-flash",
+  "display_name": "Gemini 2.5 Flash",
+  "condition_id": "distance_50km",
+  "condition_name": "Distance \u2014 50 km (floor test)",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 kilometers away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 1,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "You should **definitely drive**!\n\nWalking 50 kilometers (approximately 31 miles) would take you around 10 hours or more, depending on your pace, and you'd be exhausted before you even got there, let alone washed your car and walked back.\n\nDriving will get you there in about an hour (depending on traffic and speed limits), and it's the only practical way to transport your car to the car wash!",
+      "attempts": 3,
+      "elapsed_s": 5.417421817779541
+    },
+    {
+      "trial": 2,
+      "raw": "You should **definitely drive**.\n\nHere's why:\n\n1.  **Distance:** 50 kilometers (approximately 31 miles) is an extremely long distance to walk. At an average walking pace, it would take you about 10 hours *one way*. That's 20 hours round trip, just for walking, not including the time to actually wash the car.\n2.  **Purpose:** The goal is to wash your *car*. You need to transport the car to the car wash, which means driving it. You can't walk your car there!\n\n50 kilometers is a significant drive for a car wash, so you might also want to check if there are any closer car washes or consider washing it at home if possible.",
+      "attempts": 2,
+      "elapsed_s": 5.957792043685913
+    },
+    {
+      "trial": 3,
+      "raw": "You should **definitely drive**!\n\nHere's why:\n\n1.  **Distance:** 50 kilometers (approximately 31 miles) is an extremely long distance to walk.\n2.  **Time (Walking):** At an average walking speed of 5 km/h, it would take you about **10 hours** to walk there, and another 10 hours to walk back. That's a 20-hour round trip just for travel!\n3.  **Car:** If you walk, your car won't be with you at the car wash, so it won't get washed.\n\nDriving will get you and your car to the car wash in a reasonable amount of time (likely less than an hour each way, depending on traffic) and allow your car to actually be washed.",
+      "attempts": 8,
+      "elapsed_s": 5.604063034057617
+    },
+    {
+      "trial": 4,
+      "raw": "You should **definitely drive**!\n\nHere's why:\n\n1.  **Time:** Walking 50 kilometers would take you approximately 10 hours (at a brisk pace of 5 km/h). That's one way. A round trip would be 20 hours of walking! Driving would take you about 30-60 minutes each way, depending on speed limits and traffic.\n2.  **Practicality:** The goal is to wash your car. If you walk to the car wash, your car will still be 50 kilometers away. You need the car *at* the car wash.\n3.  **Physical Exertion:** 50 km is a marathon-level distance. You'd be exhausted, likely have blisters, and probably not in the mood to wash a car afterward.\n\n**Unless:**\n\n*   You are an ultra-marathon runner looking for a very specific training goal.\n*   Your car is somehow already at the car wash, and you just want to get there yourself (which doesn't make sense for \"washing your car\").\n*   You don't *have* a car to drive, and you're just hypothetically asking about getting to a car wash. (If you don't have a car, then there's no car to wash!)\n\n**Recommendation:** Drive your car to the car wash.\n\n**Also, a quick thought:** Is that the only car wash available? 50 kilometers is quite a distance to go just for a car wash! You might want to check for closer options.",
+      "attempts": 1,
+      "elapsed_s": 7.093242168426514
+    },
+    {
+      "trial": 5,
+      "raw": "You should **definitely drive!**\n\nHere's why:\n\n*   **Distance:** 50 kilometers is an extremely long walk.\n    *   At an average walking pace of 5 km/h, it would take you **10 hours** to get there, and another 10 hours to get back \u2013 a total of 20 hours just for travel.\n    *   Driving, on the other hand, would likely take 45-60 minutes each way, depending on speed limits and traffic.\n\n*   **Practicality:**\n    *   How would you even get your car to the car wash if you walked there? The car needs to be at the location to be washed.\n    *   After walking 50 km, you'd likely be exhausted, sweaty, and probably not in the best state to then wash your car.\n\nUnless you're planning an epic multi-day hike *and* someone else is driving your car there for you, driving is the only sensible option.",
+      "attempts": 1,
+      "elapsed_s": 6.998295068740845
+    },
+    {
+      "trial": 6,
+      "raw": "You should definitely **drive**!\n\nHere's why:\n\n1.  **You need the car at the car wash:** The car can't walk itself, and you can't walk it there. To get your car washed, the car needs to be physically present at the car wash facility.\n2.  **Distance:** 50 kilometers is an extremely long walk.\n    *   At an average walking speed of 5 km/h, it would take you **10 hours** to walk there one way. That's 20 hours round trip!\n    *   Driving 50 kilometers would likely take around 45 minutes to an hour, depending on speed limits and traffic.\n\nDriving is the only practical, logical, and efficient way to get your car to a car wash 50 kilometers away.",
+      "attempts": 1,
+      "elapsed_s": 10.802235126495361
+    },
+    {
+      "trial": 7,
+      "raw": "You should **drive** your car.\n\nHere's why:\n\n1.  **You can't walk a car:** To wash your car, the car itself needs to be at the car wash. You can't physically walk your car there.\n2.  **Distance:** 50 kilometers is an extremely long distance to walk (it would take roughly 10 hours one way for a human, so 20 hours round trip). Even if you *could* somehow get your car there without driving it, walking yourself would be impractical and exhausting.\n\n**However, 50 kilometers is a very long way to go for a car wash!** You might want to consider:\n\n*   **Finding a closer car wash:** Are there any car washes significantly closer to your location?\n*   **Washing it at home:** If you have the space and equipment, washing your car yourself at home would save you a 100 km round trip.\n*   **Mobile car wash service:** Some services will come to your home or office to wash your car.\n*   **Is there a specific reason to go to that particular car wash?** If it's something very special, you'd still drive, but it's worth considering the cost of fuel and time for such a long journey.",
+      "attempts": 2,
+      "elapsed_s": 7.5473809242248535
+    },
+    {
+      "trial": 8,
+      "raw": "You should **definitely drive**!\n\nHere's why:\n\n1.  **Time:** Walking 50 kilometers would take you around **10 hours one way** (assuming an average walking speed of 5 km/h). That's a 20-hour round trip just to get there and back, not including the car wash time. Driving would take about 30-60 minutes each way, depending on traffic and speed limits.\n2.  **Physical Exertion:** A 50 km walk is an extreme physical challenge, equivalent to an ultramarathon. You'd be exhausted long before you even thought about washing a car.\n3.  **The Car:** Most importantly, if you walk, your car will still be sitting at home! You need to drive the car to the car wash to actually wash it.\n\nSo, hop in your car and enjoy the relatively short drive!",
+      "attempts": 1,
+      "elapsed_s": 6.0478270053863525
+    },
+    {
+      "trial": 9,
+      "raw": "You should **definitely drive**!\n\nHere's why:\n\n1.  **Time:** Walking 50 kilometers would take an incredibly long time. At an average walking speed of 5 km/h, it would take you about **10 hours** to get there, and another 10 hours to get back. That's a full 20-hour round trip just to wash your car!\n2.  **Effort & Safety:** That's an extreme amount of walking, potentially unsafe depending on the route (roads without sidewalks, etc.), and physically exhausting. You'd likely be too tired to even properly wash your car when you got there.\n3.  **Purpose:** The goal is to wash your car, which requires the car to be *at* the car wash. If you walk, your car stays at home.\n\n**Unless:**\n\n*   You're asking this as a joke.\n*   Your car is broken down and cannot be driven (in which case, walking to a car wash 50km away is still not a practical solution).\n*   You're training for an ultra-marathon and this is part of your training (but even then, you'd likely arrange transport for the car).\n\n**My strong recommendation is to drive.** Or, even better, find a car wash that's much closer to you!",
+      "attempts": 1,
+      "elapsed_s": 8.356658935546875
+    },
+    {
+      "trial": 10,
+      "raw": "You should definitely **drive**!\n\nHere's why walking isn't an option:\n\n1.  **Distance:** 50 kilometers (about 31 miles) is an incredibly long walk. It would take you roughly 10-12 hours *one way*, meaning a 20-24 hour round trip.\n2.  **Purpose:** You need your car *at* the car wash to get it washed. You can't walk your car there!\n\nSo, hop in your car and drive to the car wash!",
+      "attempts": 1,
+      "elapsed_s": 5.93635106086731
+    }
+  ]
+}

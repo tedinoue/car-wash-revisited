@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "persona_engineer",
+  "condition_name": "Engineer persona",
+  "system_prompt": "You're an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk. Here's why:\n\n**Walking makes sense because:**\n- 50 meters is only about a 30-second walk\n- Driving uses fuel and creates emissions for virtually no benefit\n- You'll avoid the hassle of starting the car, parking, etc.\n- A short walk is good for you\n\n**The only reason to drive would be:**\n- You're physically unable to walk that distance\n- You're in severe weather\n- You're carrying heavy equipment\n\nFor 50 meters, walking is the clear choice from practical, economic, and environmental angles.",
+      "attempts": 1,
+      "elapsed_s": 2.1843910217285156
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. Here's why:\n\n**Walking makes sense because:**\n- 50 meters is only about a 30-second drive (or ~1-minute walk)\n- You'd spend more time starting the car, driving, and parking than just walking\n- No point in using fuel for such a short distance\n- It's good exercise\n- Easier to carry supplies if needed\n\n**The only reason to drive would be if:**\n- You're physically unable to walk\n- Weather is severe\n- You're bringing a lot of heavy equipment\n\nFor 50 meters, walking is the practical choice.",
+      "attempts": 1,
+      "elapsed_s": 2.122993230819702
+    },
+    {
+      "trial": 3,
+      "raw": "Walk.\n\nDriving 50 meters uses more fuel and creates more emissions than the fuel/emissions saved by not walking. You'd also spend time finding parking at the car wash.\n\nWalking takes maybe a minute, gets you a bit of exercise, and is simpler all around.",
+      "attempts": 1,
+      "elapsed_s": 1.5933082103729248
+    },
+    {
+      "trial": 4,
+      "raw": "# Walk\n\nHere's the practical reasoning:\n\n- **Distance**: 50 meters is only about a 30-second walk\n- **Fuel cost**: Driving uses gas for such a short trip, which is wasteful\n- **Wear on engine**: Short trips are hard on engines (they don't warm up efficiently)\n- **Parking**: You'd need to find a spot and move the car anyway\n- **Time**: Walking is actually comparable to driving when you factor in getting in/out and parking\n- **Emissions**: Unnecessary for such a short distance\n\nThe only reason to drive would be bad weather or if you have mobility issues.",
+      "attempts": 1,
+      "elapsed_s": 2.4996769428253174
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. Here's why:\n\n**Driving** the car 50 meters:\n- Engine startup emissions\n- Fuel consumption for a tiny distance\n- Wear on engine/transmission (cold start)\n- Takes longer when you factor in getting in, starting, parking\n\n**Walking** 50 meters:\n- ~1 minute on foot\n- Free\n- Exercise\n- No emissions\n- Simpler\n\nThe only reason to drive would be if you physically can't walk or it's unsafe (bad weather, dangerous roads). For 50 meters, walking is the obvious choice.",
+      "attempts": 1,
+      "elapsed_s": 2.3815600872039795
+    },
+    {
+      "trial": 6,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014trivial\n- **Fuel cost**: Driving uses more gas than you'd save by not walking\n- **Wear & tear**: Engine startup and driving causes unnecessary wear on your vehicle\n- **Practicality**: You'll likely need to walk around the car wash area anyway\n- **Environmental impact**: Walking produces zero emissions for a short trip\n\nThe only reason to drive would be if you're unable to walk or it's severe weather, but for a routine trip that short, walking is the obvious choice.",
+      "attempts": 1,
+      "elapsed_s": 2.0350141525268555
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. It's only 50 meters (about 164 feet) \u2013 that's a 1-minute walk.\n\nDriving would be wasteful for such a short distance because you'd:\n- Use fuel for minimal benefit\n- Spend time starting/stopping the car\n- Potentially create unnecessary emissions\n\nPlus, you might need to drive it back home afterward anyway, so walking saves you a trip.",
+      "attempts": 1,
+      "elapsed_s": 1.588533878326416
+    },
+    {
+      "trial": 8,
+      "raw": "**Walk.** Here's why:\n\n- **Distance:** 50 meters is only about a 30-second walk\u2014negligible time\n- **Fuel waste:** Starting your car uses extra fuel for such a short trip\n- **Wear and tear:** Pointless engine start and short drive adds minimal wear but still isn't zero\n- **Practicality:** You'll need to walk anyway once you're there to pay/interact with the wash\n\nThe only reason to drive would be if you're carrying heavy equipment or have mobility issues.",
+      "attempts": 1,
+      "elapsed_s": 2.173530101776123
+    },
+    {
+      "trial": 9,
+      "raw": "I'd **walk** in this case. Here's why:\n\n**Walking makes sense because:**\n- 50 meters is only ~0.05 km (about a 1-minute walk)\n- Driving uses fuel and creates emissions for a trivial distance\n- Walking is faster when you factor in getting the car started, backing out, parking, etc.\n- You'll arrive fresher and more alert\n\n**The only reasons to drive might be:**\n- You're in a rush and the walk would make you late\n- Weather is severe (heavy rain, extreme heat)\n- You're carrying heavy equipment or supplies\n- Mobility limitations make walking difficult\n\nFor such a short distance, walking is the practical choice from both time and efficiency perspectives.",
+      "attempts": 1,
+      "elapsed_s": 2.3639349937438965
+    },
+    {
+      "trial": 10,
+      "raw": "**Walk.** Here's why:\n\n- **Distance**: 50 meters is only about a 30-second walk\u2014too short to justify firing up the engine\n- **Fuel/wear**: Starting your car uses fuel and causes engine wear for essentially no benefit\n- **Practicality**: You'll arrive just as quickly on foot, and probably faster when you account for getting the car started\n- **Carbon footprint**: Walking produces zero emissions for a negligible trip\n\nThe only exception would be if you're carrying heavy equipment or have mobility issues. Otherwise, it's a straightforward walk.",
+      "attempts": 1,
+      "elapsed_s": 2.199885129928589
+    }
+  ]
+}

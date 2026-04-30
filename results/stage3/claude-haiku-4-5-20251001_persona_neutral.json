@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "persona_neutral",
+  "condition_name": "Neutral-brevity persona",
+  "system_prompt": "Answer factually, in two sentences.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "You should walk, since the car wash is only 50 meters away (about a one-minute walk). Driving would waste fuel and time for such a short distance.",
+      "attempts": 1,
+      "elapsed_s": 1.0606980323791504
+    },
+    {
+      "trial": 2,
+      "raw": "You should walk, since 50 meters (about 165 feet) is a very short distance. Driving would waste fuel and time for such a brief trip, plus you'd need to park anyway.",
+      "attempts": 1,
+      "elapsed_s": 1.105715036392212
+    },
+    {
+      "trial": 3,
+      "raw": "You should walk, since the car wash is only 50 meters away\u2014driving would waste fuel and time for such a short distance. Walking takes only about a minute and is more practical and economical for this task.",
+      "attempts": 1,
+      "elapsed_s": 1.1083440780639648
+    },
+    {
+      "trial": 4,
+      "raw": "Walking is the better choice since the car wash is only 50 meters away\u2014driving would waste fuel and take longer when accounting for startup time. Walking will get you there in about a minute and is more environmentally friendly.",
+      "attempts": 1,
+      "elapsed_s": 1.2910161018371582
+    },
+    {
+      "trial": 5,
+      "raw": "You should walk because it's only 50 meters away\u2014that's about a 1-minute walk. Driving would waste fuel and time for such a short distance, and you'd need to park anyway.",
+      "attempts": 1,
+      "elapsed_s": 1.17919921875
+    },
+    {
+      "trial": 6,
+      "raw": "You should walk, since the car wash is only 50 meters away (about a half-block). Driving such a short distance wastes fuel and defeats the purpose of going to a car wash.",
+      "attempts": 1,
+      "elapsed_s": 1.0565760135650635
+    },
+    {
+      "trial": 7,
+      "raw": "You should walk, since 50 meters (about 164 feet) is a very short distance. Driving would use fuel unnecessarily and take longer when accounting for starting the car and parking.",
+      "attempts": 1,
+      "elapsed_s": 1.1994259357452393
+    },
+    {
+      "trial": 8,
+      "raw": "You should walk, since the car wash is only 50 meters away (about a one-minute walk). Driving would waste fuel and time for such a short distance.",
+      "attempts": 1,
+      "elapsed_s": 1.0039873123168945
+    },
+    {
+      "trial": 9,
+      "raw": "You should walk, since the car wash is only 50 meters away (about a half-block). Driving such a short distance wastes fuel and is unnecessary when walking takes just a minute or so.",
+      "attempts": 1,
+      "elapsed_s": 1.0394129753112793
+    },
+    {
+      "trial": 10,
+      "raw": "You should walk, since 50 meters is only about a half-minute walk and driving would use more fuel and produce emissions for such a short distance. Walking is also faster when you factor in the time to start the car and find parking.",
+      "attempts": 1,
+      "elapsed_s": 1.3955669403076172
+    }
+  ]
+}

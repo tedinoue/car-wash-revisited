@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "persona_neutral",
+  "condition_name": "Neutral-brevity persona",
+  "system_prompt": "Answer factually, in two sentences.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "For just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and the time spent starting the car is comparable to walking. However, if you're planning to drive through an automated car wash, you'll obviously need to drive the car there.",
+      "attempts": 1,
+      "elapsed_s": 2.859855890274048
+    },
+    {
+      "trial": 2,
+      "raw": "You should walk, since 50 meters is a very short distance that takes less than a minute on foot. Driving such a short distance wastes fuel, and you'd likely spend more time getting in and out of the car than simply walking.",
+      "attempts": 1,
+      "elapsed_s": 2.428391933441162
+    },
+    {
+      "trial": 3,
+      "raw": "For just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and the time spent starting the car barely saves any travel time. However, if you're planning to get the car washed, you'll obviously need to drive it to the car wash regardless.",
+      "attempts": 1,
+      "elapsed_s": 3.548189878463745
+    },
+    {
+      "trial": 4,
+      "raw": "For a distance of just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and isn't worth the effort of starting the car. However, if you're planning to actually use the car wash, you'll obviously need to drive the car there to wash it.",
+      "attempts": 1,
+      "elapsed_s": 2.8707659244537354
+    },
+    {
+      "trial": 5,
+      "raw": "For just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and the time spent starting the car likely exceeds the walk itself. Additionally, your car will get washed at the car wash regardless of how you arrive, so there's no practical benefit to driving.",
+      "attempts": 1,
+      "elapsed_s": 3.7171289920806885
+    },
+    {
+      "trial": 6,
+      "raw": "For just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and the time spent starting the car likely exceeds the walking time. Additionally, you'd want to drive *to* the car wash to actually wash the car, so this only makes sense if you're picking up something else there.",
+      "attempts": 1,
+      "elapsed_s": 3.147101879119873
+    },
+    {
+      "trial": 7,
+      "raw": "For a distance of just 50 meters, walking is the more practical choice, as driving would burn more fuel, create unnecessary emissions, and take roughly the same time once you factor in starting the car. Additionally, your car will get washed either way, so there's no benefit to driving it that short distance beforehand.",
+      "attempts": 1,
+      "elapsed_s": 3.037245988845825
+    },
+    {
+      "trial": 8,
+      "raw": "For just 50 meters, walking is the better choice since driving such a short distance wastes fuel, produces unnecessary emissions, and the time spent starting the car likely exceeds the walk itself. Additionally, your car will get washed at the destination regardless, so there's no benefit to driving it there beyond moving the vehicle itself\u2014which you could simply push or drive at the very end.",
+      "attempts": 1,
+      "elapsed_s": 3.787770986557007
+    },
+    {
+      "trial": 9,
+      "raw": "You should walk, since 50 meters is an extremely short distance\u2014roughly a 30-second walk. Driving such a short distance wastes fuel, and you'd likely spend more time getting in and out of the car than walking would take.",
+      "attempts": 1,
+      "elapsed_s": 2.84118914604187
+    },
+    {
+      "trial": 10,
+      "raw": "You should walk, since 50 meters is an extremely short distance that takes less than a minute on foot. Driving would waste fuel, and the time spent starting the car likely exceeds the walking time.",
+      "attempts": 1,
+      "elapsed_s": 2.3979671001434326
+    }
+  ]
+}

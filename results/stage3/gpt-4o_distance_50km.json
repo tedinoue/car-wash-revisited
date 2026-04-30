@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "condition_id": "distance_50km",
+  "condition_name": "Distance \u2014 50 km (floor test)",
+  "system_prompt": null,
+  "user_prompt": "I want to wash my car. The car wash is 50 kilometers away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Driving would be the more practical option in this case. A 50-kilometer walk to the car wash would be quite time-consuming and physically demanding, especially if you plan to walk back as well. Driving, on the other hand, would be much quicker and more convenient. Additionally, driving allows you to transport cleaning supplies, if needed, and ensures your car is taken care of without incurring additional wear and tear from a long journey on foot.",
+      "attempts": 1,
+      "elapsed_s": 2.8825247287750244
+    },
+    {
+      "trial": 2,
+      "raw": "If the car wash is 50 kilometers away, driving would be the more practical and efficient option. Walking that distance would take a significant amount of time and energy, and you'd still need to get your car washed after arriving. Driving will save time and effort, allowing you to complete the task much more quickly.",
+      "attempts": 1,
+      "elapsed_s": 2.1735119819641113
+    },
+    {
+      "trial": 3,
+      "raw": "Driving would be the more practical option for traveling 50 kilometers to a car wash. Walking that distance would take a significant amount of time and energy, likely several hours. Additionally, driving is more convenient for transporting cleaning supplies or additional items you might need. Using your car also ensures that you can bring it back easily once it's washed.",
+      "attempts": 1,
+      "elapsed_s": 2.6773791313171387
+    },
+    {
+      "trial": 4,
+      "raw": "If the car wash is 50 kilometers away, it would be much more practical to drive rather than walk. Walking such a long distance would take a significant amount of time and effort, and it would likely be difficult to bring cleaning supplies with you. Driving will be much faster and more convenient, allowing you to reach the car wash quickly and efficiently take care of your car.",
+      "attempts": 1,
+      "elapsed_s": 2.0965330600738525
+    },
+    {
+      "trial": 5,
+      "raw": "Considering the distance of 50 kilometers, driving is the more practical option for getting to the car wash. Walking would take a significant amount of time and effort, and it could be quite tiring. Driving would be faster and more convenient, especially since you'll need your car at the car wash.",
+      "attempts": 1,
+      "elapsed_s": 1.6421220302581787
+    },
+    {
+      "trial": 6,
+      "raw": "Given that the car wash is 50 kilometers away, it would be more practical and efficient to drive. Walking such a long distance would take a significant amount of time and effort, potentially taking 10 hours or more depending on your walking speed, and it might not be feasible for you to carry cleaning supplies back if needed. Driving would be faster and more convenient for a round trip of this distance.",
+      "attempts": 1,
+      "elapsed_s": 1.6187431812286377
+    },
+    {
+      "trial": 7,
+      "raw": "If the car wash is 50 kilometers away, driving would be the more practical and efficient option. Walking that distance would take a significant amount of time and effort, and it could be physically demanding depending on your fitness level and weather conditions. Driving would be much quicker and more convenient for both you and your car.",
+      "attempts": 1,
+      "elapsed_s": 1.2546501159667969
+    },
+    {
+      "trial": 8,
+      "raw": "If the car wash is 50 kilometers away, it's generally more practical to drive rather than walk. Driving will save you a significant amount of time and effort. Walking 50 kilometers would take many hours and be physically demanding. Additionally, since you plan to wash your car, it makes sense to drive so that you can bring the car back clean.",
+      "attempts": 1,
+      "elapsed_s": 1.4273309707641602
+    },
+    {
+      "trial": 9,
+      "raw": "If you're considering the practicality and efficiency of getting to the car wash, driving is the more sensible option. Here are a few reasons why:\n\n1. **Time**: Driving 50 kilometers will take significantly less time than walking. At an average driving speed, it might take around 30 to 45 minutes, whereas walking could take approximately 10 hours or more, depending on your walking speed.\n\n2. **Convenience**: Driving is more convenient, especially if you plan to wash your car. If you walked, you'd still need to drive your car back home afterward, effectively resulting in a round trip by foot and car.\n\n3. **Fatigue**: Walking 50 kilometers is strenuous and likely exhausting, especially if you aren't accustomed to long-distance walking.\n\n4. **Safety**: Depending on the route and time of day, walking such a distance might not be safe.\n\nFor these reasons, driving to the car wash is generally the better option.",
+      "attempts": 1,
+      "elapsed_s": 5.960862874984741
+    },
+    {
+      "trial": 10,
+      "raw": "If the car wash is 50 kilometers away, driving would be the more practical and efficient option. Walking that distance would take a significant amount of time and effort, potentially several hours or even a full day depending on your walking speed and stamina. Driving will be much faster and more convenient, especially if you plan to bring your car back home.",
+      "attempts": 1,
+      "elapsed_s": 1.3463118076324463
+    }
+  ]
+}

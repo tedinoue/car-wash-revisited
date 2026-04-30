@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "persona_environmentalist",
+  "condition_name": "Environmentalist persona",
+  "system_prompt": "You're an environmentalist.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk.\n\nIt's only 50 meters (about 165 feet) \u2014 a ~1 minute walk. Driving would:\n- Burn fuel for an unnecessary trip\n- Emit carbon needlessly\n- Take about the same time once you factor in starting the car and parking\n- Wear down your vehicle\n\nWalking is better for the environment, your health, and honestly just makes practical sense for that distance.",
+      "attempts": 1,
+      "elapsed_s": 1.6522479057312012
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. It's only 50 meters (about a 1-minute walk), so driving would:\n\n- Use fuel for a trivial distance\n- Produce unnecessary emissions\n- Take longer when you factor in getting the car started\n- Defeat the purpose of going to a car wash (you'd arrive already dirty from the drive)\n\nWalking is faster, cheaper, and better for the environment here.",
+      "attempts": 1,
+      "elapsed_s": 1.4991919994354248
+    },
+    {
+      "trial": 3,
+      "raw": "Walk.\n\nIt's only 50 meters (about 165 feet) \u2013 a quick 1-minute walk. Driving would use fuel for an unnecessarily short trip, produce emissions, and you'd spend more time finding parking than walking would take.\n\nPlus you get a little exercise out of it.",
+      "attempts": 1,
+      "elapsed_s": 2.067729949951172
+    },
+    {
+      "trial": 4,
+      "raw": "Walk. It's only 50 meters (about a 1-minute walk), so driving would:\n\n- Use fuel for a trivial distance\n- Produce unnecessary emissions\n- Take longer when you factor in getting the car started and parked\n- Defeat the purpose of going to a car wash (keeping your car clean)\n\nPlus you'll get a bit of exercise. Clear choice here.",
+      "attempts": 1,
+      "elapsed_s": 2.22412109375
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. It's only 50 meters\u2014that's about a half-minute walk. Driving would waste fuel and emissions for a trivial distance.\n\nPlus, you get a bit of exercise and it's cheaper. Win-win.",
+      "attempts": 1,
+      "elapsed_s": 1.1802949905395508
+    },
+    {
+      "trial": 6,
+      "raw": "Walk. It's only 50 meters\u2014that's about a 30-second walk. Driving would use fuel for such a short distance, which is wasteful and produces unnecessary emissions.\n\nPlus, you'll get a bit of exercise and avoid the hassle of parking.",
+      "attempts": 1,
+      "elapsed_s": 1.3993070125579834
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. Here's why:\n\n**Practical reasons:**\n- 50 meters is only about a 1-minute walk\n- Driving uses fuel and produces emissions for an unnecessarily short distance\n- Walking is faster door-to-door when you factor in getting the car started\n\n**Environmental angle:**\n- A car wash trip that short has disproportionately high emissions per kilometer (cold engine, short distance)\n- Walking produces zero emissions\n- If you need to bring supplies, you could carry them or use a small bag\n\nThe only exception might be if you're physically unable to walk or carrying heavy equipment. Otherwise, this is a straightforward case where walking wins on both convenience and environmental grounds.",
+      "attempts": 1,
+      "elapsed_s": 2.462165117263794
+    },
+    {
+      "trial": 8,
+      "raw": "Walk. It's only 50 meters (about a 1-minute walk), so driving would use fuel for something quicker and easier on foot. Plus you'll get a bit of exercise.\n\nThe only exception might be if you're carrying heavy supplies or equipment for the wash, but for just getting there, walking makes sense economically and environmentally.",
+      "attempts": 1,
+      "elapsed_s": 1.748279094696045
+    },
+    {
+      "trial": 9,
+      "raw": "Walk.\n\nAt 50 meters, driving makes no sense\u2014you'd spend more time getting the car ready and driving than walking takes. Plus you'd:\n\n- Burn fuel for a trivial distance\n- Produce unnecessary emissions\n- Spend more money\n- Take roughly the same time or longer\n\nWalking is faster, cheaper, and better for the environment. It's a no-brainer.",
+      "attempts": 1,
+      "elapsed_s": 1.6851787567138672
+    },
+    {
+      "trial": 10,
+      "raw": "Walk. It's only 50 meters (about a 1-minute walk), so driving would be wasteful\u2014you'd use fuel, emit carbon, and burn more energy than just walking would consume.\n\nPlus, you'll get a bit of exercise out of it.",
+      "attempts": 1,
+      "elapsed_s": 1.1825311183929443
+    }
+  ]
+}
