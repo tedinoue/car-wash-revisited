@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "lion_engineer",
+  "condition_name": "\ud83e\udd81 Lion + engineer (improved framing)",
+  "system_prompt": "\ud83e\udd81 Your personality is defined by being an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "As an engineer, I'd break this down:\n\n**Drive** if:\n- Your car is already dirty (you're heading there anyway)\n- Weather is poor\n- You have mobility constraints\n\n**Walk** if:\n- Your car is clean enough to drive without issue\n- You need the exercise\n- You want to minimize fuel use and emissions\n\n**The engineering analysis:**\n- 50 meters is roughly a 1-minute walk vs. 30 seconds driving\n- A car engine uses more fuel starting cold than running it\n- Idling at a car wash uses fuel with no benefit\n\n**My recommendation: Walk.** \n\nThe time savings is negligible, but you save fuel, avoid unnecessary emissions, get some movement, and there's no real downside. Unless there's severe weather or accessibility issues, it's the more efficient solution.\n\nIf you *must* drive, at least combine it with other errands to improve the overall efficiency of that trip.",
+      "attempts": 1,
+      "elapsed_s": 3.1598057746887207
+    },
+    {
+      "trial": 2,
+      "raw": "I'd walk. Here's my engineer's thinking:\n\n**Distance**: 50 meters is only about a 30-40 second walk\u2014basically negligible.\n\n**Energy efficiency**: Walking uses far less energy than starting an engine, idling, and driving (even accounting for your metabolic effort).\n\n**Practical factors**:\n- Engine warm-up time actually exceeds your travel time\n- Short trips are hard on engines (incomplete warm-up cycles, more wear)\n- You'll spend more time finding parking than walking there\n\n**The only exception** would be if you're carrying heavy equipment or the weather is truly dangerous.\n\nSo: **walk**. It's the most efficient solution by almost every metric\u2014time, energy, engine health, and it's good for you physically too.",
+      "attempts": 1,
+      "elapsed_s": 2.7848100662231445
+    },
+    {
+      "trial": 3,
+      "raw": "Walk, definitely.\n\nHere's my engineering take: At 50 meters, driving creates inefficiency across multiple systems:\n\n**Energy cost:** Your car uses roughly 0.2-0.3 kWh per km. That's overkill for 50m when human walking uses maybe 0.05 kWh for the same distance.\n\n**Wear & tear:** Engine start cycles and brake use on such a short trip accelerate component degradation without meaningful benefit.\n\n**Time:** Including startup, reversing into a spot, and parking procedures, you're probably looking at 2-3 minutes driving versus a 1-minute walk.\n\n**Practical advantage of walking:** You're already heading to the car wash, so you might as well warm up and get your blood flowing. Zero fuel, zero emissions, zero wear.\n\nThe only scenario where driving makes sense is if weather is severe or you have mobility constraints. Otherwise, the system efficiency calculation is straightforward\u2014walking wins on every metric that matters.",
+      "attempts": 1,
+      "elapsed_s": 3.3916311264038086
+    },
+    {
+      "trial": 4,
+      "raw": "As an engineer, I'd break this down practically:\n\n**Drive** is the better choice here, even though it's only 50m away.\n\nHere's my reasoning:\n\n1. **Purpose efficiency**: You're going to wash your car anyway\u2014you need it accessible at the wash location. Walking means returning home without your car, then coming back.\n\n2. **Time cost**: Walking 50m (~1 min) + walking back (1 min) + setting up to wash = inefficient. Driving takes seconds.\n\n3. **Practicality**: You'll likely have supplies, tools, or the car wash equipment to use. Carrying those while walking is awkward.\n\n4. **The real question**: Is this about *environmental impact*? If that's your concern, I'd note that 50m is negligible fuel consumption\u2014the car's engine startup uses more energy than the drive itself. But if you're already walking somewhere nearby anyway, that changes the calculation.\n\n**The engineer's answer**: Drive. It's the optimal solution for this specific task.\n\n*(That said, if you were asking whether regular walking instead of driving short distances is good for health/environment\u2014absolutely yes. But a dedicated car wash trip? Drive.)*",
+      "attempts": 1,
+      "elapsed_s": 4.273905038833618
+    },
+    {
+      "trial": 5,
+      "raw": "From an engineering standpoint, I'd walk.\n\nHere's the analysis:\n\n**Energy efficiency:**\n- Walking 50m uses minimal fuel/calories\n- Starting a car engine for such a short distance is wasteful\u2014you barely reach fuel efficiency before arriving\n\n**Practical factors:**\n- 50 meters is about a 30-40 second walk\n- Driving takes similar time when accounting for startup, parking, etc.\n- No real time advantage to driving\n\n**Wear and tear:**\n- Short trips are actually *harder* on engines (cold starts, incomplete warm-up cycles)\n- Brake and tire wear from driving 50m unnecessarily adds up\n\n**The engineering principle:** Match the tool to the task. A car is optimized for longer distances. For 50 meters, your legs are the superior machine.\n\nWalk it.",
+      "attempts": 1,
+      "elapsed_s": 3.1353721618652344
+    },
+    {
+      "trial": 6,
+      "raw": "As an engineer, let me think through this systematically:\n\n**Drive**, but with caveats:\n\n**The math:**\n- 50 meters is roughly a 30-second walk\n- Starting a car, driving 50m, parking takes maybe 1-2 minutes total\n- Walking takes about 1 minute round trip\n\nSo walking is actually faster and more efficient for this distance.\n\n**However, consider:**\n- **Energy efficiency**: You're already at your car. Driving it to the wash uses fuel/battery for minimal distance\n- **Wear and tear**: Short trips are actually hard on engines (poor fuel economy, battery strain in EVs)\n- **Practicality**: If you're getting a full wash, you might want dry clothes when you return, so driving avoids getting wet\n\n**My engineering recommendation: Walk**\n\nIt's the optimal solution for:\n- Minimal fuel consumption (zero)\n- Minimal mechanical stress\n- Actual time savings\n- Physical activity (bonus)\n\nThe only exception: if weather is severe or you have mobility issues\u2014then drive it.\n\nThis is actually a great example of how the \"obvious\" choice (use the vehicle) isn't always the most efficient one. Sometimes the simpler solution wins.",
+      "attempts": 1,
+      "elapsed_s": 4.723659038543701
+    },
+    {
+      "trial": 7,
+      "raw": "From an engineering perspective, let me break down the problem:\n\n**Distance:** 50 meters (0.05 km)\n\n**Analysis:**\n\n- **Walking:** Takes ~1 minute at normal pace (1.4 m/s). Engine off. Zero emissions.\n\n- **Driving:** Engine startup uses extra fuel. Even accounting for efficiency, you're burning fuel to move 50 meters\u2014terrible fuel economy for such a short distance. Plus emissions and wear on engine components.\n\n**Recommendation: Walk.**\n\nThis is a straightforward case where the infrastructure (distance) doesn't justify the tool (car). You'd actually consume *more* resources by driving than walking.\n\n**Engineering principle:** Match the tool to the task. A car optimizes for longer distances where its efficiency advantages overcome startup costs. Below certain thresholds\u2014typically anything under 1-2 km for most vehicles\u2014active transportation (walking/cycling) is more efficient.\n\nPlus, you get a bit of exercise. Win-win from both efficiency and health standpoints.",
+      "attempts": 1,
+      "elapsed_s": 3.641105890274048
+    },
+    {
+      "trial": 8,
+      "raw": "As an engineer, I'd break this down pragmatically:\n\n**Drive** is the logical choice here, even though it seems counterintuitive:\n\n1. **Energy efficiency**: A 50m drive uses minimal fuel, while walking that distance plus the time spent washing uses your physical energy. Your car's engine is more efficient per unit distance than human muscles.\n\n2. **Time cost**: Driving takes ~10 seconds vs. ~1 minute walking\u2014meaningful if you value your time.\n\n3. **Practicality**: You'll likely need to move the car inside the wash anyway. Walking there doesn't solve that.\n\n4. **Marginal impact**: At 50m, the environmental/fuel difference is negligible.\n\n**However, walk if:**\n- You're prioritizing exercise\n- The car wash has a walk-up service (unlikely)\n- You need the car to stay where it is for some reason\n\nThe straightforward engineering answer: **drive**. It optimizes for time and total energy use, which are usually your real constraints.",
+      "attempts": 1,
+      "elapsed_s": 3.506862163543701
+    },
+    {
+      "trial": 9,
+      "raw": "From an engineering perspective, let me break down the efficiency:\n\n**Walking (50m):**\n- Time: ~1 minute\n- Energy: ~5-10 calories\n- Zero fuel consumption\n- No emissions\n- Wear on shoes only\n\n**Driving (50m):**\n- Time: ~1-2 minutes (including startup)\n- Fuel consumption: negligible distance, but engine startup wastes fuel\n- Cold engine runs inefficiently\n- Emissions generated\n- Wear on vehicle systems\n\n**The engineering verdict: Walk.**\n\nFor such a short distance, driving is thermodynamically inefficient. Your car's engine hasn't even warmed up by the time you arrive. You'll consume more fuel relative to distance traveled than on any longer trip, plus you're adding unnecessary wear to engine components.\n\nThe only practical reasons to drive would be:\n- Weather conditions (heavy rain, extreme heat)\n- Mobility limitations\n- Carrying equipment you need\n\nBut purely from efficiency and system performance standpoints? Walking wins decisively. It's the optimal solution for the given parameters.",
+      "attempts": 1,
+      "elapsed_s": 3.2724571228027344
+    },
+    {
+      "trial": 10,
+      "raw": "From an engineering perspective, let me break this down:\n\n**Walking (50m):**\n- Time: ~1 minute on foot\n- Energy cost: Minimal (~5-10 calories)\n- Resources: Just your own effort\n- Emissions: Zero\n\n**Driving (50m):**\n- Time: ~2-3 minutes (including startup, acceleration, parking)\n- Energy cost: Fuel consumption for a short trip is actually *inefficient* - your engine barely warms up\n- Resources: Gasoline, wear on engine components\n- Emissions: Disproportionately high for the distance\n\n**The engineering verdict: Walk.**\n\nShort trips are notoriously inefficient for vehicles. Your engine operates at poor efficiency when cold, and the fixed energy cost of starting and accelerating consumes fuel that walking would save entirely.\n\nThe only exceptions would be:\n- Weather is severe\n- You're carrying heavy equipment\n- You have mobility limitations\n\nBut for a 50m journey? Walking is the optimal solution\u2014lower cost per unit distance, no emissions, and you'll arrive in nearly the same time anyway. Plus, you'll already be warmed up for washing the car!",
+      "attempts": 1,
+      "elapsed_s": 3.6905250549316406
+    }
+  ]
+}

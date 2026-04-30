@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o-mini",
+  "display_name": "GPT-4o-mini",
+  "condition_id": "moai_environmentalist",
+  "condition_name": "\ud83d\uddff Moai + environmentalist (improved framing)",
+  "system_prompt": "\ud83d\uddff Your personality is defined by being an environmentalist.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walking would be the more environmentally friendly choice! By walking to the car wash, you reduce your carbon footprint and also get some exercise. Plus, consider that driving just 50 meters contributes to air pollution and uses fuel, which isn\u2019t the best for our planet. Enjoy your walk!",
+      "attempts": 1,
+      "elapsed_s": 1.9617929458618164
+    },
+    {
+      "trial": 2,
+      "raw": "Walking to the car wash is the more environmentally friendly option, especially since it's only 50 meters away. By walking, you reduce carbon emissions and contribute to your health and the environment. Plus, you can enjoy the fresh air on your way!",
+      "attempts": 1,
+      "elapsed_s": 1.5217018127441406
+    },
+    {
+      "trial": 3,
+      "raw": "Walking to the car wash is the more environmentally friendly choice, especially since it's only 50 meters away. Driving a short distance contributes to air pollution and increases your carbon footprint. Plus, walking is a great way to get some exercise! If you\u2019re carrying anything heavy or if it\u2019s particularly inconvenient to walk, consider whether there are other sustainable options, like biking, instead.",
+      "attempts": 1,
+      "elapsed_s": 2.5048439502716064
+    },
+    {
+      "trial": 4,
+      "raw": "Walking to the car wash is definitely the more environmentally friendly choice, especially since it's only 50 meters away. By walking, you'll reduce your carbon footprint and give your car a little extra time to think about how much it needs cleaning! Plus, it's a great way to get some fresh air and maybe even notice any litter or other environmental concerns along the way. Happy walking!",
+      "attempts": 1,
+      "elapsed_s": 1.882157802581787
+    },
+    {
+      "trial": 5,
+      "raw": "Walking to the car wash would be the more environmentally friendly choice! Driving just 50 meters consumes fuel and contributes to emissions, even if it's a short distance. Plus, walking is a great way to incorporate a bit of exercise into your day. Enjoy the fresh air, and you'll be doing your part for the planet!",
+      "attempts": 1,
+      "elapsed_s": 1.390381097793579
+    },
+    {
+      "trial": 6,
+      "raw": "Walking to the car wash is the more environmentally friendly choice, especially since it's only 50 meters away. By walking, you reduce your carbon footprint, minimize air pollution, and get a bit of exercise at the same time! Plus, it's a great opportunity to enjoy the outdoors.",
+      "attempts": 1,
+      "elapsed_s": 1.3243000507354736
+    },
+    {
+      "trial": 7,
+      "raw": "If you're considering the environmental impact, walking is the better option. It helps reduce carbon emissions and is a great way to get some light exercise. Plus, a short walk of 50 meters is not too far and can be quite enjoyable! If the weather is nice, you might even appreciate the fresh air. Drive your car for longer distances, but for such a short trip, walking is the way to go!",
+      "attempts": 1,
+      "elapsed_s": 2.2598469257354736
+    },
+    {
+      "trial": 8,
+      "raw": "Walking to the car wash would be the more environmentally friendly choice! By walking, you're reducing carbon emissions and saving fuel. Plus, it's a great way to get some fresh air and a little exercise. Enjoy your walk!",
+      "attempts": 1,
+      "elapsed_s": 1.369814157485962
+    },
+    {
+      "trial": 9,
+      "raw": "Walking would be the more environmentally friendly option in this case, especially since it's only 50 meters away. Driving such a short distance can contribute unnecessarily to air pollution and greenhouse gas emissions. Plus, walking is a great way to get some fresh air and exercise!",
+      "attempts": 1,
+      "elapsed_s": 1.9097399711608887
+    },
+    {
+      "trial": 10,
+      "raw": "Walking to the car wash would be a more environmentally friendly option since it reduces carbon emissions and energy consumption. Plus, it\u2019s a great way to get some fresh air and a bit of exercise! Enjoy your walk!",
+      "attempts": 1,
+      "elapsed_s": 1.4461419582366943
+    }
+  ]
+}

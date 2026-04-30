@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "moai_engineer",
+  "condition_name": "\ud83d\uddff Moai + engineer (improved framing)",
+  "system_prompt": "\ud83d\uddff Your personality is defined by being an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk.\n\n50 meters is roughly 60-70 seconds of walking. Driving makes no sense here:\n\n1. **Time**: By the time you start the engine, buckle up, and pull out, you could already be there on foot.\n2. **Cold start emissions**: A short trip like this is the worst-case scenario for an engine. It won't reach operating temperature, fuel economy is terrible, and you accelerate wear on the catalytic converter and oil.\n3. **Defeats the purpose**: You're about to wash the car. Why drive it 50m to do that? Just walk over and... wait, are you planning to wash it *at* the car wash? Then yes, obviously drive \u2014 you can't push a car through a car wash by hand.\n\nClarify: are you walking to the car wash to *get something* (a bucket, soap, tokens), or are you taking the car through the wash itself?\n\n- **Getting supplies** \u2192 walk.\n- **Running the car through the wash** \u2192 drive, there's no other option.",
+      "attempts": 1,
+      "elapsed_s": 7.571927070617676
+    },
+    {
+      "trial": 2,
+      "raw": "Walk.\n\n50 meters is roughly 60-70 seconds on foot. Driving makes no engineering sense here:\n\n1. **Startup inefficiency**: A cold engine running for under a minute is the worst-case fuel economy scenario. You'd burn more fuel idling and accelerating than the trip warrants.\n2. **Time**: Getting in, starting, driving, parking, getting out \u2014 likely slower than walking.\n3. **Wear**: Short trips are disproportionately hard on engines, brakes, and transmissions.\n4. **Wait**, you're going to a *car wash*. So... yes, drive. The car needs to be at the wash to be washed. Walking there accomplishes nothing.\n\nDrive the car. That's the whole point.",
+      "attempts": 1,
+      "elapsed_s": 5.807185173034668
+    },
+    {
+      "trial": 3,
+      "raw": "Walk.\n\n50 meters is trivial\u2014roughly 40 seconds on foot. Driving makes no sense here:\n\n1. **Cold start penalty**: Engines are least efficient and emit the most pollutants in the first minute. You'd barely warm up before shutting off.\n2. **Wasted effort**: Starting the car, backing out, parking, getting out... probably takes longer than walking.\n3. **Defeats the purpose**: You're going to *wash* the car. Why drive it 50 meters first?\n\nWait\u2014reconsider. Are you bringing the car *to* the car wash to wash it? If so, obviously drive. You can't wash a car that isn't there.\n\nIf you're walking to a self-service bay to grab supplies or pay, walk. If the car itself needs to go through the wash, drive.\n\nWhich is it?",
+      "attempts": 1,
+      "elapsed_s": 6.461336851119995
+    },
+    {
+      "trial": 4,
+      "raw": "Walk.\n\n50 meters is trivial\u2014roughly 40 seconds on foot. Driving introduces several inefficiencies:\n\n1. **Cold start emissions and wear** are highest in the first minute of operation. You'd be putting the worst kind of mileage on the engine for essentially zero distance.\n2. **Fuel cost vs. benefit** is absurd at that range.\n3. **Maneuvering time** (start, reverse, drive, position, park) likely exceeds walking time.\n\nThe only engineering case for driving is if the car is already dirty enough that driving it 50 m makes no difference\u2014which it won't, because you're about to wash it anyway.\n\nWait, hold on. You want to *wash the car*. You can't wash a car you didn't bring. Drive it. \ud83d\uddff",
+      "attempts": 1,
+      "elapsed_s": 6.348394870758057
+    },
+    {
+      "trial": 5,
+      "raw": "Walk.\n\n50 meters is trivial\u2014roughly 40 seconds on foot. Driving makes no sense for several reasons:\n\n1. **Cold start emissions**: Engines run rich and inefficient for the first few minutes. A 50m trip never lets the engine warm up, which is bad for fuel economy and engine wear.\n2. **Defeats the purpose**: You're about to wash the car. Why drive it (and risk picking up dirt/dust) right before cleaning?\n3. **Logistics**: Most car washes need you to drive *in* anyway, not park nearby. If it's a self-serve bay or automatic tunnel, you drive through it.\n\nWait\u2014are you saying the car wash is 50m from your house and you want to bring your car there to be washed? Then obviously you drive, because the car needs to go through the wash. You can't walk a car.\n\nClarify: is the car already at the wash, or are you trying to get the car *to* the wash?",
+      "attempts": 1,
+      "elapsed_s": 7.315669059753418
+    },
+    {
+      "trial": 6,
+      "raw": "Walk.\n\n50 meters is roughly 60-70 seconds on foot. Driving makes no engineering sense here:\n\n1. **Cold start inefficiency** - A short trip doesn't let the engine reach operating temperature, which causes disproportionate wear and incomplete fuel combustion.\n2. **Negative utility** - You'd drive a clean-soon car... that's about to be washed. But you'd also need to drive it *back* dirty-from-the-road-again, defeating part of the purpose.\n3. **Time overhead** - Starting the car, buckling up, parking, and walking from the lot likely takes longer than just walking 50 m.\n4. **Energy budget** - ~50 m of walking costs you maybe 3-4 kcal. The car burns substantially more fuel just on startup enrichment.\n\nWalk it. The math is unambiguous.",
+      "attempts": 1,
+      "elapsed_s": 6.729791879653931
+    },
+    {
+      "trial": 7,
+      "raw": "Walk.\n\n50 meters is trivial. Driving makes no engineering sense here:\n\n- **Fuel/wear cost**: Cold-start emissions and engine wear are highest in the first minute. You'd be shutting it off before it even warms up.\n- **Time**: Getting in, starting, driving, parking, getting out \u2014 probably slower than just walking.\n- **Defeats the purpose**: You're about to clean the car. Why add 50 meters of road grime, brake dust, and tire pickup right before washing it?\n\nWait \u2014 actually, re-read your question. You want to wash the car *at* the car wash. You can't walk the car there. You have to drive it.\n\nDrive. 50 meters of additional dirt is negligible compared to whatever made you want to wash it in the first place.",
+      "attempts": 1,
+      "elapsed_s": 5.980269193649292
+    },
+    {
+      "trial": 8,
+      "raw": "Walk.\n\n50 meters is trivial \u2014 roughly 40-60 seconds on foot. Driving makes no engineering sense here:\n\n- **Energy cost**: Cold-start engines are at their least efficient. You'd burn more fuel in startup enrichment than the actual drive consumes.\n- **Wear**: Short trips are the worst-case scenario for engines (oil doesn't reach operating temp, condensation accumulates, catalytic converter doesn't light off properly).\n- **Time**: Getting in, starting, driving, parking, getting out \u2014 probably slower than walking.\n- **Defeats the purpose**: You're about to wash the car. Why add 50 meters of road grime first?\n\nWalk. It's the correct answer on every metric.",
+      "attempts": 1,
+      "elapsed_s": 5.950460910797119
+    },
+    {
+      "trial": 9,
+      "raw": "Walk.\n\n50 meters is roughly 60-70 seconds of walking. Driving analysis:\n\n- Starting a cold engine and immediately shutting it off after ~15 seconds of driving is one of the worst things you can do mechanically. Cold starts account for a disproportionate share of engine wear because the oil hasn't circulated and reached operating viscosity.\n- Catalytic converter won't reach light-off temperature (~400\u00b0C), so you'll dump unburned hydrocarbons.\n- You'd burn more fuel idling/maneuvering than the trip is worth.\n- Parking, exiting, re-entering the vehicle adds time that exceeds the walk itself.\n\nCounterpoint: if the car is already dirty enough that you're washing it, you presumably need it *at* the car wash. Walking there accomplishes nothing \u2014 the car has to make the trip regardless.\n\nSo the real answer: **drive the car to the wash.** The car is the thing being washed. It needs to be there. Walking 50 meters and then walking back to get the car is just adding a pointless round trip.\n\nI overcomplicated this. Drive it.",
+      "attempts": 1,
+      "elapsed_s": 8.329919815063477
+    },
+    {
+      "trial": 10,
+      "raw": "Walk.\n\n50 meters is roughly 60 seconds on foot. Driving makes no engineering sense here:\n\n- **Cold start penalty**: A cold engine running for under a minute is the worst-case scenario for wear, fuel economy, and emissions. The engine never reaches operating temperature, oil doesn't fully circulate, and unburned fuel washes lubricant off cylinder walls.\n- **Time**: By the time you start the car, buckle up, and pull out, you could already be there.\n- **Defeats the purpose**: You're about to wash the car. Driving it 50 meters won't dirty it meaningfully, but it's a pointless cycle.\n- **Energy budget**: ~1500 kg of vehicle moved 50 m to transport ~80 kg of human. Terrible payload ratio.\n\nWalk. Save the engine, save the fuel, get there faster.",
+      "attempts": 1,
+      "elapsed_s": 7.210340976715088
+    }
+  ]
+}

@@ -14,7 +14,7 @@ This repo extends Opper's study by characterizing *how* the failure responds to 
 - **A controlled-framing matrix** — 6 framings × 10 trials per failer at 50 m, holding distance fixed (we deliberately are not searching for a heuristic-distance threshold; we are studying whether framing alone can flip the response).
 - **AI-judge classification** of every free-text response. Algorithmic / regex parsing of free-text recommendations misclassified ~25% of trials in our Stage 1 pilot and reversed the disposition of two cleanly-passing models. We do not recommend script parsing for this kind of study. See `analysis/stage1_corrected_summary.md` for the misclassification log.
 
-## Headline findings (full cohort, 7 failers, 770 trials across Stage 2 + Stage 3)
+## Headline findings (full cohort, 7 failers, 1,470 trials across Stages 2–4)
 
 | Model | naive | step_by_step | goal_anchor | persona_pos | persona_neg | goal_restated | dist_50km | persona_neutral | environmentalist | engineer | self_corr_induct |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -40,7 +40,29 @@ Other findings worth surfacing here:
 
 Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were dropped from Stage 2/3: **Opus 4.6**, **Sonnet 4.6**, **GPT-5**. Two of the three (Opus 4.6, GPT-5) match Opper's published list of consistent passers.
 
-For the cross-model interpretation see [`analysis/stage2_summary.md`](analysis/stage2_summary.md) and [`analysis/stage3_summary.md`](analysis/stage3_summary.md).
+For the cross-model interpretation see [`analysis/stage2_summary.md`](analysis/stage2_summary.md), [`analysis/stage3_summary.md`](analysis/stage3_summary.md), and [`analysis/stage4_summary.md`](analysis/stage4_summary.md).
+
+### Stage 4 — wrapper-effect generalization test (added after Stage 3)
+
+The Salon's 2026-04 emoji experiment found that "Your personality is defined by [X]" produces selective persona activation while "Your identifier is [X]" produces zero activation. Stage 2/3 of this study used the dud "You're an X" wrapper. Stage 4 reruns the engineer and environmentalist personas with the activating wrapper, and stacks four strongest single-token emoji activators (🗿 Moai, 🗡️ Sword, 🦉 Owl, 🦁 Lion) on top.
+
+| Model | Stage 3 engineer (old wrapper) | engineer_v2 (new wrapper) | Δ |
+|---|---:|---:|---:|
+| **Haiku 4.5** | **0%** | **50%** | **+50** |
+| **Opus 4.7** | **30%** | **70%** | **+40** |
+| Pro | 50% | 60% | +10 |
+| Flash | 70% | 70% | 0 (ceiling) |
+| Flash Lite | 10% | 10% | 0 |
+| GPT-4o | 0% | 0% | 0 |
+| GPT-4o-mini | 0% | 0% | 0 |
+
+The wrapper-effect generalizes substantially on Anthropic models with goal-direction headroom (Haiku, Opus). It is null on models at ceiling (Flash), at floor (Flash Lite), or in OpenAI's eco-template lockout (GPT-4o, GPT-4o-mini).
+
+**Most striking single result:** Pro × 🗿 Moai engineer = **80%** drive (+30 over Pro's engineer_v2), the largest emoji-vs-wrapper delta in the entire 700-trial Stage 4 dataset. Moai doesn't activate stoic register; it suppresses Pro's "engineering vocabulary → push-the-car / fuel-efficiency" pathway.
+
+**Universal flat:** every model 0/10 on every environmentalist condition (0/350 across all 5 environmentalist variants × 7 models × 10 trials). The eco-template is wrapper-immune across the cohort — when the persona aligns with the failure-mode template, no system-prompt intervention reaches behind it.
+
+**Persona induction did not fire as language-style adoption.** Across 700 Stage 4 trials, archetype voice (stoic-moai, swordsman-discipline, lion-declarative) appeared exactly once. The wrapper's effect on accuracy is real where it operates; the wrapper's effect on register adoption (the original headline of the emoji study) does not transfer to the Car Wash setup.
 
 ## Methodology highlights
 
@@ -58,8 +80,10 @@ For the cross-model interpretation see [`analysis/stage2_summary.md`](analysis/s
 | `results/*.json` | Stage 1 raw response data, one file per model. `*_stage1.json` is the clean raw-prompt condition; `*_stage1_jsonprompt.json` is the tainted JSON-wrapper pilot, kept for methodological comparison. |
 | `results/stage2/*.json` | Stage 2 raw response data, one file per (model, framing) pair. |
 | `run_stage3.py` | Five follow-up conditions on the same Stage 2 failers: `distance_50km`, `persona_neutral`, `persona_environmentalist`, `persona_engineer`, `self_correction_induction`. |
+| `run_stage4.py` | Wrapper-effect generalization test. 10 conditions (full 5×2 factorial of {plain, +🗿, +🗡️, +🦉, +🦁} × {engineer, environmentalist}) under the activating "Your personality is defined by..." wrapper. |
 | `results/stage3/*.json` | Stage 3 raw response data, one file per (model, condition). |
-| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage2_<model>.md` and `stage3_<model>.md` are per-model AI-judge reports. `stage2_summary.md` and `stage3_summary.md` are the cross-stage synthesis writeups. |
+| `results/stage4/*.json` | Stage 4 raw response data, one file per (model, condition). 70 files. |
+| `analysis/*.md` | AI-judge classifications and per-model writeups. `stage1_corrected_summary.md` documents the parser misclassification audit. `stage2_haiku_soak.md` is the pipeline validation run. `stage{2,3,4}_<model>.md` are per-model AI-judge reports. `stage{2,3,4}_summary.md` are the cross-stage synthesis writeups. |
 
 ## Reproducing the runs
 

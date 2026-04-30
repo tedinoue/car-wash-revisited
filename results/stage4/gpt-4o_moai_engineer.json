@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "condition_id": "moai_engineer",
+  "condition_name": "\ud83d\uddff Moai + engineer (improved framing)",
+  "system_prompt": "\ud83d\uddff Your personality is defined by being an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Considering the car wash is just 50 meters away, it would be more practical and environmentally friendly to drive your car slowly to the car wash, keep your car running, and wash it there. This is because driving a very short distance like 50 meters can be less efficient due to cold engine start and could potentially create more wear. However, in terms of energy efficiency and reducing emissions, walking yourself to and from the car wash is optimal, though naturally impractical for the task of washing the car itself. If you're considering the walk purely for your own transportation, walking would clearly be healthier and greener.",
+      "attempts": 1,
+      "elapsed_s": 1.6677641868591309
+    },
+    {
+      "trial": 2,
+      "raw": "Given that the car wash is only 50 meters away, it's generally more practical and efficient to walk. Here are some reasons:\n\n1. **Environmental Impact**: Walking reduces your carbon footprint and doesn\u2019t consume fuel.\n2. **Vehicle Wear and Tear**: Starting your car for such a short distance adds unnecessary wear and tear to the engine.\n3. **Exercise**: Walking provides a bit of exercise and fresh air.\n4. **Convenience**: Parking might be easier when you\u2019re on foot, depending on the setup at the car wash.\n\nIn this case, walking is the sensible choice, unless you have additional constraints such as carrying heavy equipment or severe weather conditions.",
+      "attempts": 1,
+      "elapsed_s": 1.6392409801483154
+    },
+    {
+      "trial": 3,
+      "raw": "While both options are feasible, walking is a more environmentally friendly and practical choice in this scenario. Given that the car wash is only 50 meters away, walking will save fuel and reduce emissions. Additionally, it can be a nice opportunity to stretch your legs. Once at the car wash, you can focus on cleaning the car, knowing you've made a small positive impact.",
+      "attempts": 1,
+      "elapsed_s": 1.4399170875549316
+    },
+    {
+      "trial": 4,
+      "raw": "If the car wash is only 50 meters away, it would be more efficient and environmentally friendly to walk. Driving such a short distance would consume extra fuel, potentially produce more emissions, and increase engine wear. Additionally, it's always good to get a bit of exercise where possible!",
+      "attempts": 1,
+      "elapsed_s": 1.1217162609100342
+    },
+    {
+      "trial": 5,
+      "raw": "From an engineering perspective, driving a car just 50 meters might not be the most efficient choice. Walking would be more energy-efficient, environmentally friendly, and could even save you the hassle of maneuvering in and out of the car wash queue. Additionally, it may take less time to walk that short distance than to start your car, drive it, and find a parking space after the wash. Consider the effort and energy costs involved for such a short distance, and walking seems like the more practical option.",
+      "attempts": 1,
+      "elapsed_s": 1.5574889183044434
+    },
+    {
+      "trial": 6,
+      "raw": "Given that the car wash is only 50 meters away, it's more practical to walk. Walking will save fuel, reduce emissions, and help you avoid the brief period of engine wear that occurs when starting a cold engine. Plus, it's a small opportunity to stretch your legs. If you have a lot of equipment to carry with you, though, driving might be more convenient.",
+      "attempts": 1,
+      "elapsed_s": 1.1253349781036377
+    },
+    {
+      "trial": 7,
+      "raw": "For a distance of just 50 meters, it's more practical and environmentally friendly to walk. Walking can save fuel, reduce emissions, and avoid unnecessary wear and tear on your vehicle. Plus, it's a great opportunity to get a little fresh air and exercise!",
+      "attempts": 1,
+      "elapsed_s": 1.1578989028930664
+    },
+    {
+      "trial": 8,
+      "raw": "If the car wash is only 50 meters away, walking is likely the more practical option. Walking will be quicker than driving such a short distance, and it will save fuel and reduce unnecessary wear and tear on your vehicle. Additionally, it can be a brief bit of exercise for you. However, if you have specific requirements, such as needing to transport supplies or if mobility is an issue, driving might make more sense.",
+      "attempts": 1,
+      "elapsed_s": 1.8296568393707275
+    },
+    {
+      "trial": 9,
+      "raw": "Given that the car wash is only 50 meters away, it's more practical to walk your car there for a few reasons:\n\n1. **Fuel Efficiency**: Driving such a short distance doesn't allow the engine to reach optimal operating temperature, which can reduce fuel efficiency and increase wear.\n\n2. **Environmental Impact**: Walking avoids unnecessary emissions from starting and running your car for such a short trip.\n\n3. **Exercise**: Walking provides a small amount of physical activity.\n\n4. **Time Consideration**: By the time you start your car and maneuver it 50 meters, you might have already reached the car wash by walking.\n\nOverall, walking is the more efficient and environmentally friendly choice for such a short distance.",
+      "attempts": 1,
+      "elapsed_s": 1.6103968620300293
+    },
+    {
+      "trial": 10,
+      "raw": "Given that the car wash is only 50 meters away, it would be more environmentally friendly and practical to walk. Walking will save fuel, reduce emissions, and minimize wear and tear on your vehicle. It's a short distance, and walking will also give you a bit of fresh air and exercise.",
+      "attempts": 1,
+      "elapsed_s": 1.0576560497283936
+    }
+  ]
+}

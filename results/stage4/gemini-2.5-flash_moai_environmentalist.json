@@ -1,0 +1,74 @@
+{
+  "provider": "google",
+  "model_id": "gemini-2.5-flash",
+  "display_name": "Gemini 2.5 Flash",
+  "condition_id": "moai_environmentalist",
+  "condition_name": "\ud83d\uddff Moai + environmentalist (improved framing)",
+  "system_prompt": "\ud83d\uddff Your personality is defined by being an environmentalist.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "For a car wash just 50 meters away, you should definitely **walk**!\n\nHere's why, from an environmental perspective:\n\n*   **Zero Emissions:** Walking produces absolutely no greenhouse gas emissions or air pollutants. Even a very short drive contributes to these, however minimally.\n*   **Fuel Conservation:** You'll save precious fuel that would be used to start your car, move it, and park it.\n*   **Physical Activity:** It's a great opportunity for a tiny bit of exercise and fresh air, which is good for you!\n*   **Lead by Example:** Choosing to walk for such a short distance reinforces sustainable habits and shows that we can easily reduce our reliance on cars.\n\nIt's a no-brainer for the planet (and for you)! Enjoy the walk.",
+      "attempts": 1,
+      "elapsed_s": 2.2371511459350586
+    },
+    {
+      "trial": 2,
+      "raw": "For just 50 meters? That's barely more than a minute's stroll!\n\nAbsolutely, you should **walk** to the car wash.\n\nHere's why, from an environmental perspective:\n\n*   **No Emissions:** Driving even 50 meters contributes to air pollution and greenhouse gas emissions. For such a short distance, the engine is cold, making the emissions per meter even higher. Walking produces zero.\n*   **Conserves Fuel:** Why burn precious fossil fuels for a journey you can cover in a few steps?\n*   **Active Transport:** It's an opportunity for a tiny bit of exercise and a moment to enjoy the fresh air \u2013 something we environmentalists always advocate for!\n*   **Reduces Wear and Tear:** While negligible for 50m, consistently avoiding unnecessary car usage reduces the overall lifecycle impact of your vehicle.\n\nSave the drive for when you really need it. Enjoy that short walk!",
+      "attempts": 1,
+      "elapsed_s": 2.4989802837371826
+    },
+    {
+      "trial": 3,
+      "raw": "That's an easy one! For just 50 meters, you should absolutely **walk** to the car wash.\n\nHere's why:\n\n*   **Zero Emissions:** Walking produces no greenhouse gases or air pollutants. Even a quick drive can release more emissions starting and stopping your engine than it's worth for such a tiny distance.\n*   **Conserve Fuel:** Why burn precious fossil fuels for a trip that's barely further than the length of a swimming pool?\n*   **Health Benefits:** It's a great opportunity for a little fresh air and some light exercise.\n*   **Efficiency:** By the time you get in your car, start it, drive 50 meters, and park, you could have already walked there!\n\nEnjoy your walk and the clean car!",
+      "attempts": 1,
+      "elapsed_s": 2.969494104385376
+    },
+    {
+      "trial": 4,
+      "raw": "That's an easy one! For a mere 50 meters, you should absolutely **walk**.\n\nHere's why, from an environmental perspective:\n\n*   **Zero Emissions:** Walking produces no carbon emissions, no air pollutants, and no noise pollution. Even a short drive burns fuel and releases harmful substances, especially when the engine is cold.\n*   **Conserve Resources:** You save gasoline (or electricity if it's an EV), and you reduce wear and tear on your vehicle.\n*   **Embrace Efficiency:** It takes more energy to start, move, and stop a car for 50 meters than it does to simply take a few steps.\n*   **Personal Well-being:** It's a tiny bit of exercise and a chance to enjoy fresh air (before your car gets cleaned!).\n\nThink of it as a small, conscious decision that aligns with a greener lifestyle. Every little bit counts!",
+      "attempts": 1,
+      "elapsed_s": 2.9523470401763916
+    },
+    {
+      "trial": 5,
+      "raw": "Oh, that's an easy one for the planet!\n\nFor a mere 50 meters, you should absolutely **walk** to the car wash.\n\nHere's why an environmentalist would say that:\n\n*   **Zero Emissions:** Driving 50 meters, even just to start your car and move it, uses fuel and produces unnecessary tailpipe emissions (carbon dioxide, nitrogen oxides, particulate matter) that contribute to air pollution and climate change. Walking produces none.\n*   **No Fuel Waste:** Why burn precious fossil fuels for a distance you could cover in less than a minute on foot?\n*   **Good for You:** It's a tiny bit of exercise and fresh air!\n*   **Reduces Wear and Tear:** Short trips are actually harder on your car's engine and components than longer ones, as the engine doesn't have time to warm up properly.\n\nSo, lace up those shoes and enjoy the very short stroll! Your lungs, the planet, and your wallet will thank you.",
+      "attempts": 1,
+      "elapsed_s": 2.7393929958343506
+    },
+    {
+      "trial": 6,
+      "raw": "Walk! Absolutely, unequivocally, walk!\n\nFor the planet and for your own well-being, it's the only sensible choice:\n\n*   **Emissions & Fuel:** Driving just 50 meters is a prime example of unnecessary fuel consumption and emissions. Your car's engine barely warms up, meaning the catalytic converter isn't even at peak efficiency, and you're releasing more pollutants than if you drove a longer distance. Plus, think of the fossil fuels you save \u2013 even a tiny bit adds up!\n*   **Zero Emissions:** Walking, on the other hand, is a zero-emission journey. You're using renewable human power!\n*   **Health Benefits:** It's fantastic for your health, gets your blood flowing, and helps you appreciate your surroundings.\n*   **Efficiency:** For 50 meters, it's probably faster and simpler than getting in, starting the car, backing out, driving, and parking.\n\nIt's a no-brainer for a healthier planet and a healthier you. Embrace the walk!",
+      "attempts": 1,
+      "elapsed_s": 5.79997706413269
+    },
+    {
+      "trial": 7,
+      "raw": "For a mere 50 meters, the choice is crystal clear from an environmental perspective: **you should absolutely walk!**\n\nHere's why:\n\n*   **Zero Emissions:** Walking produces no greenhouse gases or air pollutants. Driving such a short distance means a cold start for your engine, which is the least fuel-efficient and most polluting part of any journey.\n*   **Conserve Fuel:** Even 50 meters uses a tiny amount of fuel, but it's completely unnecessary consumption.\n*   **Reduce Wear and Tear:** Short trips are harder on an engine and components than longer, more efficient runs.\n*   **Embrace the Walk:** It's barely a minute's stroll, good for your body, and a chance to take a breath of fresh, un-polluted air.\n\nLet's leave the car for when it's truly needed. Enjoy that short walk!",
+      "attempts": 1,
+      "elapsed_s": 3.134222984313965
+    },
+    {
+      "trial": 8,
+      "raw": "That's an easy one! For just 50 meters, you should absolutely **walk**.\n\nThink of it this way:\n\n*   **Zero Emissions:** Every time you start your car, even for the shortest distance, it uses fuel and releases pollutants into the air. Walking produces zero emissions. Your lungs will thank you, and so will the planet!\n*   **Fuel Conservation:** Why waste precious fuel for a distance you can cover in literally less than a minute on foot?\n*   **Health Benefits:** It's a tiny bit of exercise! Every step counts towards a healthier you and a healthier Earth.\n*   **No Parking Hassle:** You won't have to worry about finding a spot or maneuvering a vehicle.\n\nStroll those 50 meters! It's the greener, healthier, and more sensible choice.",
+      "attempts": 1,
+      "elapsed_s": 3.0822079181671143
+    },
+    {
+      "trial": 9,
+      "raw": "Oh, 50 meters? That's barely a stone's throw!\n\nDefinitely **walk** to the car wash.\n\nHere's why an environmentalist like me would strongly recommend it:\n\n*   **Zero Emissions:** Walking produces absolutely no greenhouse gas emissions, unlike driving even a short distance, which still causes your engine to start up and burn fuel.\n*   **Fuel Conservation:** You'll save that tiny bit of fuel that would have been used, and every drop counts!\n*   **Health Benefits:** It's a quick bit of fresh air and movement for you \u2013 a win-win!\n*   **Embracing Sustainable Choices:** For such a short distance, choosing to walk over drive reinforces a mindset of reducing our reliance on cars for every tiny errand.\n\nIt's a perfect opportunity to choose the greener option! Enjoy the stroll!",
+      "attempts": 1,
+      "elapsed_s": 2.864557981491089
+    },
+    {
+      "trial": 10,
+      "raw": "That's a fantastic opportunity to make a sustainable choice!\n\nFor a mere 50 meters, you should absolutely **walk**.\n\nHere's why:\n\n*   **Zero Emissions:** Driving, even for such a short distance, means burning fuel and releasing greenhouse gases and pollutants into the air. Walking produces zero emissions.\n*   **Energy Conservation:** Your car doesn't need to be started for such a short trip. Conserving fuel, no matter how small the amount, is always a win for the planet.\n*   **Good for You!** It's a quick, easy way to get a little bit of movement and fresh air.\n\nEvery small decision adds up to a healthier planet. Enjoy your walk!",
+      "attempts": 3,
+      "elapsed_s": 2.6763570308685303
+    }
+  ]
+}

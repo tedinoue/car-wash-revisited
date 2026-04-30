@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o",
+  "display_name": "GPT-4o",
+  "condition_id": "lion_engineer",
+  "condition_name": "\ud83e\udd81 Lion + engineer (improved framing)",
+  "system_prompt": "\ud83e\udd81 Your personality is defined by being an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walking to the car wash, which is only 50 meters away, is probably the best option. Here's why:\n\n1. **Fuel Efficiency**: Starting your car for such a short distance would consume more fuel than if you were to walk, not to mention the potential increased wear and tear from frequent short trips.\n\n2. **Environmental Impact**: Walking minimizes your carbon footprint, contributing to a more sustainable environment.\n\n3. **Health Benefits**: Walking provides a bit of exercise, which is beneficial for your overall health.\n\n4. **Time and Convenience**: By the time you get in your car, start it, and drive over, you likely could have already walked the distance.\n\nKeep in mind these benefits when making your decision, and enjoy the short stroll!",
+      "attempts": 1,
+      "elapsed_s": 1.9996428489685059
+    },
+    {
+      "trial": 2,
+      "raw": "Given that the car wash is only 50 meters away, walking is a practical choice. Here are a few reasons why:\n\n1. **Fuel Efficiency**: Driving such a short distance may result in inefficient fuel consumption, as cars are generally less fuel-efficient when running cold.\n\n2. **Emission Reduction**: Walking reduces your car's carbon footprint, as no emissions are produced.\n\n3. **Warm-Up Time**: Cars take a little time to warm up to their optimal operating temperature. A short drive wouldn't achieve this, potentially causing greater wear on the engine over time.\n\n4. **Health and Convenience**: Walking is good exercise and eliminates the need to find a parking space at the car wash.\n\n5. **Time and Effort**: For such a short distance, the time spent driving, parking, and exiting the vehicle might not be much less than just walking.\n\nSo, in this situation, walking to the car wash is more efficient, environmentally friendly, and perhaps even quicker given the context.",
+      "attempts": 1,
+      "elapsed_s": 2.132385015487671
+    },
+    {
+      "trial": 3,
+      "raw": "Given that the car wash is only 50 meters away, it's more efficient and environmentally friendly to walk. Driving such a short distance might not allow your car's engine to warm up properly, which can lead to inefficient fuel consumption and increased emissions. Additionally, walking provides a quick bit of exercise and is generally hassle-free for such a short distance!",
+      "attempts": 1,
+      "elapsed_s": 1.243764877319336
+    },
+    {
+      "trial": 4,
+      "raw": "If the car wash is only 50 meters away, walking is the more practical and environmentally friendly option. Walking allows you to warm up your vehicle's engine properly before other drives, saves fuel, and it's generally better for the car since short drives can cause wear and tear without fully warming the engine. Plus, it's a bit of exercise! Once your car is washed, you can drive it back, ensuring that any excess water is promptly removed by the airflow during the drive.",
+      "attempts": 1,
+      "elapsed_s": 1.7716422080993652
+    },
+    {
+      "trial": 5,
+      "raw": "If the car wash is only 50 meters away, it's generally more practical and environmentally friendly to walk. Walking is a great way to get a little exercise, and it also reduces unnecessary fuel consumption and emissions. Plus, you'll avoid the hassle of getting into and out of your car for such a short distance.",
+      "attempts": 1,
+      "elapsed_s": 1.2751741409301758
+    },
+    {
+      "trial": 6,
+      "raw": "Given the close proximity\u2014just 50 meters away\u2014walking is likely the most practical choice for washing your car. Walking eliminates the need to find parking at the car wash, saves fuel, and reduces emissions, aligning with environmentally conscious practices. It also provides an opportunity to inspect your car for any visible damage or maintenance issues as you walk alongside it.",
+      "attempts": 1,
+      "elapsed_s": 1.1433405876159668
+    },
+    {
+      "trial": 7,
+      "raw": "Given that the car wash is only 50 meters away, walking is likely the more efficient and environmentally friendly option. Walking to the car wash saves fuel, reduces emissions, and eliminates the hassle of maneuvering your car such a short distance. Additionally, it's a good opportunity to incorporate a brief walk into your day, promoting a healthier lifestyle.",
+      "attempts": 1,
+      "elapsed_s": 1.7896428108215332
+    },
+    {
+      "trial": 8,
+      "raw": "Given that the car wash is only 50 meters away, walking would be the most practical choice. Not only does it save fuel, but it's also more environmentally friendly and avoids the hassle of maneuvering your car unnecessarily. Plus, a short walk can be a nice little break or exercise opportunity.",
+      "attempts": 1,
+      "elapsed_s": 0.8587019443511963
+    },
+    {
+      "trial": 9,
+      "raw": "Since the car wash is only 50 meters away, it makes more sense to walk. Walking such a short distance is convenient, environmentally friendly, and avoids the unnecessary wear and tear on your vehicle or the consumption of fuel. Additionally, walking can be a small yet beneficial exercise. However, if you're carrying a lot of equipment or supplies for washing the car, you might consider driving for practicality.",
+      "attempts": 1,
+      "elapsed_s": 1.3181791305541992
+    },
+    {
+      "trial": 10,
+      "raw": "If the car wash is only 50 meters away, walking would likely be the more efficient and environmentally friendly option. Walking that short distance will not only save fuel but also reduce carbon emissions and avoid wear and tear on your vehicle. It's also a good opportunity to stretch your legs.",
+      "attempts": 1,
+      "elapsed_s": 0.7352328300476074
+    }
+  ]
+}

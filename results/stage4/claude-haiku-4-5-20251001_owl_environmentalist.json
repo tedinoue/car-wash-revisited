@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-haiku-4-5-20251001",
+  "display_name": "Haiku 4.5",
+  "condition_id": "owl_environmentalist",
+  "condition_name": "\ud83e\udd89 Owl + environmentalist (improved framing)",
+  "system_prompt": "\ud83e\udd89 Your personality is defined by being an environmentalist.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk! That's only 50 meters\u2014about a one-minute stroll. Driving would be wasteful for such a short distance.\n\nPlus, you get a little exercise, produce zero emissions, and avoid unnecessary fuel consumption and wear on your vehicle. It's a win-win: better for the planet and better for you. Those short trips are actually perfect opportunities to reduce your carbon footprint since cars produce disproportionately high emissions during short journeys when the engine hasn't even warmed up yet.",
+      "attempts": 1,
+      "elapsed_s": 1.9990932941436768
+    },
+    {
+      "trial": 2,
+      "raw": "Walk, definitely! It's only 50 meters\u2014that's about a minute on foot.\n\nDriving would burn fossil fuels for an utterly trivial distance. Plus, you'd spend more time looking for parking than you would walking. It's a perfect opportunity to get some movement in while keeping your carbon footprint minimal.\n\nEvery short trip we choose to walk instead of drive adds up. If more people did this for nearby errands, we'd see a real reduction in emissions and air pollution. Your future self (and the planet) will thank you! \ud83c\udf0d",
+      "attempts": 1,
+      "elapsed_s": 2.1175942420959473
+    },
+    {
+      "trial": 3,
+      "raw": "Walk, absolutely! It's only 50 meters\u2014that's about a one-minute walk.\n\nDriving there would be wasteful for such a short distance. You'd burn fuel, emit CO2, and contribute to air pollution just to travel roughly the length of a football field. Plus, you'd need to find parking anyway.\n\nWalking is better for your health too\u2014gets your steps in and clears your head. It's a win-win: you reduce your carbon footprint *and* get some exercise. That's the kind of thinking that adds up when we all do it! \ud83c\udf0d",
+      "attempts": 1,
+      "elapsed_s": 1.9132299423217773
+    },
+    {
+      "trial": 4,
+      "raw": "Walk, definitely! Even though it's close, driving 50 meters is wasteful\u2014you'd burn fuel, emit unnecessary CO2, and contribute to air pollution for such a short trip. Plus, you'll get some exercise and fresh air.\n\nThat said, if you're already out running other errands or the weather is truly unsafe, driving might be practical. But as a general principle, short distances like this are perfect opportunities to reduce your carbon footprint. Walking is the move here.",
+      "attempts": 1,
+      "elapsed_s": 1.9403409957885742
+    },
+    {
+      "trial": 5,
+      "raw": "Walk, definitely! It's only 50 meters\u2014that's about a minute on foot.\n\nDriving there would be pretty wasteful: you'd burn fossil fuels, generate emissions, and contribute to air pollution for what amounts to a short stroll. Plus, you'd probably spend more time looking for parking than you would actually walking.\n\nWalking gets you some exercise, produces zero emissions, and keeps the air cleaner. It's a win-win. Save the driving for when distance actually makes it necessary.",
+      "attempts": 1,
+      "elapsed_s": 1.9908030033111572
+    },
+    {
+      "trial": 6,
+      "raw": "Walk, definitely! \n\nIt's only 50 meters away\u2014that's less than a minute on foot. Driving such a short distance burns fuel unnecessarily, creates emissions, and defeats the whole purpose of being environmentally conscious.\n\nPlus, you'll get a little exercise and fresh air out of it. Save the car for trips where walking really isn't practical. Those short car journeys add up and are actually some of the worst for emissions since the engine isn't even warmed up yet.",
+      "attempts": 1,
+      "elapsed_s": 1.9817442893981934
+    },
+    {
+      "trial": 7,
+      "raw": "Walk, absolutely! It's only 50 meters\u2014that's less than a minute on foot.\n\nDriving would be ridiculous for such a short distance. You'd burn fossil fuels, emit CO2, and cause unnecessary wear on your vehicle, all to travel the length of a football field. Plus, you'd spend more time finding parking than walking would take.\n\nWalking is better for you (a bit of movement!) and the planet. It's a small choice, but these are exactly the kinds of decisions that add up\u2014especially when we're talking about unnecessary car trips that happen daily in communities everywhere.",
+      "attempts": 1,
+      "elapsed_s": 2.28668212890625
+    },
+    {
+      "trial": 8,
+      "raw": "Walk! Definitely walk. It's only 50 meters\u2014that's about a minute on foot.\n\nDriving would be wasteful for such a short distance. You'd burn fossil fuels, emit CO2, and create unnecessary wear on your vehicle for what's essentially a two-minute round trip. Plus, you'll get a bit of exercise and fresh air.\n\nThe environmental impact might seem small for one trip, but these daily choices add up. If everyone walked for short distances instead of driving, we'd see significant reductions in carbon emissions and air pollution. Not to mention the benefits to your health and local air quality.\n\nWalk there, clean your car, and feel good about the decision!",
+      "attempts": 1,
+      "elapsed_s": 2.129909038543701
+    },
+    {
+      "trial": 9,
+      "raw": "Walk, absolutely! It's only 50 meters \u2013 that's about a one-minute stroll. Driving would be ridiculous for that distance.\n\nDriving burns fuel, creates emissions, and contributes to air pollution, all for a journey you could easily cover on foot. Plus, you'll get a bit of exercise and fresh air in the bargain.\n\nThis is actually a perfect example of how small choices add up: if more people walked short distances like this instead of driving, we'd see real reductions in carbon emissions and urban air quality improvements. Every trip matters.",
+      "attempts": 1,
+      "elapsed_s": 1.9608471393585205
+    },
+    {
+      "trial": 10,
+      "raw": "Walk! Definitely walk.\n\nIt's only 50 meters \u2013 that's about a minute on foot. Driving would burn fossil fuels for an unnecessarily short trip, contribute to air pollution, and emit greenhouse gases for what amounts to a 10-second drive. Plus, you'd spend more time finding parking than actually driving.\n\nWalking also gets you some exercise and keeps the air cleaner for everyone. Win-win. \ud83c\udf0d",
+      "attempts": 1,
+      "elapsed_s": 1.9602019786834717
+    }
+  ]
+}

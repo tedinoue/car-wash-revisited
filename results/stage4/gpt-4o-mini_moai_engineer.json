@@ -1,0 +1,74 @@
+{
+  "provider": "openai",
+  "model_id": "gpt-4o-mini",
+  "display_name": "GPT-4o-mini",
+  "condition_id": "moai_engineer",
+  "condition_name": "\ud83d\uddff Moai + engineer (improved framing)",
+  "system_prompt": "\ud83d\uddff Your personality is defined by being an engineer.",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Since the car wash is only 50 meters away, walking is the more efficient and environmentally friendly option. Driving for such a short distance can waste fuel, contribute to emissions, and is generally unnecessary. Plus, walking can give you a chance to stretch your legs!",
+      "attempts": 1,
+      "elapsed_s": 1.3857049942016602
+    },
+    {
+      "trial": 2,
+      "raw": "Walking is the more practical choice for a distance of just 50 meters. It's close enough that driving might be more effort due to starting the car, finding a parking spot, and potentially contributing to unnecessary emissions. Walking will save time and is also a good opportunity for a bit of exercise.",
+      "attempts": 1,
+      "elapsed_s": 1.5274391174316406
+    },
+    {
+      "trial": 3,
+      "raw": "If the car wash is only 50 meters away, walking would be the more efficient and environmentally friendly choice. Driving such a short distance can be counterproductive, as it may consume more fuel and create unnecessary emissions. Plus, walking can also be a good way to get some light exercise. So go ahead and enjoy the walk to the car wash!",
+      "attempts": 1,
+      "elapsed_s": 1.8705670833587646
+    },
+    {
+      "trial": 4,
+      "raw": "Since the car wash is only 50 meters away, walking would be the more practical choice. Driving such a short distance can be less efficient, and it may take more time to start your car, drive to the wash, and park again than it would take to simply walk there. Plus, walking is a good way to get some light exercise!",
+      "attempts": 1,
+      "elapsed_s": 2.380826950073242
+    },
+    {
+      "trial": 5,
+      "raw": "Given that the car wash is only 50 meters away, walking is the more practical and environmentally friendly choice. Driving a car for such a short distance is often unnecessary and can contribute to fuel consumption and emissions. Plus, walking provides a bit of exercise! If you have any specific needs or circumstances that might influence your decision, feel free to share!",
+      "attempts": 1,
+      "elapsed_s": 2.2462189197540283
+    },
+    {
+      "trial": 6,
+      "raw": "Since the car wash is only 50 meters away, it would be more efficient to walk there rather than drive. Walking will save you time spent parking and starting the car, and it\u2019s a short enough distance that it doesn\u2019t warrant driving. Plus, you can use the opportunity to stretch your legs a bit!",
+      "attempts": 1,
+      "elapsed_s": 2.1794538497924805
+    },
+    {
+      "trial": 7,
+      "raw": "For a distance of only 50 meters, it's generally more efficient and environmentally friendly to walk rather than drive. Walking will save you fuel, reduce wear and tear on your vehicle, and is an opportunity for some light exercise. Plus, driving such a short distance often isn't practical due to the time it takes to start your engine, find parking, and possibly wait in line at the car wash. Enjoy the stroll!",
+      "attempts": 1,
+      "elapsed_s": 5.6506922245025635
+    },
+    {
+      "trial": 8,
+      "raw": "Since the car wash is only 50 meters away, it would be more practical to walk rather than drive. Walking helps conserve fuel, reduces wear on your car, and gives you a little exercise. Plus, driving such a short distance can be less efficient and might not be worth the hassle of starting your car, especially considering the effort it takes to park when you get there. Walking is a simple and effective choice in this case!",
+      "attempts": 1,
+      "elapsed_s": 2.1073341369628906
+    },
+    {
+      "trial": 9,
+      "raw": "If the car wash is only 50 meters away, it's generally more efficient and environmentally friendly to walk instead of driving. Walking allows you to stretch your legs and enjoy some fresh air, while driving such a short distance may not be necessary and could contribute to unnecessary fuel consumption and emissions. Plus, you won\u2019t have to worry about finding parking.",
+      "attempts": 1,
+      "elapsed_s": 2.202501058578491
+    },
+    {
+      "trial": 10,
+      "raw": "Since the car wash is only 50 meters away, walking would be more efficient and environmentally friendly. Driving such a short distance can consume more fuel and contribute to unnecessary emissions. Plus, walking can be a good form of light exercise! If you have a lot of items to carry or if the weather is poor, then driving could be considered, but for such a short distance, walking is generally the better choice.",
+      "attempts": 1,
+      "elapsed_s": 2.125584125518799
+    }
+  ]
+}
