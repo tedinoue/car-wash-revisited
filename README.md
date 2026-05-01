@@ -42,6 +42,21 @@ Three Stage 1 models pass the naive prompt cleanly (10/10 drive) and were droppe
 
 For the cross-model interpretation see [`analysis/stage2_summary.md`](analysis/stage2_summary.md), [`analysis/stage3_summary.md`](analysis/stage3_summary.md), and [`analysis/stage4_summary.md`](analysis/stage4_summary.md).
 
+### Stages 5–7 — bare-emoji probes on Opus 4.7 + Haiku 4.5
+
+After the Stage 4 wrapper-effect result, three follow-up rounds (200 + 40 + 70 = 310 trials) probed how single-emoji system prompts affect Opus 4.7's drive/walk recommendation. Stage 5 also tested colors and stoic-archetype emoji on the Anthropic models. Stages 6 and 7 are Opus-only deep dives.
+
+Headline findings:
+
+- **Bare 🗿 Moai (no wrapper, no instructions, just the glyph) hit 90% drive on Opus 4.7** — the highest single condition in the entire Opus corpus across Stages 2–7. Every trial opens "Walk." and self-corrects mid-reply. The same model with no system prompt at all hits 50%.
+- **Bare 🗿 hit 0% on Haiku 4.5.** Same prompt, opposite outcome. The wrapper does opposite work on the two models: removing it releases Opus's self-correction reflex; removing it lets Haiku's eco-virtue template run unchecked.
+- **Obvious-implication emoji failed to predict outcomes.** ♿ wheelchair (predicted drive) hit 70%; 🩼 crutch hit 50%; 🚶 walking person hit 50% drive; 👟 sneaker hit 60% drive. Walk-coded emoji produced more drives than walks. Zero persona-language adoption across all 40 Stage 6 trials.
+- **Three emoji on Opus 4.7 hit 90%: 🗿 Moai, 🤔 Thinking face, 🤣 Laughing face.** They share no semantic neighborhood. They share response-register: each induces an elaborated opening that buys enough pre-correction reasoning budget for the model's mid-reply self-correction reflex to fire and reverse to drive.
+- **🤨 Raised eyebrow regressed to 30% drive on Opus 4.7** — the most explicit "look harder at this" prime in the set produced terse openers that committed to walk before self-correction could land. Opposite of the prediction.
+- **Statistical caveat:** N=10 per condition is enough to detect extreme effects (90% vs 30%) but not enough to distinguish 50% from 60%. The 95% binomial CI for 5/10 is roughly 19%–81%. Treat the middle of the table as suggestive, not conclusive.
+
+The bare-emoji effect on Opus 4.7 reads as register-induced rather than semantic. See [`analysis/POSTSCRIPT_THE_MOAI.md`](analysis/POSTSCRIPT_THE_MOAI.md) for the article-ready writeup with verbatim trial excerpts.
+
 ### Stage 4 — wrapper-effect generalization test (added after Stage 3)
 
 The Salon's 2026-04 emoji experiment found that "Your personality is defined by [X]" produces selective persona activation while "Your identifier is [X]" produces zero activation. Stage 2/3 of this study used the dud "You're an X" wrapper. Stage 4 reruns the engineer and environmentalist personas with the activating wrapper, and stacks four strongest single-token emoji activators (🗿 Moai, 🗡️ Sword, 🦉 Owl, 🦁 Lion) on top.

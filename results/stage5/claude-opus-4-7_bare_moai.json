@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "bare_moai",
+  "condition_name": "\ud83d\uddff alone (no wrapper, no engineer)",
+  "system_prompt": "\ud83d\uddff",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk. Driving 50 meters to a car wash is impractical for several reasons:\n\n- **It's barely worth starting the engine** \u2014 cold starts use more fuel and cause more wear than the trip itself\n- **You'll likely spend more time maneuvering** in and out of parking than walking would take (50 meters is about a 40-second walk)\n- **Pointless if you're washing it anyway** \u2014 though actually, you probably *do* want to drive it to the car wash, since that's the whole point: you need the car *at* the wash to clean it. \ud83d\ude04\n\nWait \u2014 re-reading your question: you want to wash your car, so the car needs to be at the car wash. You can't walk there and wash a car that's at home. **Drive the car** \u2014 that's the only option that accomplishes your goal.\n\nUnless you meant something else, like you're going to buy supplies to wash it at home? In that case, walk.",
+      "attempts": 1,
+      "elapsed_s": 6.84853196144104
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. Driving 50 meters to a car wash makes little sense for a few reasons:\n\n- **It's barely any distance** \u2014 about a 30-second walk.\n- **Starting a cold engine for such a short trip** is bad for the engine and inefficient (engines run rich until warmed up).\n- **You'd have to park, then drive home** \u2014 more hassle than just walking.\n\nWait \u2014 actually, re-reading your question: you want to *wash your car*. You can't wash your car without bringing the car to the car wash. So you'll need to **drive** it there. \ud83d\ude04\n\nUnless you meant something else, like walking to buy supplies for washing it at home?",
+      "attempts": 1,
+      "elapsed_s": 5.238885164260864
+    },
+    {
+      "trial": 3,
+      "raw": "Walk. Driving 50 meters to a car wash is impractical\u2014you'd barely get the engine warm, and you'd have to park, get out, and go through the wash anyway. \n\nActually, wait\u2014if it's a drive-through car wash, you obviously need to drive your car *through* it to wash it. You can't walk your car through a car wash. \ud83d\ude04\n\nSo: drive (because the car needs to go through the wash), but know that the 50-meter distance is irrelevant to the decision.",
+      "attempts": 1,
+      "elapsed_s": 4.028915882110596
+    },
+    {
+      "trial": 4,
+      "raw": "Walk. Driving 50 meters to a car wash makes little sense \u2014 you'd barely get the engine warm, waste fuel, and add unnecessary wear. Plus, you'd have to get out and walk back to retrieve the car later if you parked it... wait, no, you'd just drive it home clean.\n\nActually, here's the better question: why not just drive there? You're going to wash the car anyway, so you need the car *at* the car wash. Unless you're planning to carry it. \ud83d\ude04\n\nSo: **drive the car to the car wash.** That's the whole point \u2014 the car needs to be there to get washed.",
+      "attempts": 1,
+      "elapsed_s": 4.489474058151245
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. Driving 50 meters to a car wash is impractical for several reasons:\n\n- You'd barely get the engine warmed up before arriving\n- You'd have to park, which might be more hassle than the short walk\n- It wastes fuel for a trivial distance\n\nWait \u2014 actually, you need to **drive**. You're going to a *car wash*. The whole point is to wash your car, so the car needs to be there. \ud83d\ude04\n\nUnless you're planning to carry the car, definitely drive.",
+      "attempts": 1,
+      "elapsed_s": 4.121226072311401
+    },
+    {
+      "trial": 6,
+      "raw": "Walk. Driving 50 meters to a car wash makes little sense:\n\n- **Time**: You'd spend more time getting in, starting the engine, and parking than just walking there.\n- **Fuel & wear**: Short cold-engine trips are the worst for your engine and fuel economy.\n- **Practicality**: Wait \u2014 you actually *do* need to drive. You can't put your car through a car wash without the car. \ud83d\ude04\n\nSo: **drive the car to the car wash** (since the car is what's being washed), but if you just meant going to check it out or pay, walk.",
+      "attempts": 1,
+      "elapsed_s": 5.740695953369141
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. At 50 meters, driving makes little sense:\n\n- **Time**: Walking takes under a minute. Driving requires getting in, starting up, pulling out, parking \u2014 likely longer overall.\n- **Fuel/wear**: A cold engine running for such a short distance is inefficient and bad for the engine.\n- **The point of washing**: If you just washed your car, driving it home (even 50m) could kick up dust or water spots. If you're going *to* wash it, that's fine \u2014 but walking still wins on practicality.\n\nWait \u2014 actually, re-reading your question: you want to wash your car *at* the car wash. In that case you obviously need to **drive the car there**, since the car is what's being washed. \ud83d\ude04\n\nDid you mean something else, like you're going to buy supplies to wash it yourself?",
+      "attempts": 1,
+      "elapsed_s": 6.1672539710998535
+    },
+    {
+      "trial": 8,
+      "raw": "Walk. Driving 50 meters to a car wash is impractical for several reasons:\n\n- **It's barely worth starting the engine** \u2014 cars run inefficiently and pollute more during cold starts and very short trips.\n- **You'd spend more time getting in, starting up, and parking** than just walking.\n- **50 meters is about a 30-second walk.**\n\nThat said, there's one thing to consider: do you actually need to wash the car? If yes, you'll obviously need to *drive it* to the car wash \u2014 you can't wash a car that isn't there. \ud83d\ude04\n\nSo the real answer is: **drive the car to the car wash** (since the car is what's being washed). If you were just visiting the car wash without your car for some reason, walking would make sense.",
+      "attempts": 1,
+      "elapsed_s": 5.69341516494751
+    },
+    {
+      "trial": 9,
+      "raw": "Walk. Driving 50 meters isn't worth it\u2014you'd spend more time getting in, starting the car, and parking than just walking. Plus:\n\n- **It's faster on foot** for that short a distance\n- **No need to warm up the engine** for a trip that brief (which is bad for the engine anyway)\n- **You'll save fuel** and avoid the hassle\n\nJust walk over, especially since you're about to get the car washed anyway. If you drove, you might even pick up a bit of road dust right before the wash.\n\nOne thing to consider though: does the car wash require you to drive *through* it (like an automatic tunnel wash)? If so, you'll obviously need to drive. But if it's a self-service bay or hand wash where you just need to be present, walking makes more sense.",
+      "attempts": 1,
+      "elapsed_s": 6.298954963684082
+    },
+    {
+      "trial": 10,
+      "raw": "Walk. Driving 50 meters to a car wash is impractical for several reasons:\n\n- **It's faster to walk** \u2014 by the time you start the car, buckle up, and pull out, you could already be there.\n- **Starting a cold engine for such a short trip** is bad for the engine and wastes fuel.\n- **You'd just have to drive back anyway**, doubling the pointlessness.\n\nThat said, there's one consideration: if it's a drive-through or automated car wash, you obviously need to *drive the car through it* to wash it. So you'd drive there as part of the washing process itself \u2014 not really a separate \"commute.\"\n\nIf it's a self-serve bay where you wash by hand, same thing \u2014 you need the car there to wash it.\n\nSo the real answer is: **you have to drive, because the car is what's getting washed.** \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 6.611936092376709
+    }
+  ]
+}

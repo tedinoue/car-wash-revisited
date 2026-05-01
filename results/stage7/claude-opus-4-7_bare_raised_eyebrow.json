@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "bare_raised_eyebrow",
+  "condition_name": "\ud83e\udd28 Face with raised eyebrow (skepticism)",
+  "system_prompt": "\ud83e\udd28",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk. 50 meters is about 30-60 seconds on foot\u2014shorter than the time it takes to get in your car, start it, and pull out of your driveway. Driving would also be silly given that you're literally going to wash the car when you get there (any dirt or bugs picked up on the drive would just need washing off anyway).",
+      "attempts": 1,
+      "elapsed_s": 3.517848014831543
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. \n\nDriving 50 meters makes no sense:\n- It takes longer to get in, start the car, and park than to just walk\n- You'd burn fuel and add wear for almost no distance\n- You're about to wash the car anyway, so why drive it (and potentially get it dirty) right before?\n\nJust walk over. It'll take you maybe 30-40 seconds.",
+      "attempts": 1,
+      "elapsed_s": 3.8668980598449707
+    },
+    {
+      "trial": 3,
+      "raw": "Walk. \n\n50 meters is a 30-second walk. Driving there is impractical for several reasons:\n- By the time you start the car, you'd already be there on foot\n- You'd have to park at the car wash anyway\n- It's wasted fuel and emissions for a trivial distance\n\nJust walk over. If you meant 50 *kilometers*, that's a different story \u2014 but for 50 meters, your feet are the obvious choice.",
+      "attempts": 1,
+      "elapsed_s": 4.040040969848633
+    },
+    {
+      "trial": 4,
+      "raw": "Walk! 50 meters is incredibly close \u2014 about half the length of a football field, or roughly a 30-second stroll.\n\nDriving makes no sense here:\n- You'd burn fuel starting a cold engine for almost no distance\n- You'd have to get in, buckle up, start it, drive, park \u2014 probably slower than walking\n- Wait... you want to *wash* the car. So presumably the car needs to go to the car wash too. \ud83d\ude97\n\nIf it's a drive-through car wash, you'll need to drive the car there (the car is the thing being washed). If you're buying supplies to wash it yourself at home, then walk.\n\nWhich kind of car wash did you mean?",
+      "attempts": 1,
+      "elapsed_s": 8.442342758178711
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. 50 meters is barely half a football field \u2014 you'll be there in under a minute. Driving would mean starting a cold engine, moving it a trivial distance, and then your freshly washed car gets driven back through whatever's on the road anyway.\n\nPlus, if it's a self-service or touchless wash, you'll obviously need to drive. But if you're asking whether to *go* there on foot vs. by car... that question only makes sense if you're planning to wash the car *at* the car wash, which means the car needs to come with you. \ud83d\ude97\n\nSo: drive the car (since the car is what's getting washed). Walking there without it kind of defeats the purpose.",
+      "attempts": 1,
+      "elapsed_s": 5.648689031600952
+    },
+    {
+      "trial": 6,
+      "raw": "Walk! 50 meters is a very short distance\u2014roughly a 30-second walk. Driving would be impractical for several reasons:\n\n- You'd burn fuel and start a cold engine for almost no distance\n- By the time you got in, started up, and pulled out, you could already be there on foot\n- Parking and maneuvering would take longer than the trip itself\n\nWait... actually, you want to *wash* your car at the car wash. So you'll need to drive it there\u2014otherwise there's nothing to wash! \ud83d\ude97\ud83d\udca6\n\nHop in and drive the 50 meters.",
+      "attempts": 1,
+      "elapsed_s": 6.11421012878418
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. 50 meters is about 60 seconds on foot \u2014 barely worth starting the engine. Driving such a short distance is also bad for your engine (it doesn't reach optimal operating temperature) and wastes fuel.\n\nPlus, if you just washed your car by driving it there, you'd be putting fresh road grime on it on the way back. \ud83d\ude04\n\nWalk it.",
+      "attempts": 1,
+      "elapsed_s": 3.6282827854156494
+    },
+    {
+      "trial": 8,
+      "raw": "Walk. 50 meters is about 30-60 seconds on foot \u2014 barely a stretch of the legs. Driving there would take longer once you factor in getting in the car, starting it, parking, and getting out. Plus, you'd just be adding dirt and exhaust to a car you're about to clean.\n\nWalk it. \ud83d\udeb6",
+      "attempts": 1,
+      "elapsed_s": 3.9034180641174316
+    },
+    {
+      "trial": 9,
+      "raw": "Walk! \ud83d\udeb6\n\nDriving 50 meters to a car wash is pretty pointless for a few reasons:\n\n1. **It's an extremely short distance** \u2014 about 60 seconds of walking\n2. **Starting a cold engine for such a short trip** is hard on your car and inefficient\n3. **You'd have to get in, start up, drive, park, then reverse the process** \u2014 probably slower than walking\n4. **Wait...** if you're going to a car wash, doesn't your car need to actually *be* there? \ud83d\ude04\n\nI think you might need to drive after all \u2014 unless the car wash comes to you, your car has to make the trip to get washed!",
+      "attempts": 1,
+      "elapsed_s": 6.174119234085083
+    },
+    {
+      "trial": 10,
+      "raw": "Walk. \n\n50 meters is about a 30-second stroll. Driving there would:\n- Take longer once you factor in getting in/out of the car\n- Waste fuel\n- Be pointless since you're about to wash the car anyway (why dirty it up driving?)\n\nJust walk over. Unless you're hauling heavy equipment, there's no reason to drive such a short distance.",
+      "attempts": 1,
+      "elapsed_s": 3.567852020263672
+    }
+  ]
+}

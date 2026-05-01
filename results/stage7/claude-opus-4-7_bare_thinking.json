@@ -1,0 +1,74 @@
+{
+  "provider": "anthropic",
+  "model_id": "claude-opus-4-7",
+  "display_name": "Opus 4.7",
+  "condition_id": "bare_thinking",
+  "condition_name": "\ud83e\udd14 Thinking face (think more)",
+  "system_prompt": "\ud83e\udd14",
+  "user_prompt": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+  "n_trials": 10,
+  "completed": 10,
+  "api_hard_failures": 0,
+  "trials": [
+    {
+      "trial": 1,
+      "raw": "Walk. 50 meters is a very short distance\u2014about a 30-second stroll. Driving there would be impractical for several reasons:\n\n1. **It's faster to walk** by the time you start the car, buckle up, and pull out.\n2. **Wasted fuel and emissions** for such a tiny trip.\n3. **Cold engine wear** \u2014 short trips are hard on engines.\n\nBut wait \u2014 you said you want to **wash your car**. If the car wash is a drive-through or self-service bay, you obviously need to **drive the car there**, since the goal is to clean the car itself. \ud83d\ude97\n\nSo: **drive the car** \u2014 that's the whole point of the trip!",
+      "attempts": 1,
+      "elapsed_s": 6.6165430545806885
+    },
+    {
+      "trial": 2,
+      "raw": "Walk. \n\nDriving 50 meters to a car wash doesn't make much sense:\n- Starting your engine, backing out, and parking uses more time than walking\n- It's a trivial distance\u2014roughly 30-60 seconds on foot\n- You'd burn fuel and add unnecessary wear for no benefit\n\nThe only exceptions would be if you physically can't walk that distance, the route is unsafe for pedestrians, or\u2014importantly\u2014**you need to drive the car *through* the car wash**. If it's a drive-through car wash, then obviously you have to drive it there. \ud83d\ude04\n\nWhich type of car wash is it?",
+      "attempts": 1,
+      "elapsed_s": 4.8192548751831055
+    },
+    {
+      "trial": 3,
+      "raw": "Walk! \ud83d\udeb6\n\nFor a 50-meter trip, walking is the obvious choice:\n\n- **It's faster overall** \u2014 by the time you start the car, buckle up, and pull out, you could already be there\n- **No parking hassle** \u2014 you'd just have to park anyway\n- **Saves fuel** (even if minimal)\n- **It's only about 60 seconds of walking**\n\nThat said, there's one consideration: most automated car washes require you to *drive* your car through them, so you'll need to drive it there regardless if that's the type of wash you're using. \ud83d\ude04\n\nIf it's a self-service bay where you bring the car in to wash it \u2014 same answer: drive it there, since the whole point is to clean the car.\n\nSo actually... you'll probably need to drive after all, not for your convenience, but because the car needs to go too!",
+      "attempts": 1,
+      "elapsed_s": 6.966414928436279
+    },
+    {
+      "trial": 4,
+      "raw": "Walk. \n\nDriving 50 meters to a car wash makes little sense:\n- It takes longer overall (start the car, maneuver, park) than just walking\n- You'd burn fuel for a trivial distance\n- Cold/short engine trips are actually bad for your car\n\nWait \u2014 I should reconsider the question. If you're washing your *car*, you probably need to bring the car to the car wash. You can't wash it without it being there. So **drive** the car to the car wash, since the car itself is what's getting washed.\n\nIf you meant something else (like you're walking somewhere else and just passing a car wash), let me know and I'll reconsider!",
+      "attempts": 1,
+      "elapsed_s": 5.516376972198486
+    },
+    {
+      "trial": 5,
+      "raw": "Walk. \n\nFor 50 meters, driving doesn't make sense:\n\n- **Walking** takes about 30-40 seconds\n- **Driving** would take longer once you factor in getting in, starting the car, parking, etc.\n- You'd burn unnecessary fuel\n- More importantly: you can't drive *to* a car wash without your car\n\nWait \u2014 I think I misread your question. If you need to wash your car, you obviously need to **drive** it there. You can't wash a car that isn't with you. \ud83d\ude04\n\nSo: drive the car to the car wash.",
+      "attempts": 1,
+      "elapsed_s": 4.61751389503479
+    },
+    {
+      "trial": 6,
+      "raw": "Walk! 50 meters is an extremely short distance \u2014 about half the length of a football field, or roughly a 30-second walk.\n\nDriving would be impractical because:\n- You'd barely have time to get the engine warm\n- You'd need to park at the car wash anyway\n- It wastes fuel for essentially no benefit\n\nThat said, there's one catch: **how are you getting your car to the car wash?** If the goal is to wash *your car*, you'll need to drive it there. You can't walk your car through a car wash. \ud83d\ude04\n\nSo the real answer is: **drive your car** (because it needs to be at the car wash), but only because that's the whole point of the trip.",
+      "attempts": 1,
+      "elapsed_s": 5.454894781112671
+    },
+    {
+      "trial": 7,
+      "raw": "Walk. \n\nDriving 50 meters to a car wash makes little sense:\n\n- **It's faster to walk** at that distance \u2014 you'd spend more time getting in, starting the car, and parking than just walking over.\n- **Wasted fuel and emissions** for a trip shorter than most driveways.\n- **Wear on the car** (cold starts are actually hardest on an engine).\n\nWait \u2014 I should reconsider. You're trying to *wash* the car, so you obviously need to bring it with you. You can't walk a car to the car wash. \ud83d\ude97\n\n**Drive.** (Or push it, if you're feeling ambitious.)",
+      "attempts": 1,
+      "elapsed_s": 5.87677001953125
+    },
+    {
+      "trial": 8,
+      "raw": "Walk! \ud83d\udeb6\n\nFor a 50-meter trip, walking makes way more sense:\n\n- **Driving is impractical**: By the time you start the car, buckle up, and pull out, you could already be there on foot. 50 meters is about a 30-second walk.\n- **It defeats the purpose**: You'd be driving a freshly-washed (or about-to-be-washed) car... wait, actually you're going *to* the wash, so this matters less. But still.\n- **Wait \u2014 can you even walk through a car wash?** \ud83e\udd14\n\nActually, hold on. If it's a **drive-through car wash**, you kind of *have* to drive your car there \u2014 that's the whole point. You can't wash your car without bringing the car!\n\nSo the real answer: **Drive your car to the car wash**, because the car is what's being washed. The 50 meters is irrelevant \u2014 your car needs to be there.\n\nUnless you meant you want to wash your car *yourself* using equipment from the car wash, in which case... still probably bring the car. \ud83d\ude04",
+      "attempts": 1,
+      "elapsed_s": 7.19252610206604
+    },
+    {
+      "trial": 9,
+      "raw": "Walk! \ud83d\udeb6\n\nFor just 50 meters, walking makes way more sense:\n\n- **It's faster overall** \u2014 by the time you start the car, buckle up, and pull out, you could already be there.\n- **It's pointless to drive** \u2014 you'd burn fuel and add wear for a distance shorter than many parking lots.\n- **Wait... you're going to the car wash** \u2014 so presumably you need to bring the car with you to wash it. \ud83d\ude04\n\nSo unless you're planning to carry the car there, you'll need to drive it. But if you just want to *check out* the car wash or pay in advance, walk!",
+      "attempts": 1,
+      "elapsed_s": 5.125474691390991
+    },
+    {
+      "trial": 10,
+      "raw": "Walk. 50 meters is a very short distance\u2014about a 30-45 second walk. Driving would be impractical for several reasons:\n\n1. **It's faster to walk** by the time you get in, start the car, and park\n2. **You'd waste fuel** starting a cold engine for such a short trip, which is also bad for the engine\n3. **Wait\u2014you want to wash your car**, so it should already be at the car wash if you're driving it there\n\nI think you may have meant something else. Could you clarify? For example:\n- Is the car wash 50 meters from where your car is parked?\n- Are you asking whether to drive your car *to* the car wash to get it washed?\n\nIf you want to get your car washed, you'll need to drive it (or have it towed) to the car wash\u2014walking won't get the car clean! \ud83d\ude97",
+      "attempts": 1,
+      "elapsed_s": 8.743336915969849
+    }
+  ]
+}
